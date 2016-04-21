@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite errors="0" failures="0" hostname="xmgbr-PC" name="cscie56.fp.ProblemServiceIntegrationSpec" skipped="0" tests="2" time="0.132" timestamp="2016-04-21T23:41:18">
+  <properties />
+  <testcase classname="cscie56.fp.ProblemServiceIntegrationSpec" name="createProblemDescription() method" time="0.012" />
+  <testcase classname="cscie56.fp.ProblemServiceIntegrationSpec" name="createProblem() method" time="0.12" />
+  <system-out><![CDATA[--Output from createProblemDescription() method--
+--Output from createProblem() method--
+]]></system-out>
+  <system-err><![CDATA[--Output from createProblemDescription() method--
+--Output from createProblem() method--
+]]></system-err>
+</testsuite>

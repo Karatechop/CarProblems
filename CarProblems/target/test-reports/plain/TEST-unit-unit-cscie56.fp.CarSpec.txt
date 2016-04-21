@@ -1,0 +1,97 @@
+Testsuite: cscie56.fp.CarSpec
+Tests run: 30, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1,059 sec
+------------- Standard Output ---------------
+--Output from test car all constraints manufacturer is nullable--
+--Output from test car all constraints manufacturer is nullable--
+--Output from test car all constraints manufacturer is matches--
+--Output from test car all constraints manufacturer is valid--
+--Output from test car all constraints manufacturer is size--
+--Output from test car all constraints manufacturer is valid--
+--Output from test car all constraints manufacturer is valid--
+--Output from test car all constraints manufacturer is valid--
+--Output from test car all constraints carModel is nullable--
+--Output from test car all constraints carModel is nullable--
+--Output from test car all constraints carModel is unique--
+--Output from test car all constraints carModel is matches--
+--Output from test car all constraints carModel is valid--
+--Output from test car all constraints carModel is size--
+--Output from test car all constraints carModel is valid--
+--Output from test car all constraints carModel is valid--
+--Output from test car all constraints carModel is valid--
+--Output from test car all constraints carModel is validator--
+--Output from test car all constraints year is nullable--
+--Output from test car all constraints year is nullable--
+--Output from test car all constraints year is valid--
+--Output from test car all constraints year is valid--
+--Output from test car all constraints year is validator--
+--Output from test car all constraints doors is nullable--
+--Output from test car all constraints doors is nullable--
+--Output from test car all constraints doors is valid--
+--Output from test car all constraints doors is valid--
+--Output from test car all constraints doors is valid--
+--Output from test car all constraints doors is validator--
+--Output from test car all constraints doors is validator--
+------------- ---------------- ---------------
+------------- Standard Error -----------------
+--Output from test car all constraints manufacturer is nullable--
+--Output from test car all constraints manufacturer is nullable--
+--Output from test car all constraints manufacturer is matches--
+--Output from test car all constraints manufacturer is valid--
+--Output from test car all constraints manufacturer is size--
+--Output from test car all constraints manufacturer is valid--
+--Output from test car all constraints manufacturer is valid--
+--Output from test car all constraints manufacturer is valid--
+--Output from test car all constraints carModel is nullable--
+--Output from test car all constraints carModel is nullable--
+--Output from test car all constraints carModel is unique--
+--Output from test car all constraints carModel is matches--
+--Output from test car all constraints carModel is valid--
+--Output from test car all constraints carModel is size--
+--Output from test car all constraints carModel is valid--
+--Output from test car all constraints carModel is valid--
+--Output from test car all constraints carModel is valid--
+--Output from test car all constraints carModel is validator--
+--Output from test car all constraints year is nullable--
+--Output from test car all constraints year is nullable--
+--Output from test car all constraints year is valid--
+--Output from test car all constraints year is valid--
+--Output from test car all constraints year is validator--
+--Output from test car all constraints doors is nullable--
+--Output from test car all constraints doors is nullable--
+--Output from test car all constraints doors is valid--
+--Output from test car all constraints doors is valid--
+--Output from test car all constraints doors is valid--
+--Output from test car all constraints doors is validator--
+--Output from test car all constraints doors is validator--
+------------- ---------------- ---------------
+
+Testcase: test car all constraints manufacturer is nullable took 0,276 sec
+Testcase: test car all constraints manufacturer is nullable took 0,031 sec
+Testcase: test car all constraints manufacturer is matches took 0,029 sec
+Testcase: test car all constraints manufacturer is valid took 0,032 sec
+Testcase: test car all constraints manufacturer is size took 0,032 sec
+Testcase: test car all constraints manufacturer is valid took 0,026 sec
+Testcase: test car all constraints manufacturer is valid took 0,029 sec
+Testcase: test car all constraints manufacturer is valid took 0,026 sec
+Testcase: test car all constraints carModel is nullable took 0,034 sec
+Testcase: test car all constraints carModel is nullable took 0,027 sec
+Testcase: test car all constraints carModel is unique took 0,028 sec
+Testcase: test car all constraints carModel is matches took 0,024 sec
+Testcase: test car all constraints carModel is valid took 0,027 sec
+Testcase: test car all constraints carModel is size took 0,025 sec
+Testcase: test car all constraints carModel is valid took 0,024 sec
+Testcase: test car all constraints carModel is valid took 0,036 sec
+Testcase: test car all constraints carModel is valid took 0,024 sec
+Testcase: test car all constraints carModel is validator took 0,027 sec
+Testcase: test car all constraints year is nullable took 0,025 sec
+Testcase: test car all constraints year is nullable took 0,021 sec
+Testcase: test car all constraints year is valid took 0,021 sec
+Testcase: test car all constraints year is valid took 0,024 sec
+Testcase: test car all constraints year is validator took 0,024 sec
+Testcase: test car all constraints doors is nullable took 0,022 sec
+Testcase: test car all constraints doors is nullable took 0,02 sec
+Testcase: test car all constraints doors is valid took 0,026 sec
+Testcase: test car all constraints doors is valid took 0,022 sec
+Testcase: test car all constraints doors is valid took 0,022 sec
+Testcase: test car all constraints doors is validator took 0,025 sec
+Testcase: test car all constraints doors is validator took 0,026 sec

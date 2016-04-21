@@ -45,7 +45,7 @@ class User implements Serializable {
 	static transients = ['springSecurityService']
 
 	static constraints = {
-		username blank: false, unique: true
+		username blank: false, unique: true, matches: "[a-zA-Z0-9 ]*", size: 1..30
 		password blank: false
 	}
 

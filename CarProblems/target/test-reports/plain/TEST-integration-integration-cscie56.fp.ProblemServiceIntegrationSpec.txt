@@ -1,0 +1,13 @@
+Testsuite: cscie56.fp.ProblemServiceIntegrationSpec
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0,132 sec
+------------- Standard Output ---------------
+--Output from createProblemDescription() method--
+--Output from createProblem() method--
+------------- ---------------- ---------------
+------------- Standard Error -----------------
+--Output from createProblemDescription() method--
+--Output from createProblem() method--
+------------- ---------------- ---------------
+
+Testcase: createProblemDescription() method took 0,012 sec
+Testcase: createProblem() method took 0,12 sec

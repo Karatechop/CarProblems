@@ -9,10 +9,19 @@ import spock.lang.*
 @Mock(Problem)
 class ProblemControllerSpec extends Specification {
 
+
     def populateValidParams(params) {
         assert params != null
-        // TODO: Populate valid properties like...
-        //params["name"] = 'someValidName'
+
+        Car testCar = new Car(manufacturer:'Test Car Motors', carModel: '2016 Sport', year: 2016, fuel: 'Diesel', doors: 5)
+
+        params << [
+                car:testCar,
+                system: 'Test System',
+                description: 'description',
+                approved: false,
+        ]
+
     }
 
     void "Test the index action returns the correct model"() {

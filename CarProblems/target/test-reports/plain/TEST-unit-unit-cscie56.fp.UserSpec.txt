@@ -1,0 +1,40 @@
+Testsuite: cscie56.fp.UserSpec
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0,216 sec
+------------- Standard Output ---------------
+--Output from test user all constraints username is nullable--
+--Output from test user all constraints username is unique--
+--Output from test user all constraints username is nullable--
+--Output from test user all constraints username is matches--
+--Output from test user all constraints username is valid--
+--Output from test user all constraints username is size--
+--Output from test user all constraints username is valid--
+--Output from test user all constraints username is valid--
+--Output from test user all constraints username is valid--
+--Output from test user all constraints password is nullable--
+--Output from test user all constraints password is nullable--
+------------- ---------------- ---------------
+------------- Standard Error -----------------
+--Output from test user all constraints username is nullable--
+--Output from test user all constraints username is unique--
+--Output from test user all constraints username is nullable--
+--Output from test user all constraints username is matches--
+--Output from test user all constraints username is valid--
+--Output from test user all constraints username is size--
+--Output from test user all constraints username is valid--
+--Output from test user all constraints username is valid--
+--Output from test user all constraints username is valid--
+--Output from test user all constraints password is nullable--
+--Output from test user all constraints password is nullable--
+------------- ---------------- ---------------
+
+Testcase: test user all constraints username is nullable took 0,074 sec
+Testcase: test user all constraints username is unique took 0,013 sec
+Testcase: test user all constraints username is nullable took 0,01 sec
+Testcase: test user all constraints username is matches took 0,016 sec
+Testcase: test user all constraints username is valid took 0,012 sec
+Testcase: test user all constraints username is size took 0,014 sec
+Testcase: test user all constraints username is valid took 0,014 sec
+Testcase: test user all constraints username is valid took 0,015 sec
+Testcase: test user all constraints username is valid took 0,014 sec
+Testcase: test user all constraints password is nullable took 0,013 sec
+Testcase: test user all constraints password is nullable took 0,012 sec

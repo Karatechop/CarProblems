@@ -11,8 +11,17 @@ class CarControllerSpec extends Specification {
 
     def populateValidParams(params) {
         assert params != null
-        // TODO: Populate valid properties like...
-        //params["name"] = 'someValidName'
+
+        User testUser = new User(username: 'username', password: 'password')
+        params << [
+                user:testUser,
+                manufacturer: 'Test Car Motors',
+                carModel: '2016 Sport',
+                year: 2016,
+                fuel: 'Diesel',
+                doors: 5
+        ]
+
     }
 
     void "Test the index action returns the correct model"() {

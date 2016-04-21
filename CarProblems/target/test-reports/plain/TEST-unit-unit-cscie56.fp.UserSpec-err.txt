@@ -1,0 +1,11 @@
+--Output from test user all constraints username is nullable--
+--Output from test user all constraints username is unique--
+--Output from test user all constraints username is nullable--
+--Output from test user all constraints username is matches--
+--Output from test user all constraints username is valid--
+--Output from test user all constraints username is size--
+--Output from test user all constraints username is valid--
+--Output from test user all constraints username is valid--
+--Output from test user all constraints username is valid--
+--Output from test user all constraints password is nullable--
+--Output from test user all constraints password is nullable--

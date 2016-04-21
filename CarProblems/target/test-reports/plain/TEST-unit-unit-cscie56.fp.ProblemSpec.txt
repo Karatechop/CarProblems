@@ -1,0 +1,55 @@
+Testsuite: cscie56.fp.ProblemSpec
+Tests run: 16, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0,363 sec
+------------- Standard Output ---------------
+--Output from test problem all constraints system is nullable--
+--Output from test problem all constraints system is nullable--
+--Output from test problem all constraints system is matches--
+--Output from test problem all constraints system is valid--
+--Output from test problem all constraints system is size--
+--Output from test problem all constraints system is valid--
+--Output from test problem all constraints system is valid--
+--Output from test problem all constraints system is valid--
+--Output from test problem all constraints description is nullable--
+--Output from test problem all constraints description is nullable--
+--Output from test problem all constraints description is matches--
+--Output from test problem all constraints description is valid--
+--Output from test problem all constraints description is size--
+--Output from test problem all constraints description is valid--
+--Output from test problem all constraints description is valid--
+--Output from test problem all constraints description is valid--
+------------- ---------------- ---------------
+------------- Standard Error -----------------
+--Output from test problem all constraints system is nullable--
+--Output from test problem all constraints system is nullable--
+--Output from test problem all constraints system is matches--
+--Output from test problem all constraints system is valid--
+--Output from test problem all constraints system is size--
+--Output from test problem all constraints system is valid--
+--Output from test problem all constraints system is valid--
+--Output from test problem all constraints system is valid--
+--Output from test problem all constraints description is nullable--
+--Output from test problem all constraints description is nullable--
+--Output from test problem all constraints description is matches--
+--Output from test problem all constraints description is valid--
+--Output from test problem all constraints description is size--
+--Output from test problem all constraints description is valid--
+--Output from test problem all constraints description is valid--
+--Output from test problem all constraints description is valid--
+------------- ---------------- ---------------
+
+Testcase: test problem all constraints system is nullable took 0,081 sec
+Testcase: test problem all constraints system is nullable took 0,018 sec
+Testcase: test problem all constraints system is matches took 0,014 sec
+Testcase: test problem all constraints system is valid took 0,018 sec
+Testcase: test problem all constraints system is size took 0,017 sec
+Testcase: test problem all constraints system is valid took 0,017 sec
+Testcase: test problem all constraints system is valid took 0,017 sec
+Testcase: test problem all constraints system is valid took 0,018 sec
+Testcase: test problem all constraints description is nullable took 0,017 sec
+Testcase: test problem all constraints description is nullable took 0,018 sec
+Testcase: test problem all constraints description is matches took 0,018 sec
+Testcase: test problem all constraints description is valid took 0,017 sec
+Testcase: test problem all constraints description is size took 0,018 sec
+Testcase: test problem all constraints description is valid took 0,021 sec
+Testcase: test problem all constraints description is valid took 0,015 sec
+Testcase: test problem all constraints description is valid took 0,02 sec

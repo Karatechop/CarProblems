@@ -1,0 +1,10 @@
+Testsuite: cscie56.fp.CarServiceIntegrationSpec
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0,192 sec
+------------- Standard Output ---------------
+--Output from createCar() method--
+------------- ---------------- ---------------
+------------- Standard Error -----------------
+--Output from createCar() method--
+------------- ---------------- ---------------
+
+Testcase: createCar() method took 0,186 sec
