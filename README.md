@@ -9,17 +9,17 @@ Buying pre-owned cars is a gamble. Community sourced information on typical mile
 CarProblems will allow anonymous users to access such information while registered users will also be able to contribute it. Third type of users - admins - will manage the application.
 
 Anonymous users will be able to brows cars and check their respective problem tracking pages.
-Registered users will be able to login. They will be able to add car models that interest them most to their profiles. This way they will have fast access to their problem details. They will be also able to contribute problems to car models they own. Apart from problem, specification and description problem contributions will also contain basic information about submission author and time of submission. All relevant problem submissions will be displayed at car details page. Before becoming visible, each problem will have to be confirmed by an admin.
+Registered users will be able to login. Upon that they will be able to add to their profiles those car models that interest them most. This way they will have fast access to their problem details and will be able to contribute problems to these models. Apart from problem, specification and description, problem contributions will also contain basic information about submission author and time of submission. All relevant problem submissions will be displayed at car details page. Before becoming visible, each problem will have to be confirmed by an admin.
 Admin users will have a dashboard displaying all problem submissions awaiting confirmation as well as lists of all users, cars and problems with buttons that allow basic CRUD functionalities.
 
 
 
 ## Current state
 + Domain models (simplified for MVP)
-+ Domain models unit tests
-+ Simple services for creation domain model instances
++ Domain models' unit tests
++ Simple services for creation of domain model instances
 + Integration tests for services
-+ Grails generated CRUD controllers for  
++ Grails generated CRUD controllers for domain models
 
 ##TODOs
 + Expand services with methods required for operation with domain model instances
