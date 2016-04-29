@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite errors="0" failures="0" hostname="xmgbr-PC" name="cscie56.fp.ProblemSpec" skipped="0" tests="16" time="0.363" timestamp="2016-04-21T23:41:08">
+<testsuite errors="0" failures="0" hostname="xmgbr-PC" name="cscie56.fp.ProblemSpec" skipped="0" tests="16" time="0.378" timestamp="2016-04-29T20:59:33">
   <properties />
-  <testcase classname="cscie56.fp.ProblemSpec" name="test problem all constraints system is nullable" time="0.081" />
-  <testcase classname="cscie56.fp.ProblemSpec" name="test problem all constraints system is nullable" time="0.018" />
-  <testcase classname="cscie56.fp.ProblemSpec" name="test problem all constraints system is matches" time="0.014" />
+  <testcase classname="cscie56.fp.ProblemSpec" name="test problem all constraints system is nullable" time="0.099" />
+  <testcase classname="cscie56.fp.ProblemSpec" name="test problem all constraints system is nullable" time="0.019" />
+  <testcase classname="cscie56.fp.ProblemSpec" name="test problem all constraints system is matches" time="0.018" />
   <testcase classname="cscie56.fp.ProblemSpec" name="test problem all constraints system is valid" time="0.018" />
-  <testcase classname="cscie56.fp.ProblemSpec" name="test problem all constraints system is size" time="0.017" />
+  <testcase classname="cscie56.fp.ProblemSpec" name="test problem all constraints system is size" time="0.019" />
+  <testcase classname="cscie56.fp.ProblemSpec" name="test problem all constraints system is valid" time="0.021" />
   <testcase classname="cscie56.fp.ProblemSpec" name="test problem all constraints system is valid" time="0.017" />
-  <testcase classname="cscie56.fp.ProblemSpec" name="test problem all constraints system is valid" time="0.017" />
-  <testcase classname="cscie56.fp.ProblemSpec" name="test problem all constraints system is valid" time="0.018" />
-  <testcase classname="cscie56.fp.ProblemSpec" name="test problem all constraints description is nullable" time="0.017" />
-  <testcase classname="cscie56.fp.ProblemSpec" name="test problem all constraints description is nullable" time="0.018" />
-  <testcase classname="cscie56.fp.ProblemSpec" name="test problem all constraints description is matches" time="0.018" />
-  <testcase classname="cscie56.fp.ProblemSpec" name="test problem all constraints description is valid" time="0.017" />
-  <testcase classname="cscie56.fp.ProblemSpec" name="test problem all constraints description is size" time="0.018" />
-  <testcase classname="cscie56.fp.ProblemSpec" name="test problem all constraints description is valid" time="0.021" />
+  <testcase classname="cscie56.fp.ProblemSpec" name="test problem all constraints system is valid" time="0.016" />
+  <testcase classname="cscie56.fp.ProblemSpec" name="test problem all constraints description is nullable" time="0.016" />
+  <testcase classname="cscie56.fp.ProblemSpec" name="test problem all constraints description is nullable" time="0.015" />
+  <testcase classname="cscie56.fp.ProblemSpec" name="test problem all constraints description is matches" time="0.015" />
+  <testcase classname="cscie56.fp.ProblemSpec" name="test problem all constraints description is valid" time="0.014" />
+  <testcase classname="cscie56.fp.ProblemSpec" name="test problem all constraints description is size" time="0.014" />
   <testcase classname="cscie56.fp.ProblemSpec" name="test problem all constraints description is valid" time="0.015" />
-  <testcase classname="cscie56.fp.ProblemSpec" name="test problem all constraints description is valid" time="0.02" />
+  <testcase classname="cscie56.fp.ProblemSpec" name="test problem all constraints description is valid" time="0.015" />
+  <testcase classname="cscie56.fp.ProblemSpec" name="test problem all constraints description is valid" time="0.034" />
   <system-out><![CDATA[--Output from test problem all constraints system is nullable--
 --Output from test problem all constraints system is nullable--
 --Output from test problem all constraints system is matches--

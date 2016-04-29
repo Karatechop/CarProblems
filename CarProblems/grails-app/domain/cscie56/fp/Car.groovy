@@ -3,7 +3,7 @@ package cscie56.fp
 class Car {
 
     static belongsTo = [user:User]
-    static hasMany = [problems:Problem]
+    static hasMany = [problems:Problem, users:User]
 
     String manufacturer
     String carModel

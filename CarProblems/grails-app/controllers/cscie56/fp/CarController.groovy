@@ -1,11 +1,12 @@
 package cscie56.fp
 
-
+import grails.plugin.springsecurity.annotation.Secured
 
 import static org.springframework.http.HttpStatus.*
 import grails.transaction.Transactional
 
 @Transactional(readOnly = true)
+@Secured(['ROLE_ADMIN'])
 class CarController {
 
     static allowedMethods = [save: "POST", update: "PUT", delete: "DELETE"]
@@ -15,6 +16,7 @@ class CarController {
         respond Car.list(params), model:[carInstanceCount: Car.count()]
     }
 
+    @Secured(['ROLE_ADMIN', 'ROLE_USER', 'ROLE_ANONYMOUS'])
     def show(Car carInstance) {
         respond carInstance
     }

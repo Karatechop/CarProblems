@@ -1,35 +1,35 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite errors="0" failures="0" hostname="xmgbr-PC" name="cscie56.fp.CarSpec" skipped="0" tests="30" time="1.059" timestamp="2016-04-21T23:41:06">
+<testsuite errors="0" failures="0" hostname="xmgbr-PC" name="cscie56.fp.CarSpec" skipped="0" tests="30" time="0.982" timestamp="2016-04-29T20:59:32">
   <properties />
-  <testcase classname="cscie56.fp.CarSpec" name="test car all constraints manufacturer is nullable" time="0.276" />
-  <testcase classname="cscie56.fp.CarSpec" name="test car all constraints manufacturer is nullable" time="0.031" />
-  <testcase classname="cscie56.fp.CarSpec" name="test car all constraints manufacturer is matches" time="0.029" />
-  <testcase classname="cscie56.fp.CarSpec" name="test car all constraints manufacturer is valid" time="0.031" />
-  <testcase classname="cscie56.fp.CarSpec" name="test car all constraints manufacturer is size" time="0.032" />
+  <testcase classname="cscie56.fp.CarSpec" name="test car all constraints manufacturer is nullable" time="0.283" />
+  <testcase classname="cscie56.fp.CarSpec" name="test car all constraints manufacturer is nullable" time="0.027" />
+  <testcase classname="cscie56.fp.CarSpec" name="test car all constraints manufacturer is matches" time="0.025" />
+  <testcase classname="cscie56.fp.CarSpec" name="test car all constraints manufacturer is valid" time="0.023" />
+  <testcase classname="cscie56.fp.CarSpec" name="test car all constraints manufacturer is size" time="0.03" />
+  <testcase classname="cscie56.fp.CarSpec" name="test car all constraints manufacturer is valid" time="0.025" />
+  <testcase classname="cscie56.fp.CarSpec" name="test car all constraints manufacturer is valid" time="0.024" />
   <testcase classname="cscie56.fp.CarSpec" name="test car all constraints manufacturer is valid" time="0.026" />
-  <testcase classname="cscie56.fp.CarSpec" name="test car all constraints manufacturer is valid" time="0.029" />
-  <testcase classname="cscie56.fp.CarSpec" name="test car all constraints manufacturer is valid" time="0.026" />
-  <testcase classname="cscie56.fp.CarSpec" name="test car all constraints carModel is nullable" time="0.034" />
-  <testcase classname="cscie56.fp.CarSpec" name="test car all constraints carModel is nullable" time="0.027" />
-  <testcase classname="cscie56.fp.CarSpec" name="test car all constraints carModel is unique" time="0.028" />
-  <testcase classname="cscie56.fp.CarSpec" name="test car all constraints carModel is matches" time="0.024" />
+  <testcase classname="cscie56.fp.CarSpec" name="test car all constraints carModel is nullable" time="0.032" />
+  <testcase classname="cscie56.fp.CarSpec" name="test car all constraints carModel is nullable" time="0.024" />
+  <testcase classname="cscie56.fp.CarSpec" name="test car all constraints carModel is unique" time="0.027" />
+  <testcase classname="cscie56.fp.CarSpec" name="test car all constraints carModel is matches" time="0.023" />
+  <testcase classname="cscie56.fp.CarSpec" name="test car all constraints carModel is valid" time="0.024" />
+  <testcase classname="cscie56.fp.CarSpec" name="test car all constraints carModel is size" time="0.022" />
+  <testcase classname="cscie56.fp.CarSpec" name="test car all constraints carModel is valid" time="0.022" />
   <testcase classname="cscie56.fp.CarSpec" name="test car all constraints carModel is valid" time="0.027" />
-  <testcase classname="cscie56.fp.CarSpec" name="test car all constraints carModel is size" time="0.025" />
-  <testcase classname="cscie56.fp.CarSpec" name="test car all constraints carModel is valid" time="0.024" />
-  <testcase classname="cscie56.fp.CarSpec" name="test car all constraints carModel is valid" time="0.036" />
-  <testcase classname="cscie56.fp.CarSpec" name="test car all constraints carModel is valid" time="0.024" />
-  <testcase classname="cscie56.fp.CarSpec" name="test car all constraints carModel is validator" time="0.027" />
-  <testcase classname="cscie56.fp.CarSpec" name="test car all constraints year is nullable" time="0.025" />
-  <testcase classname="cscie56.fp.CarSpec" name="test car all constraints year is nullable" time="0.021" />
-  <testcase classname="cscie56.fp.CarSpec" name="test car all constraints year is valid" time="0.021" />
-  <testcase classname="cscie56.fp.CarSpec" name="test car all constraints year is valid" time="0.024" />
-  <testcase classname="cscie56.fp.CarSpec" name="test car all constraints year is validator" time="0.024" />
-  <testcase classname="cscie56.fp.CarSpec" name="test car all constraints doors is nullable" time="0.022" />
-  <testcase classname="cscie56.fp.CarSpec" name="test car all constraints doors is nullable" time="0.02" />
-  <testcase classname="cscie56.fp.CarSpec" name="test car all constraints doors is valid" time="0.026" />
+  <testcase classname="cscie56.fp.CarSpec" name="test car all constraints carModel is valid" time="0.023" />
+  <testcase classname="cscie56.fp.CarSpec" name="test car all constraints carModel is validator" time="0.024" />
+  <testcase classname="cscie56.fp.CarSpec" name="test car all constraints year is nullable" time="0.023" />
+  <testcase classname="cscie56.fp.CarSpec" name="test car all constraints year is nullable" time="0.019" />
+  <testcase classname="cscie56.fp.CarSpec" name="test car all constraints year is valid" time="0.019" />
+  <testcase classname="cscie56.fp.CarSpec" name="test car all constraints year is valid" time="0.02" />
+  <testcase classname="cscie56.fp.CarSpec" name="test car all constraints year is validator" time="0.019" />
+  <testcase classname="cscie56.fp.CarSpec" name="test car all constraints doors is nullable" time="0.018" />
+  <testcase classname="cscie56.fp.CarSpec" name="test car all constraints doors is nullable" time="0.018" />
+  <testcase classname="cscie56.fp.CarSpec" name="test car all constraints doors is valid" time="0.019" />
   <testcase classname="cscie56.fp.CarSpec" name="test car all constraints doors is valid" time="0.022" />
-  <testcase classname="cscie56.fp.CarSpec" name="test car all constraints doors is valid" time="0.022" />
-  <testcase classname="cscie56.fp.CarSpec" name="test car all constraints doors is validator" time="0.025" />
+  <testcase classname="cscie56.fp.CarSpec" name="test car all constraints doors is valid" time="0.025" />
+  <testcase classname="cscie56.fp.CarSpec" name="test car all constraints doors is validator" time="0.02" />
   <testcase classname="cscie56.fp.CarSpec" name="test car all constraints doors is validator" time="0.026" />
   <system-out><![CDATA[--Output from test car all constraints manufacturer is nullable--
 --Output from test car all constraints manufacturer is nullable--

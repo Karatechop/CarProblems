@@ -9619,3 +9619,820 @@ cscie56.fp.Problem : (unsaved)
 
 	at cscie56.fp.ConstraintUnitSpec.validateConstraints(ConstraintUnitSpec.groovy:15)
 	at cscie56.fp.ProblemSpec.test problem description constraints(ProblemSpec.groovy:49)
+2016-04-29 22:33:39,641 [main] ERROR StackTrace  - Full Stack Trace:
+org.codehaus.groovy.grails.web.servlet.mvc.exceptions.CannotRedirectException: Cannot redirect for object [cscie56.fp.Car : (unsaved)] it is not a domain or has no identifier. Use an explicit redirect instead 
+	at org.codehaus.groovy.grails.plugins.web.api.ControllersApi.redirect(ControllersApi.java:276)
+	at org.grails.plugins.web.rest.api.ControllersRestApi.redirect(ControllersRestApi.groovy:53)
+	at org.springsource.loaded.ri.ReflectiveInterceptor.jlrMethodInvoke(ReflectiveInterceptor.java:1426)
+	at groovy.lang.GroovyObjectSupport.invokeMethod(GroovyObjectSupport.java:46)
+	at cscie56.fp.CarController._tt__save_closure9$_closure14(CarController.groovy:45)
+	at cscie56.fp.CarController._tt__save_closure9$_closure14(CarController.groovy)
+	at org.springsource.loaded.ri.ReflectiveInterceptor.jlrMethodInvoke(ReflectiveInterceptor.java:1426)
+	at groovy.lang.Closure.call(Closure.java:426)
+	at groovy.lang.Closure.call(Closure.java:420)
+	at org.codehaus.groovy.grails.plugins.web.api.MimeTypesApiSupport.getResponseForFormat(MimeTypesApiSupport.groovy:142)
+	at org.codehaus.groovy.grails.plugins.web.api.MimeTypesApiSupport.withFormatInternal(MimeTypesApiSupport.groovy:57)
+	at org.codehaus.groovy.grails.plugins.web.api.MimeTypesApiSupport.withFormat(MimeTypesApiSupport.groovy:40)
+	at org.codehaus.groovy.grails.plugins.web.api.RequestMimeTypesApi.withFormat(RequestMimeTypesApi.groovy:95)
+	at cscie56.fp.CarController.$tt__save(CarController.groovy:42)
+	at cscie56.fp.CarController.save_closure4(CarController.groovy)
+	at org.springsource.loaded.ri.ReflectiveInterceptor.jlrMethodInvoke(ReflectiveInterceptor.java:1426)
+	at groovy.lang.Closure.call(Closure.java:426)
+	at groovy.lang.Closure.call(Closure.java:442)
+	at org.codehaus.groovy.grails.orm.support.GrailsTransactionTemplate$2.doInTransaction(GrailsTransactionTemplate.groovy:90)
+	at org.springframework.transaction.support.TransactionTemplate.execute(TransactionTemplate.java:133)
+	at org.codehaus.groovy.grails.orm.support.GrailsTransactionTemplate.execute(GrailsTransactionTemplate.groovy:87)
+	at cscie56.fp.CarControllerSpec.Test the save action correctly persists an instance(CarControllerSpec.groovy:63)
+2016-04-29 22:33:39,668 [main] ERROR StackTrace  - Full Stack Trace:
+org.codehaus.groovy.grails.web.servlet.mvc.exceptions.CannotRedirectException: Cannot redirect for object [cscie56.fp.Car : (unsaved)] it is not a domain or has no identifier. Use an explicit redirect instead 
+	at org.grails.plugins.web.rest.api.ControllersRestApi.redirect(ControllersRestApi.groovy:53)
+	at cscie56.fp.CarController._tt__save_closure9$_closure14(CarController.groovy:45)
+	at cscie56.fp.CarController.$tt__save(CarController.groovy:42)
+	at cscie56.fp.CarControllerSpec.Test the save action correctly persists an instance(CarControllerSpec.groovy:63)
+2016-04-29 22:33:39,679 [main] ERROR StackTrace  - Full Stack Trace:
+org.codehaus.groovy.grails.web.servlet.mvc.exceptions.CannotRedirectException: Cannot redirect for object [cscie56.fp.Car : (unsaved)] it is not a domain or has no identifier. Use an explicit redirect instead 
+	at org.grails.plugins.web.rest.api.ControllersRestApi.redirect(ControllersRestApi.groovy:53)
+	at cscie56.fp.CarController._tt__save_closure9$_closure14(CarController.groovy:45)
+	at cscie56.fp.CarController.$tt__save(CarController.groovy:42)
+	at cscie56.fp.CarControllerSpec.Test the save action correctly persists an instance(CarControllerSpec.groovy:63)
+2016-04-29 22:33:39,679 [main] ERROR StackTrace  - Full Stack Trace:
+org.codehaus.groovy.grails.web.servlet.mvc.exceptions.CannotRedirectException: Cannot redirect for object [cscie56.fp.Car : (unsaved)] it is not a domain or has no identifier. Use an explicit redirect instead 
+	at org.grails.plugins.web.rest.api.ControllersRestApi.redirect(ControllersRestApi.groovy:53)
+	at cscie56.fp.CarController._tt__save_closure9$_closure14(CarController.groovy:45)
+	at cscie56.fp.CarController.$tt__save(CarController.groovy:42)
+	at cscie56.fp.CarControllerSpec.Test the save action correctly persists an instance(CarControllerSpec.groovy:63)
+2016-04-29 22:33:39,720 [main] ERROR StackTrace  - Full Stack Trace:
+org.codehaus.groovy.grails.web.servlet.mvc.exceptions.CannotRedirectException: Cannot redirect for object [cscie56.fp.Car : (unsaved)] it is not a domain or has no identifier. Use an explicit redirect instead 
+	at org.grails.plugins.web.rest.api.ControllersRestApi.redirect(ControllersRestApi.groovy:53)
+	at cscie56.fp.CarController._tt__save_closure9$_closure14(CarController.groovy:45)
+	at cscie56.fp.CarController.$tt__save(CarController.groovy:42)
+	at cscie56.fp.CarControllerSpec.Test the save action correctly persists an instance(CarControllerSpec.groovy:63)
+2016-04-29 22:33:39,720 [main] ERROR StackTrace  - Full Stack Trace:
+org.codehaus.groovy.grails.web.servlet.mvc.exceptions.CannotRedirectException: Cannot redirect for object [cscie56.fp.Car : (unsaved)] it is not a domain or has no identifier. Use an explicit redirect instead 
+	at org.grails.plugins.web.rest.api.ControllersRestApi.redirect(ControllersRestApi.groovy:53)
+	at cscie56.fp.CarController._tt__save_closure9$_closure14(CarController.groovy:45)
+	at cscie56.fp.CarController.$tt__save(CarController.groovy:42)
+	at cscie56.fp.CarControllerSpec.Test the save action correctly persists an instance(CarControllerSpec.groovy:63)
+2016-04-29 22:33:40,105 [main] ERROR StackTrace  - Full Stack Trace:
+java.lang.NullPointerException: Cannot get property 'id' on null object
+	at cscie56.fp.CarControllerSpec.Test the update action performs an update on a valid domain instance(CarControllerSpec.groovy:131)
+2016-04-29 22:33:40,106 [main] ERROR StackTrace  - Full Stack Trace:
+java.lang.NullPointerException: Cannot get property 'id' on null object
+	at cscie56.fp.CarControllerSpec.Test the update action performs an update on a valid domain instance(CarControllerSpec.groovy:131)
+2016-04-29 22:33:40,106 [main] ERROR StackTrace  - Full Stack Trace:
+java.lang.NullPointerException: Cannot get property 'id' on null object
+	at cscie56.fp.CarControllerSpec.Test the update action performs an update on a valid domain instance(CarControllerSpec.groovy:131)
+2016-04-29 22:33:40,106 [main] ERROR StackTrace  - Full Stack Trace:
+java.lang.NullPointerException: Cannot get property 'id' on null object
+	at cscie56.fp.CarControllerSpec.Test the update action performs an update on a valid domain instance(CarControllerSpec.groovy:131)
+2016-04-29 22:33:40,107 [main] ERROR StackTrace  - Full Stack Trace:
+java.lang.NullPointerException: Cannot get property 'id' on null object
+	at cscie56.fp.CarControllerSpec.Test the update action performs an update on a valid domain instance(CarControllerSpec.groovy:131)
+2016-04-29 22:33:40,107 [main] ERROR StackTrace  - Full Stack Trace:
+java.lang.NullPointerException: Cannot get property 'id' on null object
+	at cscie56.fp.CarControllerSpec.Test the update action performs an update on a valid domain instance(CarControllerSpec.groovy:131)
+2016-04-29 22:33:40,306 [main] ERROR StackTrace  - Full Stack Trace:
+Condition not satisfied:
+
+Car.count() == 1
+    |       |
+    0       false
+
+	at cscie56.fp.CarControllerSpec.Test that the delete action deletes an instance if it exists(CarControllerSpec.groovy:151)
+2016-04-29 22:33:40,330 [main] ERROR StackTrace  - Full Stack Trace:
+Condition not satisfied:
+
+Car.count() == 1
+    |       |
+    0       false
+
+	at cscie56.fp.CarControllerSpec.Test that the delete action deletes an instance if it exists(CarControllerSpec.groovy:151)
+2016-04-29 22:33:40,330 [main] ERROR StackTrace  - Full Stack Trace:
+junit.framework.AssertionFailedError: Condition not satisfied:
+
+Car.count() == 1
+    |       |
+    0       false
+
+	at cscie56.fp.CarControllerSpec.Test that the delete action deletes an instance if it exists(CarControllerSpec.groovy:151)
+2016-04-29 22:33:40,331 [main] ERROR StackTrace  - Full Stack Trace:
+junit.framework.AssertionFailedError: Condition not satisfied:
+
+Car.count() == 1
+    |       |
+    0       false
+
+	at cscie56.fp.CarControllerSpec.Test that the delete action deletes an instance if it exists(CarControllerSpec.groovy:151)
+2016-04-29 22:33:40,331 [main] ERROR StackTrace  - Full Stack Trace:
+junit.framework.AssertionFailedError: Condition not satisfied:
+
+Car.count() == 1
+    |       |
+    0       false
+
+	at cscie56.fp.CarControllerSpec.Test that the delete action deletes an instance if it exists(CarControllerSpec.groovy:151)
+2016-04-29 22:33:40,332 [main] ERROR StackTrace  - Full Stack Trace:
+junit.framework.AssertionFailedError: Condition not satisfied:
+
+Car.count() == 1
+    |       |
+    0       false
+
+	at cscie56.fp.CarControllerSpec.Test that the delete action deletes an instance if it exists(CarControllerSpec.groovy:151)
+2016-04-29 22:33:43,175 [main] ERROR StackTrace  - Full Stack Trace:
+org.codehaus.groovy.grails.web.servlet.mvc.exceptions.CannotRedirectException: Cannot redirect for object [cscie56.fp.Problem : (unsaved)] it is not a domain or has no identifier. Use an explicit redirect instead 
+	at org.codehaus.groovy.grails.plugins.web.api.ControllersApi.redirect(ControllersApi.java:276)
+	at org.grails.plugins.web.rest.api.ControllersRestApi.redirect(ControllersRestApi.groovy:53)
+	at org.springsource.loaded.ri.ReflectiveInterceptor.jlrMethodInvoke(ReflectiveInterceptor.java:1426)
+	at groovy.lang.GroovyObjectSupport.invokeMethod(GroovyObjectSupport.java:46)
+	at cscie56.fp.ProblemController._tt__save_closure9$_closure14(ProblemController.groovy:45)
+	at cscie56.fp.ProblemController._tt__save_closure9$_closure14(ProblemController.groovy)
+	at org.springsource.loaded.ri.ReflectiveInterceptor.jlrMethodInvoke(ReflectiveInterceptor.java:1426)
+	at groovy.lang.Closure.call(Closure.java:426)
+	at groovy.lang.Closure.call(Closure.java:420)
+	at org.codehaus.groovy.grails.plugins.web.api.MimeTypesApiSupport.getResponseForFormat(MimeTypesApiSupport.groovy:142)
+	at org.codehaus.groovy.grails.plugins.web.api.MimeTypesApiSupport.withFormatInternal(MimeTypesApiSupport.groovy:57)
+	at org.codehaus.groovy.grails.plugins.web.api.MimeTypesApiSupport.withFormat(MimeTypesApiSupport.groovy:40)
+	at org.codehaus.groovy.grails.plugins.web.api.RequestMimeTypesApi.withFormat(RequestMimeTypesApi.groovy:95)
+	at cscie56.fp.ProblemController.$tt__save(ProblemController.groovy:42)
+	at cscie56.fp.ProblemController.save_closure4(ProblemController.groovy)
+	at org.springsource.loaded.ri.ReflectiveInterceptor.jlrMethodInvoke(ReflectiveInterceptor.java:1426)
+	at groovy.lang.Closure.call(Closure.java:426)
+	at groovy.lang.Closure.call(Closure.java:442)
+	at org.codehaus.groovy.grails.orm.support.GrailsTransactionTemplate$2.doInTransaction(GrailsTransactionTemplate.groovy:90)
+	at org.springframework.transaction.support.TransactionTemplate.execute(TransactionTemplate.java:133)
+	at org.codehaus.groovy.grails.orm.support.GrailsTransactionTemplate.execute(GrailsTransactionTemplate.groovy:87)
+	at cscie56.fp.ProblemControllerSpec.Test the save action correctly persists an instance(ProblemControllerSpec.groovy:63)
+2016-04-29 22:33:43,177 [main] ERROR StackTrace  - Full Stack Trace:
+org.codehaus.groovy.grails.web.servlet.mvc.exceptions.CannotRedirectException: Cannot redirect for object [cscie56.fp.Problem : (unsaved)] it is not a domain or has no identifier. Use an explicit redirect instead 
+	at org.grails.plugins.web.rest.api.ControllersRestApi.redirect(ControllersRestApi.groovy:53)
+	at cscie56.fp.ProblemController._tt__save_closure9$_closure14(ProblemController.groovy:45)
+	at cscie56.fp.ProblemController.$tt__save(ProblemController.groovy:42)
+	at cscie56.fp.ProblemControllerSpec.Test the save action correctly persists an instance(ProblemControllerSpec.groovy:63)
+2016-04-29 22:33:43,177 [main] ERROR StackTrace  - Full Stack Trace:
+org.codehaus.groovy.grails.web.servlet.mvc.exceptions.CannotRedirectException: Cannot redirect for object [cscie56.fp.Problem : (unsaved)] it is not a domain or has no identifier. Use an explicit redirect instead 
+	at org.grails.plugins.web.rest.api.ControllersRestApi.redirect(ControllersRestApi.groovy:53)
+	at cscie56.fp.ProblemController._tt__save_closure9$_closure14(ProblemController.groovy:45)
+	at cscie56.fp.ProblemController.$tt__save(ProblemController.groovy:42)
+	at cscie56.fp.ProblemControllerSpec.Test the save action correctly persists an instance(ProblemControllerSpec.groovy:63)
+2016-04-29 22:33:43,177 [main] ERROR StackTrace  - Full Stack Trace:
+org.codehaus.groovy.grails.web.servlet.mvc.exceptions.CannotRedirectException: Cannot redirect for object [cscie56.fp.Problem : (unsaved)] it is not a domain or has no identifier. Use an explicit redirect instead 
+	at org.grails.plugins.web.rest.api.ControllersRestApi.redirect(ControllersRestApi.groovy:53)
+	at cscie56.fp.ProblemController._tt__save_closure9$_closure14(ProblemController.groovy:45)
+	at cscie56.fp.ProblemController.$tt__save(ProblemController.groovy:42)
+	at cscie56.fp.ProblemControllerSpec.Test the save action correctly persists an instance(ProblemControllerSpec.groovy:63)
+2016-04-29 22:33:43,178 [main] ERROR StackTrace  - Full Stack Trace:
+org.codehaus.groovy.grails.web.servlet.mvc.exceptions.CannotRedirectException: Cannot redirect for object [cscie56.fp.Problem : (unsaved)] it is not a domain or has no identifier. Use an explicit redirect instead 
+	at org.grails.plugins.web.rest.api.ControllersRestApi.redirect(ControllersRestApi.groovy:53)
+	at cscie56.fp.ProblemController._tt__save_closure9$_closure14(ProblemController.groovy:45)
+	at cscie56.fp.ProblemController.$tt__save(ProblemController.groovy:42)
+	at cscie56.fp.ProblemControllerSpec.Test the save action correctly persists an instance(ProblemControllerSpec.groovy:63)
+2016-04-29 22:33:43,178 [main] ERROR StackTrace  - Full Stack Trace:
+org.codehaus.groovy.grails.web.servlet.mvc.exceptions.CannotRedirectException: Cannot redirect for object [cscie56.fp.Problem : (unsaved)] it is not a domain or has no identifier. Use an explicit redirect instead 
+	at org.grails.plugins.web.rest.api.ControllersRestApi.redirect(ControllersRestApi.groovy:53)
+	at cscie56.fp.ProblemController._tt__save_closure9$_closure14(ProblemController.groovy:45)
+	at cscie56.fp.ProblemController.$tt__save(ProblemController.groovy:42)
+	at cscie56.fp.ProblemControllerSpec.Test the save action correctly persists an instance(ProblemControllerSpec.groovy:63)
+2016-04-29 22:33:43,344 [main] ERROR StackTrace  - Full Stack Trace:
+java.lang.NullPointerException: Cannot get property 'id' on null object
+	at cscie56.fp.ProblemControllerSpec.Test the update action performs an update on a valid domain instance(ProblemControllerSpec.groovy:131)
+2016-04-29 22:33:43,344 [main] ERROR StackTrace  - Full Stack Trace:
+java.lang.NullPointerException: Cannot get property 'id' on null object
+	at cscie56.fp.ProblemControllerSpec.Test the update action performs an update on a valid domain instance(ProblemControllerSpec.groovy:131)
+2016-04-29 22:33:43,344 [main] ERROR StackTrace  - Full Stack Trace:
+java.lang.NullPointerException: Cannot get property 'id' on null object
+	at cscie56.fp.ProblemControllerSpec.Test the update action performs an update on a valid domain instance(ProblemControllerSpec.groovy:131)
+2016-04-29 22:33:43,344 [main] ERROR StackTrace  - Full Stack Trace:
+java.lang.NullPointerException: Cannot get property 'id' on null object
+	at cscie56.fp.ProblemControllerSpec.Test the update action performs an update on a valid domain instance(ProblemControllerSpec.groovy:131)
+2016-04-29 22:33:43,345 [main] ERROR StackTrace  - Full Stack Trace:
+java.lang.NullPointerException: Cannot get property 'id' on null object
+	at cscie56.fp.ProblemControllerSpec.Test the update action performs an update on a valid domain instance(ProblemControllerSpec.groovy:131)
+2016-04-29 22:33:43,345 [main] ERROR StackTrace  - Full Stack Trace:
+java.lang.NullPointerException: Cannot get property 'id' on null object
+	at cscie56.fp.ProblemControllerSpec.Test the update action performs an update on a valid domain instance(ProblemControllerSpec.groovy:131)
+2016-04-29 22:33:43,388 [main] ERROR StackTrace  - Full Stack Trace:
+Condition not satisfied:
+
+Problem.count() == 1
+        |       |
+        0       false
+
+	at cscie56.fp.ProblemControllerSpec.Test that the delete action deletes an instance if it exists(ProblemControllerSpec.groovy:151)
+2016-04-29 22:33:43,389 [main] ERROR StackTrace  - Full Stack Trace:
+Condition not satisfied:
+
+Problem.count() == 1
+        |       |
+        0       false
+
+	at cscie56.fp.ProblemControllerSpec.Test that the delete action deletes an instance if it exists(ProblemControllerSpec.groovy:151)
+2016-04-29 22:33:43,389 [main] ERROR StackTrace  - Full Stack Trace:
+junit.framework.AssertionFailedError: Condition not satisfied:
+
+Problem.count() == 1
+        |       |
+        0       false
+
+	at cscie56.fp.ProblemControllerSpec.Test that the delete action deletes an instance if it exists(ProblemControllerSpec.groovy:151)
+2016-04-29 22:33:43,389 [main] ERROR StackTrace  - Full Stack Trace:
+junit.framework.AssertionFailedError: Condition not satisfied:
+
+Problem.count() == 1
+        |       |
+        0       false
+
+	at cscie56.fp.ProblemControllerSpec.Test that the delete action deletes an instance if it exists(ProblemControllerSpec.groovy:151)
+2016-04-29 22:33:43,390 [main] ERROR StackTrace  - Full Stack Trace:
+junit.framework.AssertionFailedError: Condition not satisfied:
+
+Problem.count() == 1
+        |       |
+        0       false
+
+	at cscie56.fp.ProblemControllerSpec.Test that the delete action deletes an instance if it exists(ProblemControllerSpec.groovy:151)
+2016-04-29 22:33:43,390 [main] ERROR StackTrace  - Full Stack Trace:
+junit.framework.AssertionFailedError: Condition not satisfied:
+
+Problem.count() == 1
+        |       |
+        0       false
+
+	at cscie56.fp.ProblemControllerSpec.Test that the delete action deletes an instance if it exists(ProblemControllerSpec.groovy:151)
+2016-04-29 22:33:44,261 [main] ERROR StackTrace  - Full Stack Trace:
+org.codehaus.groovy.grails.web.servlet.mvc.exceptions.CannotRedirectException: Cannot redirect for object [User(username:null)] it is not a domain or has no identifier. Use an explicit redirect instead 
+	at org.codehaus.groovy.grails.plugins.web.api.ControllersApi.redirect(ControllersApi.java:276)
+	at org.grails.plugins.web.rest.api.ControllersRestApi.redirect(ControllersRestApi.groovy:53)
+	at org.springsource.loaded.ri.ReflectiveInterceptor.jlrMethodInvoke(ReflectiveInterceptor.java:1426)
+	at groovy.lang.GroovyObjectSupport.invokeMethod(GroovyObjectSupport.java:46)
+	at cscie56.fp.UserController._tt__save_closure9$_closure14(UserController.groovy:44)
+	at cscie56.fp.UserController._tt__save_closure9$_closure14(UserController.groovy)
+	at org.springsource.loaded.ri.ReflectiveInterceptor.jlrMethodInvoke(ReflectiveInterceptor.java:1426)
+	at groovy.lang.Closure.call(Closure.java:426)
+	at groovy.lang.Closure.call(Closure.java:420)
+	at org.codehaus.groovy.grails.plugins.web.api.MimeTypesApiSupport.getResponseForFormat(MimeTypesApiSupport.groovy:142)
+	at org.codehaus.groovy.grails.plugins.web.api.MimeTypesApiSupport.withFormatInternal(MimeTypesApiSupport.groovy:57)
+	at org.codehaus.groovy.grails.plugins.web.api.MimeTypesApiSupport.withFormat(MimeTypesApiSupport.groovy:40)
+	at org.codehaus.groovy.grails.plugins.web.api.RequestMimeTypesApi.withFormat(RequestMimeTypesApi.groovy:95)
+	at cscie56.fp.UserController.$tt__save(UserController.groovy:41)
+	at cscie56.fp.UserController.save_closure4(UserController.groovy)
+	at org.springsource.loaded.ri.ReflectiveInterceptor.jlrMethodInvoke(ReflectiveInterceptor.java:1426)
+	at groovy.lang.Closure.call(Closure.java:426)
+	at groovy.lang.Closure.call(Closure.java:442)
+	at org.codehaus.groovy.grails.orm.support.GrailsTransactionTemplate$2.doInTransaction(GrailsTransactionTemplate.groovy:90)
+	at org.springframework.transaction.support.TransactionTemplate.execute(TransactionTemplate.java:133)
+	at org.codehaus.groovy.grails.orm.support.GrailsTransactionTemplate.execute(GrailsTransactionTemplate.groovy:87)
+	at cscie56.fp.UserControllerSpec.Test the save action correctly persists an instance(UserControllerSpec.groovy:54)
+2016-04-29 22:33:44,262 [main] ERROR StackTrace  - Full Stack Trace:
+org.codehaus.groovy.grails.web.servlet.mvc.exceptions.CannotRedirectException: Cannot redirect for object [User(username:null)] it is not a domain or has no identifier. Use an explicit redirect instead 
+	at org.grails.plugins.web.rest.api.ControllersRestApi.redirect(ControllersRestApi.groovy:53)
+	at cscie56.fp.UserController._tt__save_closure9$_closure14(UserController.groovy:44)
+	at cscie56.fp.UserController.$tt__save(UserController.groovy:41)
+	at cscie56.fp.UserControllerSpec.Test the save action correctly persists an instance(UserControllerSpec.groovy:54)
+2016-04-29 22:33:44,262 [main] ERROR StackTrace  - Full Stack Trace:
+org.codehaus.groovy.grails.web.servlet.mvc.exceptions.CannotRedirectException: Cannot redirect for object [User(username:null)] it is not a domain or has no identifier. Use an explicit redirect instead 
+	at org.grails.plugins.web.rest.api.ControllersRestApi.redirect(ControllersRestApi.groovy:53)
+	at cscie56.fp.UserController._tt__save_closure9$_closure14(UserController.groovy:44)
+	at cscie56.fp.UserController.$tt__save(UserController.groovy:41)
+	at cscie56.fp.UserControllerSpec.Test the save action correctly persists an instance(UserControllerSpec.groovy:54)
+2016-04-29 22:33:44,262 [main] ERROR StackTrace  - Full Stack Trace:
+org.codehaus.groovy.grails.web.servlet.mvc.exceptions.CannotRedirectException: Cannot redirect for object [User(username:null)] it is not a domain or has no identifier. Use an explicit redirect instead 
+	at org.grails.plugins.web.rest.api.ControllersRestApi.redirect(ControllersRestApi.groovy:53)
+	at cscie56.fp.UserController._tt__save_closure9$_closure14(UserController.groovy:44)
+	at cscie56.fp.UserController.$tt__save(UserController.groovy:41)
+	at cscie56.fp.UserControllerSpec.Test the save action correctly persists an instance(UserControllerSpec.groovy:54)
+2016-04-29 22:33:44,262 [main] ERROR StackTrace  - Full Stack Trace:
+org.codehaus.groovy.grails.web.servlet.mvc.exceptions.CannotRedirectException: Cannot redirect for object [User(username:null)] it is not a domain or has no identifier. Use an explicit redirect instead 
+	at org.grails.plugins.web.rest.api.ControllersRestApi.redirect(ControllersRestApi.groovy:53)
+	at cscie56.fp.UserController._tt__save_closure9$_closure14(UserController.groovy:44)
+	at cscie56.fp.UserController.$tt__save(UserController.groovy:41)
+	at cscie56.fp.UserControllerSpec.Test the save action correctly persists an instance(UserControllerSpec.groovy:54)
+2016-04-29 22:33:44,263 [main] ERROR StackTrace  - Full Stack Trace:
+org.codehaus.groovy.grails.web.servlet.mvc.exceptions.CannotRedirectException: Cannot redirect for object [User(username:null)] it is not a domain or has no identifier. Use an explicit redirect instead 
+	at org.grails.plugins.web.rest.api.ControllersRestApi.redirect(ControllersRestApi.groovy:53)
+	at cscie56.fp.UserController._tt__save_closure9$_closure14(UserController.groovy:44)
+	at cscie56.fp.UserController.$tt__save(UserController.groovy:41)
+	at cscie56.fp.UserControllerSpec.Test the save action correctly persists an instance(UserControllerSpec.groovy:54)
+2016-04-29 22:33:44,361 [main] ERROR StackTrace  - Full Stack Trace:
+java.lang.NullPointerException: Cannot get property 'id' on null object
+	at cscie56.fp.UserControllerSpec.Test the update action performs an update on a valid domain instance(UserControllerSpec.groovy:122)
+2016-04-29 22:33:44,362 [main] ERROR StackTrace  - Full Stack Trace:
+java.lang.NullPointerException: Cannot get property 'id' on null object
+	at cscie56.fp.UserControllerSpec.Test the update action performs an update on a valid domain instance(UserControllerSpec.groovy:122)
+2016-04-29 22:33:44,362 [main] ERROR StackTrace  - Full Stack Trace:
+java.lang.NullPointerException: Cannot get property 'id' on null object
+	at cscie56.fp.UserControllerSpec.Test the update action performs an update on a valid domain instance(UserControllerSpec.groovy:122)
+2016-04-29 22:33:44,362 [main] ERROR StackTrace  - Full Stack Trace:
+java.lang.NullPointerException: Cannot get property 'id' on null object
+	at cscie56.fp.UserControllerSpec.Test the update action performs an update on a valid domain instance(UserControllerSpec.groovy:122)
+2016-04-29 22:33:44,362 [main] ERROR StackTrace  - Full Stack Trace:
+java.lang.NullPointerException: Cannot get property 'id' on null object
+	at cscie56.fp.UserControllerSpec.Test the update action performs an update on a valid domain instance(UserControllerSpec.groovy:122)
+2016-04-29 22:33:44,362 [main] ERROR StackTrace  - Full Stack Trace:
+java.lang.NullPointerException: Cannot get property 'id' on null object
+	at cscie56.fp.UserControllerSpec.Test the update action performs an update on a valid domain instance(UserControllerSpec.groovy:122)
+2016-04-29 22:33:44,387 [main] ERROR StackTrace  - Full Stack Trace:
+Condition not satisfied:
+
+User.count() == 1
+     |       |
+     0       false
+
+	at cscie56.fp.UserControllerSpec.Test that the delete action deletes an instance if it exists(UserControllerSpec.groovy:142)
+2016-04-29 22:33:44,387 [main] ERROR StackTrace  - Full Stack Trace:
+Condition not satisfied:
+
+User.count() == 1
+     |       |
+     0       false
+
+	at cscie56.fp.UserControllerSpec.Test that the delete action deletes an instance if it exists(UserControllerSpec.groovy:142)
+2016-04-29 22:33:44,387 [main] ERROR StackTrace  - Full Stack Trace:
+junit.framework.AssertionFailedError: Condition not satisfied:
+
+User.count() == 1
+     |       |
+     0       false
+
+	at cscie56.fp.UserControllerSpec.Test that the delete action deletes an instance if it exists(UserControllerSpec.groovy:142)
+2016-04-29 22:33:44,388 [main] ERROR StackTrace  - Full Stack Trace:
+junit.framework.AssertionFailedError: Condition not satisfied:
+
+User.count() == 1
+     |       |
+     0       false
+
+	at cscie56.fp.UserControllerSpec.Test that the delete action deletes an instance if it exists(UserControllerSpec.groovy:142)
+2016-04-29 22:33:44,388 [main] ERROR StackTrace  - Full Stack Trace:
+junit.framework.AssertionFailedError: Condition not satisfied:
+
+User.count() == 1
+     |       |
+     0       false
+
+	at cscie56.fp.UserControllerSpec.Test that the delete action deletes an instance if it exists(UserControllerSpec.groovy:142)
+2016-04-29 22:33:44,388 [main] ERROR StackTrace  - Full Stack Trace:
+junit.framework.AssertionFailedError: Condition not satisfied:
+
+User.count() == 1
+     |       |
+     0       false
+
+	at cscie56.fp.UserControllerSpec.Test that the delete action deletes an instance if it exists(UserControllerSpec.groovy:142)
+2016-04-29 22:34:32,076 [main] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.MissingPropertyException: No such property: user for class: cscie56.fp.Car
+Possible solutions: users, fuel, usersId, year
+	at cscie56.fp.CarService.$tt__createCar(CarService.groovy:13)
+	at cscie56.fp.CarService.createCar_closure1(CarService.groovy)
+	at org.springsource.loaded.ri.ReflectiveInterceptor.jlrMethodInvoke(ReflectiveInterceptor.java:1426)
+	at groovy.lang.Closure.call(Closure.java:426)
+	at groovy.lang.Closure.call(Closure.java:442)
+	at org.codehaus.groovy.grails.orm.support.GrailsTransactionTemplate$2.doInTransaction(GrailsTransactionTemplate.groovy:90)
+	at org.springframework.transaction.support.TransactionTemplate.execute(TransactionTemplate.java:133)
+	at org.codehaus.groovy.grails.orm.support.GrailsTransactionTemplate.execute(GrailsTransactionTemplate.groovy:87)
+	at cscie56.fp.CarServiceIntegrationSpec.createCar() method(CarServiceIntegrationSpec.groovy:18)
+2016-04-29 22:34:32,101 [main] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.MissingPropertyException: No such property: user for class: cscie56.fp.Car
+Possible solutions: users, fuel, usersId, year
+	at cscie56.fp.CarService.$tt__createCar(CarService.groovy:13)
+	at cscie56.fp.CarServiceIntegrationSpec.createCar() method(CarServiceIntegrationSpec.groovy:18)
+2016-04-29 22:34:32,104 [main] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.MissingPropertyException: No such property: user for class: cscie56.fp.Car
+Possible solutions: users, fuel, usersId, year
+	at cscie56.fp.CarService.$tt__createCar(CarService.groovy:13)
+	at cscie56.fp.CarServiceIntegrationSpec.createCar() method(CarServiceIntegrationSpec.groovy:18)
+2016-04-29 22:34:32,106 [main] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.MissingPropertyException: No such property: user for class: cscie56.fp.Car
+Possible solutions: users, fuel, usersId, year
+	at cscie56.fp.CarService.$tt__createCar(CarService.groovy:13)
+	at cscie56.fp.CarServiceIntegrationSpec.createCar() method(CarServiceIntegrationSpec.groovy:18)
+2016-04-29 22:34:32,112 [main] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.MissingPropertyException: No such property: user for class: cscie56.fp.Car
+Possible solutions: users, fuel, usersId, year
+	at cscie56.fp.CarService.$tt__createCar(CarService.groovy:13)
+	at cscie56.fp.CarServiceIntegrationSpec.createCar() method(CarServiceIntegrationSpec.groovy:18)
+2016-04-29 22:34:32,113 [main] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.MissingPropertyException: No such property: user for class: cscie56.fp.Car
+Possible solutions: users, fuel, usersId, year
+	at cscie56.fp.CarService.$tt__createCar(CarService.groovy:13)
+	at cscie56.fp.CarServiceIntegrationSpec.createCar() method(CarServiceIntegrationSpec.groovy:18)
+2016-04-29 22:34:32,459 [main] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.MissingPropertyException: No such property: user for class: cscie56.fp.Car
+Possible solutions: users, fuel, usersId, year
+	at cscie56.fp.CarService.$tt__createCar(CarService.groovy:13)
+	at cscie56.fp.CarService.createCar_closure1(CarService.groovy)
+	at org.springsource.loaded.ri.ReflectiveInterceptor.jlrMethodInvoke(ReflectiveInterceptor.java:1426)
+	at groovy.lang.Closure.call(Closure.java:426)
+	at groovy.lang.Closure.call(Closure.java:442)
+	at org.codehaus.groovy.grails.orm.support.GrailsTransactionTemplate$2.doInTransaction(GrailsTransactionTemplate.groovy:90)
+	at org.springframework.transaction.support.TransactionTemplate.execute(TransactionTemplate.java:133)
+	at org.codehaus.groovy.grails.orm.support.GrailsTransactionTemplate.execute(GrailsTransactionTemplate.groovy:87)
+	at cscie56.fp.ProblemService.$tt__createProblem(ProblemService.groovy:17)
+	at cscie56.fp.ProblemService.createProblem_closure2(ProblemService.groovy)
+	at org.springsource.loaded.ri.ReflectiveInterceptor.jlrMethodInvoke(ReflectiveInterceptor.java:1426)
+	at groovy.lang.Closure.call(Closure.java:426)
+	at groovy.lang.Closure.call(Closure.java:442)
+	at org.codehaus.groovy.grails.orm.support.GrailsTransactionTemplate$2.doInTransaction(GrailsTransactionTemplate.groovy:90)
+	at org.springframework.transaction.support.TransactionTemplate.execute(TransactionTemplate.java:133)
+	at org.codehaus.groovy.grails.orm.support.GrailsTransactionTemplate.execute(GrailsTransactionTemplate.groovy:87)
+	at cscie56.fp.ProblemServiceIntegrationSpec.createProblem() method(ProblemServiceIntegrationSpec.groovy:28)
+2016-04-29 22:34:32,460 [main] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.MissingPropertyException: No such property: user for class: cscie56.fp.Car
+Possible solutions: users, fuel, usersId, year
+	at cscie56.fp.CarService.$tt__createCar(CarService.groovy:13)
+	at cscie56.fp.ProblemService.$tt__createProblem(ProblemService.groovy:17)
+	at cscie56.fp.ProblemServiceIntegrationSpec.createProblem() method(ProblemServiceIntegrationSpec.groovy:28)
+2016-04-29 22:34:32,461 [main] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.MissingPropertyException: No such property: user for class: cscie56.fp.Car
+Possible solutions: users, fuel, usersId, year
+	at cscie56.fp.CarService.$tt__createCar(CarService.groovy:13)
+	at cscie56.fp.ProblemService.$tt__createProblem(ProblemService.groovy:17)
+	at cscie56.fp.ProblemServiceIntegrationSpec.createProblem() method(ProblemServiceIntegrationSpec.groovy:28)
+2016-04-29 22:34:32,461 [main] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.MissingPropertyException: No such property: user for class: cscie56.fp.Car
+Possible solutions: users, fuel, usersId, year
+	at cscie56.fp.CarService.$tt__createCar(CarService.groovy:13)
+	at cscie56.fp.ProblemService.$tt__createProblem(ProblemService.groovy:17)
+	at cscie56.fp.ProblemServiceIntegrationSpec.createProblem() method(ProblemServiceIntegrationSpec.groovy:28)
+2016-04-29 22:34:32,464 [main] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.MissingPropertyException: No such property: user for class: cscie56.fp.Car
+Possible solutions: users, fuel, usersId, year
+	at cscie56.fp.CarService.$tt__createCar(CarService.groovy:13)
+	at cscie56.fp.ProblemService.$tt__createProblem(ProblemService.groovy:17)
+	at cscie56.fp.ProblemServiceIntegrationSpec.createProblem() method(ProblemServiceIntegrationSpec.groovy:28)
+2016-04-29 22:34:32,464 [main] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.MissingPropertyException: No such property: user for class: cscie56.fp.Car
+Possible solutions: users, fuel, usersId, year
+	at cscie56.fp.CarService.$tt__createCar(CarService.groovy:13)
+	at cscie56.fp.ProblemService.$tt__createProblem(ProblemService.groovy:17)
+	at cscie56.fp.ProblemServiceIntegrationSpec.createProblem() method(ProblemServiceIntegrationSpec.groovy:28)
+2016-04-29 22:37:16,831 [main] ERROR StackTrace  - Full Stack Trace:
+org.codehaus.groovy.grails.web.servlet.mvc.exceptions.CannotRedirectException: Cannot redirect for object [cscie56.fp.Car : (unsaved)] it is not a domain or has no identifier. Use an explicit redirect instead 
+	at org.codehaus.groovy.grails.plugins.web.api.ControllersApi.redirect(ControllersApi.java:276)
+	at org.grails.plugins.web.rest.api.ControllersRestApi.redirect(ControllersRestApi.groovy:53)
+	at org.springsource.loaded.ri.ReflectiveInterceptor.jlrMethodInvoke(ReflectiveInterceptor.java:1426)
+	at groovy.lang.GroovyObjectSupport.invokeMethod(GroovyObjectSupport.java:46)
+	at cscie56.fp.CarController._tt__save_closure9$_closure14(CarController.groovy:45)
+	at cscie56.fp.CarController._tt__save_closure9$_closure14(CarController.groovy)
+	at org.springsource.loaded.ri.ReflectiveInterceptor.jlrMethodInvoke(ReflectiveInterceptor.java:1426)
+	at groovy.lang.Closure.call(Closure.java:426)
+	at groovy.lang.Closure.call(Closure.java:420)
+	at org.codehaus.groovy.grails.plugins.web.api.MimeTypesApiSupport.getResponseForFormat(MimeTypesApiSupport.groovy:142)
+	at org.codehaus.groovy.grails.plugins.web.api.MimeTypesApiSupport.withFormatInternal(MimeTypesApiSupport.groovy:57)
+	at org.codehaus.groovy.grails.plugins.web.api.MimeTypesApiSupport.withFormat(MimeTypesApiSupport.groovy:40)
+	at org.codehaus.groovy.grails.plugins.web.api.RequestMimeTypesApi.withFormat(RequestMimeTypesApi.groovy:95)
+	at cscie56.fp.CarController.$tt__save(CarController.groovy:42)
+	at cscie56.fp.CarController.save_closure4(CarController.groovy)
+	at org.springsource.loaded.ri.ReflectiveInterceptor.jlrMethodInvoke(ReflectiveInterceptor.java:1426)
+	at groovy.lang.Closure.call(Closure.java:426)
+	at groovy.lang.Closure.call(Closure.java:442)
+	at org.codehaus.groovy.grails.orm.support.GrailsTransactionTemplate$2.doInTransaction(GrailsTransactionTemplate.groovy:90)
+	at org.springframework.transaction.support.TransactionTemplate.execute(TransactionTemplate.java:133)
+	at org.codehaus.groovy.grails.orm.support.GrailsTransactionTemplate.execute(GrailsTransactionTemplate.groovy:87)
+	at cscie56.fp.CarControllerSpec.Test the save action correctly persists an instance(CarControllerSpec.groovy:63)
+2016-04-29 22:37:16,835 [main] ERROR StackTrace  - Full Stack Trace:
+org.codehaus.groovy.grails.web.servlet.mvc.exceptions.CannotRedirectException: Cannot redirect for object [cscie56.fp.Car : (unsaved)] it is not a domain or has no identifier. Use an explicit redirect instead 
+	at org.grails.plugins.web.rest.api.ControllersRestApi.redirect(ControllersRestApi.groovy:53)
+	at cscie56.fp.CarController._tt__save_closure9$_closure14(CarController.groovy:45)
+	at cscie56.fp.CarController.$tt__save(CarController.groovy:42)
+	at cscie56.fp.CarControllerSpec.Test the save action correctly persists an instance(CarControllerSpec.groovy:63)
+2016-04-29 22:37:16,836 [main] ERROR StackTrace  - Full Stack Trace:
+org.codehaus.groovy.grails.web.servlet.mvc.exceptions.CannotRedirectException: Cannot redirect for object [cscie56.fp.Car : (unsaved)] it is not a domain or has no identifier. Use an explicit redirect instead 
+	at org.grails.plugins.web.rest.api.ControllersRestApi.redirect(ControllersRestApi.groovy:53)
+	at cscie56.fp.CarController._tt__save_closure9$_closure14(CarController.groovy:45)
+	at cscie56.fp.CarController.$tt__save(CarController.groovy:42)
+	at cscie56.fp.CarControllerSpec.Test the save action correctly persists an instance(CarControllerSpec.groovy:63)
+2016-04-29 22:37:16,837 [main] ERROR StackTrace  - Full Stack Trace:
+org.codehaus.groovy.grails.web.servlet.mvc.exceptions.CannotRedirectException: Cannot redirect for object [cscie56.fp.Car : (unsaved)] it is not a domain or has no identifier. Use an explicit redirect instead 
+	at org.grails.plugins.web.rest.api.ControllersRestApi.redirect(ControllersRestApi.groovy:53)
+	at cscie56.fp.CarController._tt__save_closure9$_closure14(CarController.groovy:45)
+	at cscie56.fp.CarController.$tt__save(CarController.groovy:42)
+	at cscie56.fp.CarControllerSpec.Test the save action correctly persists an instance(CarControllerSpec.groovy:63)
+2016-04-29 22:37:16,841 [main] ERROR StackTrace  - Full Stack Trace:
+org.codehaus.groovy.grails.web.servlet.mvc.exceptions.CannotRedirectException: Cannot redirect for object [cscie56.fp.Car : (unsaved)] it is not a domain or has no identifier. Use an explicit redirect instead 
+	at org.grails.plugins.web.rest.api.ControllersRestApi.redirect(ControllersRestApi.groovy:53)
+	at cscie56.fp.CarController._tt__save_closure9$_closure14(CarController.groovy:45)
+	at cscie56.fp.CarController.$tt__save(CarController.groovy:42)
+	at cscie56.fp.CarControllerSpec.Test the save action correctly persists an instance(CarControllerSpec.groovy:63)
+2016-04-29 22:37:16,842 [main] ERROR StackTrace  - Full Stack Trace:
+org.codehaus.groovy.grails.web.servlet.mvc.exceptions.CannotRedirectException: Cannot redirect for object [cscie56.fp.Car : (unsaved)] it is not a domain or has no identifier. Use an explicit redirect instead 
+	at org.grails.plugins.web.rest.api.ControllersRestApi.redirect(ControllersRestApi.groovy:53)
+	at cscie56.fp.CarController._tt__save_closure9$_closure14(CarController.groovy:45)
+	at cscie56.fp.CarController.$tt__save(CarController.groovy:42)
+	at cscie56.fp.CarControllerSpec.Test the save action correctly persists an instance(CarControllerSpec.groovy:63)
+2016-04-29 22:37:16,981 [main] ERROR StackTrace  - Full Stack Trace:
+java.lang.NullPointerException: Cannot get property 'id' on null object
+	at cscie56.fp.CarControllerSpec.Test the update action performs an update on a valid domain instance(CarControllerSpec.groovy:131)
+2016-04-29 22:37:16,982 [main] ERROR StackTrace  - Full Stack Trace:
+java.lang.NullPointerException: Cannot get property 'id' on null object
+	at cscie56.fp.CarControllerSpec.Test the update action performs an update on a valid domain instance(CarControllerSpec.groovy:131)
+2016-04-29 22:37:16,982 [main] ERROR StackTrace  - Full Stack Trace:
+java.lang.NullPointerException: Cannot get property 'id' on null object
+	at cscie56.fp.CarControllerSpec.Test the update action performs an update on a valid domain instance(CarControllerSpec.groovy:131)
+2016-04-29 22:37:16,982 [main] ERROR StackTrace  - Full Stack Trace:
+java.lang.NullPointerException: Cannot get property 'id' on null object
+	at cscie56.fp.CarControllerSpec.Test the update action performs an update on a valid domain instance(CarControllerSpec.groovy:131)
+2016-04-29 22:37:16,982 [main] ERROR StackTrace  - Full Stack Trace:
+java.lang.NullPointerException: Cannot get property 'id' on null object
+	at cscie56.fp.CarControllerSpec.Test the update action performs an update on a valid domain instance(CarControllerSpec.groovy:131)
+2016-04-29 22:37:16,983 [main] ERROR StackTrace  - Full Stack Trace:
+java.lang.NullPointerException: Cannot get property 'id' on null object
+	at cscie56.fp.CarControllerSpec.Test the update action performs an update on a valid domain instance(CarControllerSpec.groovy:131)
+2016-04-29 22:37:17,030 [main] ERROR StackTrace  - Full Stack Trace:
+Condition not satisfied:
+
+Car.count() == 1
+    |       |
+    0       false
+
+	at cscie56.fp.CarControllerSpec.Test that the delete action deletes an instance if it exists(CarControllerSpec.groovy:151)
+2016-04-29 22:37:17,032 [main] ERROR StackTrace  - Full Stack Trace:
+Condition not satisfied:
+
+Car.count() == 1
+    |       |
+    0       false
+
+	at cscie56.fp.CarControllerSpec.Test that the delete action deletes an instance if it exists(CarControllerSpec.groovy:151)
+2016-04-29 22:37:17,032 [main] ERROR StackTrace  - Full Stack Trace:
+junit.framework.AssertionFailedError: Condition not satisfied:
+
+Car.count() == 1
+    |       |
+    0       false
+
+	at cscie56.fp.CarControllerSpec.Test that the delete action deletes an instance if it exists(CarControllerSpec.groovy:151)
+2016-04-29 22:37:17,032 [main] ERROR StackTrace  - Full Stack Trace:
+junit.framework.AssertionFailedError: Condition not satisfied:
+
+Car.count() == 1
+    |       |
+    0       false
+
+	at cscie56.fp.CarControllerSpec.Test that the delete action deletes an instance if it exists(CarControllerSpec.groovy:151)
+2016-04-29 22:37:17,032 [main] ERROR StackTrace  - Full Stack Trace:
+junit.framework.AssertionFailedError: Condition not satisfied:
+
+Car.count() == 1
+    |       |
+    0       false
+
+	at cscie56.fp.CarControllerSpec.Test that the delete action deletes an instance if it exists(CarControllerSpec.groovy:151)
+2016-04-29 22:37:17,033 [main] ERROR StackTrace  - Full Stack Trace:
+junit.framework.AssertionFailedError: Condition not satisfied:
+
+Car.count() == 1
+    |       |
+    0       false
+
+	at cscie56.fp.CarControllerSpec.Test that the delete action deletes an instance if it exists(CarControllerSpec.groovy:151)
+2016-04-29 22:37:29,300 [main] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.MissingPropertyException: No such property: user for class: cscie56.fp.Car
+Possible solutions: users, fuel, usersId, year
+	at cscie56.fp.CarService.$tt__createCar(CarService.groovy:13)
+	at cscie56.fp.CarService.createCar_closure1(CarService.groovy)
+	at org.springsource.loaded.ri.ReflectiveInterceptor.jlrMethodInvoke(ReflectiveInterceptor.java:1426)
+	at groovy.lang.Closure.call(Closure.java:426)
+	at groovy.lang.Closure.call(Closure.java:442)
+	at org.codehaus.groovy.grails.orm.support.GrailsTransactionTemplate$2.doInTransaction(GrailsTransactionTemplate.groovy:90)
+	at org.springframework.transaction.support.TransactionTemplate.execute(TransactionTemplate.java:133)
+	at org.codehaus.groovy.grails.orm.support.GrailsTransactionTemplate.execute(GrailsTransactionTemplate.groovy:87)
+	at cscie56.fp.CarServiceIntegrationSpec.createCar() method(CarServiceIntegrationSpec.groovy:18)
+2016-04-29 22:37:29,303 [main] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.MissingPropertyException: No such property: user for class: cscie56.fp.Car
+Possible solutions: users, fuel, usersId, year
+	at cscie56.fp.CarService.$tt__createCar(CarService.groovy:13)
+	at cscie56.fp.CarServiceIntegrationSpec.createCar() method(CarServiceIntegrationSpec.groovy:18)
+2016-04-29 22:37:29,305 [main] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.MissingPropertyException: No such property: user for class: cscie56.fp.Car
+Possible solutions: users, fuel, usersId, year
+	at cscie56.fp.CarService.$tt__createCar(CarService.groovy:13)
+	at cscie56.fp.CarServiceIntegrationSpec.createCar() method(CarServiceIntegrationSpec.groovy:18)
+2016-04-29 22:37:29,306 [main] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.MissingPropertyException: No such property: user for class: cscie56.fp.Car
+Possible solutions: users, fuel, usersId, year
+	at cscie56.fp.CarService.$tt__createCar(CarService.groovy:13)
+	at cscie56.fp.CarServiceIntegrationSpec.createCar() method(CarServiceIntegrationSpec.groovy:18)
+2016-04-29 22:37:29,309 [main] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.MissingPropertyException: No such property: user for class: cscie56.fp.Car
+Possible solutions: users, fuel, usersId, year
+	at cscie56.fp.CarService.$tt__createCar(CarService.groovy:13)
+	at cscie56.fp.CarServiceIntegrationSpec.createCar() method(CarServiceIntegrationSpec.groovy:18)
+2016-04-29 22:37:29,309 [main] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.MissingPropertyException: No such property: user for class: cscie56.fp.Car
+Possible solutions: users, fuel, usersId, year
+	at cscie56.fp.CarService.$tt__createCar(CarService.groovy:13)
+	at cscie56.fp.CarServiceIntegrationSpec.createCar() method(CarServiceIntegrationSpec.groovy:18)
+2016-04-29 22:37:29,471 [main] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.MissingPropertyException: No such property: user for class: cscie56.fp.Car
+Possible solutions: users, fuel, usersId, year
+	at cscie56.fp.CarService.$tt__createCar(CarService.groovy:13)
+	at cscie56.fp.CarService.createCar_closure1(CarService.groovy)
+	at org.springsource.loaded.ri.ReflectiveInterceptor.jlrMethodInvoke(ReflectiveInterceptor.java:1426)
+	at groovy.lang.Closure.call(Closure.java:426)
+	at groovy.lang.Closure.call(Closure.java:442)
+	at org.codehaus.groovy.grails.orm.support.GrailsTransactionTemplate$2.doInTransaction(GrailsTransactionTemplate.groovy:90)
+	at org.springframework.transaction.support.TransactionTemplate.execute(TransactionTemplate.java:133)
+	at org.codehaus.groovy.grails.orm.support.GrailsTransactionTemplate.execute(GrailsTransactionTemplate.groovy:87)
+	at cscie56.fp.ProblemService.$tt__createProblem(ProblemService.groovy:17)
+	at cscie56.fp.ProblemService.createProblem_closure2(ProblemService.groovy)
+	at org.springsource.loaded.ri.ReflectiveInterceptor.jlrMethodInvoke(ReflectiveInterceptor.java:1426)
+	at groovy.lang.Closure.call(Closure.java:426)
+	at groovy.lang.Closure.call(Closure.java:442)
+	at org.codehaus.groovy.grails.orm.support.GrailsTransactionTemplate$2.doInTransaction(GrailsTransactionTemplate.groovy:90)
+	at org.springframework.transaction.support.TransactionTemplate.execute(TransactionTemplate.java:133)
+	at org.codehaus.groovy.grails.orm.support.GrailsTransactionTemplate.execute(GrailsTransactionTemplate.groovy:87)
+	at cscie56.fp.ProblemServiceIntegrationSpec.createProblem() method(ProblemServiceIntegrationSpec.groovy:28)
+2016-04-29 22:37:29,471 [main] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.MissingPropertyException: No such property: user for class: cscie56.fp.Car
+Possible solutions: users, fuel, usersId, year
+	at cscie56.fp.CarService.$tt__createCar(CarService.groovy:13)
+	at cscie56.fp.ProblemService.$tt__createProblem(ProblemService.groovy:17)
+	at cscie56.fp.ProblemServiceIntegrationSpec.createProblem() method(ProblemServiceIntegrationSpec.groovy:28)
+2016-04-29 22:37:29,472 [main] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.MissingPropertyException: No such property: user for class: cscie56.fp.Car
+Possible solutions: users, fuel, usersId, year
+	at cscie56.fp.CarService.$tt__createCar(CarService.groovy:13)
+	at cscie56.fp.ProblemService.$tt__createProblem(ProblemService.groovy:17)
+	at cscie56.fp.ProblemServiceIntegrationSpec.createProblem() method(ProblemServiceIntegrationSpec.groovy:28)
+2016-04-29 22:37:29,472 [main] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.MissingPropertyException: No such property: user for class: cscie56.fp.Car
+Possible solutions: users, fuel, usersId, year
+	at cscie56.fp.CarService.$tt__createCar(CarService.groovy:13)
+	at cscie56.fp.ProblemService.$tt__createProblem(ProblemService.groovy:17)
+	at cscie56.fp.ProblemServiceIntegrationSpec.createProblem() method(ProblemServiceIntegrationSpec.groovy:28)
+2016-04-29 22:37:29,474 [main] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.MissingPropertyException: No such property: user for class: cscie56.fp.Car
+Possible solutions: users, fuel, usersId, year
+	at cscie56.fp.CarService.$tt__createCar(CarService.groovy:13)
+	at cscie56.fp.ProblemService.$tt__createProblem(ProblemService.groovy:17)
+	at cscie56.fp.ProblemServiceIntegrationSpec.createProblem() method(ProblemServiceIntegrationSpec.groovy:28)
+2016-04-29 22:37:29,474 [main] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.MissingPropertyException: No such property: user for class: cscie56.fp.Car
+Possible solutions: users, fuel, usersId, year
+	at cscie56.fp.CarService.$tt__createCar(CarService.groovy:13)
+	at cscie56.fp.ProblemService.$tt__createProblem(ProblemService.groovy:17)
+	at cscie56.fp.ProblemServiceIntegrationSpec.createProblem() method(ProblemServiceIntegrationSpec.groovy:28)
+2016-04-29 22:49:32,030 [main] ERROR StackTrace  - Full Stack Trace:
+org.springframework.dao.InvalidDataAccessApiUsageException: Not-null property references a transient value - transient instance must be saved before current operation : cscie56.fp.Problem.user -> cscie56.fp.User; nested exception is org.hibernate.TransientPropertyValueException: Not-null property references a transient value - transient instance must be saved before current operation : cscie56.fp.Problem.user -> cscie56.fp.User
+	at org.springframework.orm.hibernate4.SessionFactoryUtils.convertHibernateAccessException(SessionFactoryUtils.java:190)
+	at org.codehaus.groovy.grails.orm.hibernate.GrailsHibernateTemplate.convertHibernateAccessException(GrailsHibernateTemplate.java:606)
+	at org.codehaus.groovy.grails.orm.hibernate.GrailsHibernateTemplate.doExecute(GrailsHibernateTemplate.java:192)
+	at org.codehaus.groovy.grails.orm.hibernate.GrailsHibernateTemplate.execute(GrailsHibernateTemplate.java:132)
+	at org.codehaus.groovy.grails.orm.hibernate.metaclass.SavePersistentMethod.performSave(SavePersistentMethod.java:56)
+	at org.codehaus.groovy.grails.orm.hibernate.metaclass.AbstractSavePersistentMethod.doInvokeInternal(AbstractSavePersistentMethod.java:215)
+	at org.codehaus.groovy.grails.orm.hibernate.metaclass.AbstractDynamicPersistentMethod.invoke(AbstractDynamicPersistentMethod.java:69)
+	at org.codehaus.groovy.grails.orm.hibernate.HibernateGormInstanceApi.save(HibernateGormInstanceApi.groovy:196)
+	at cscie56.fp.ProblemService.$tt__createProblem(ProblemService.groovy:25)
+	at cscie56.fp.ProblemService.createProblem_closure2(ProblemService.groovy)
+	at org.springsource.loaded.ri.ReflectiveInterceptor.jlrMethodInvoke(ReflectiveInterceptor.java:1426)
+	at groovy.lang.Closure.call(Closure.java:426)
+	at groovy.lang.Closure.call(Closure.java:442)
+	at org.codehaus.groovy.grails.orm.support.GrailsTransactionTemplate$2.doInTransaction(GrailsTransactionTemplate.groovy:90)
+	at org.springframework.transaction.support.TransactionTemplate.execute(TransactionTemplate.java:133)
+	at org.codehaus.groovy.grails.orm.support.GrailsTransactionTemplate.execute(GrailsTransactionTemplate.groovy:87)
+	at cscie56.fp.ProblemServiceIntegrationSpec.createProblem() method(ProblemServiceIntegrationSpec.groovy:28)
+Caused by: org.hibernate.TransientPropertyValueException: Not-null property references a transient value - transient instance must be saved before current operation : cscie56.fp.Problem.user -> cscie56.fp.User
+	at org.hibernate.action.internal.UnresolvedEntityInsertActions.checkNoUnresolvedActionsAfterOperation(UnresolvedEntityInsertActions.java:137)
+	at org.hibernate.engine.spi.ActionQueue.checkNoUnresolvedActionsAfterOperation(ActionQueue.java:320)
+	at org.hibernate.internal.SessionImpl.checkNoUnresolvedActionsAfterOperation(SessionImpl.java:658)
+	at org.hibernate.internal.SessionImpl.fireSaveOrUpdate(SessionImpl.java:686)
+	at org.hibernate.internal.SessionImpl.saveOrUpdate(SessionImpl.java:676)
+	at org.hibernate.internal.SessionImpl.saveOrUpdate(SessionImpl.java:671)
+	at org.codehaus.groovy.grails.orm.hibernate.metaclass.SavePersistentMethod$1.doInHibernate(SavePersistentMethod.java:58)
+	at org.codehaus.groovy.grails.orm.hibernate.GrailsHibernateTemplate.doExecute(GrailsHibernateTemplate.java:188)
+	... 14 more
+2016-04-29 22:49:32,035 [main] ERROR StackTrace  - Full Stack Trace:
+org.hibernate.TransientPropertyValueException: Not-null property references a transient value - transient instance must be saved before current operation : cscie56.fp.Problem.user -> cscie56.fp.User
+	at org.hibernate.action.internal.UnresolvedEntityInsertActions.checkNoUnresolvedActionsAfterOperation(UnresolvedEntityInsertActions.java:137)
+	at org.hibernate.engine.spi.ActionQueue.checkNoUnresolvedActionsAfterOperation(ActionQueue.java:320)
+	at org.hibernate.internal.SessionImpl.checkNoUnresolvedActionsAfterOperation(SessionImpl.java:658)
+	at org.hibernate.internal.SessionImpl.fireSaveOrUpdate(SessionImpl.java:686)
+	at org.hibernate.internal.SessionImpl.saveOrUpdate(SessionImpl.java:676)
+	at org.hibernate.internal.SessionImpl.saveOrUpdate(SessionImpl.java:671)
+	at org.codehaus.groovy.grails.orm.hibernate.metaclass.SavePersistentMethod$1.doInHibernate(SavePersistentMethod.java:58)
+	at org.codehaus.groovy.grails.orm.hibernate.GrailsHibernateTemplate.doExecute(GrailsHibernateTemplate.java:188)
+	at org.codehaus.groovy.grails.orm.hibernate.GrailsHibernateTemplate.execute(GrailsHibernateTemplate.java:132)
+	at org.codehaus.groovy.grails.orm.hibernate.metaclass.SavePersistentMethod.performSave(SavePersistentMethod.java:56)
+	at org.codehaus.groovy.grails.orm.hibernate.metaclass.AbstractSavePersistentMethod.doInvokeInternal(AbstractSavePersistentMethod.java:215)
+	at org.codehaus.groovy.grails.orm.hibernate.metaclass.AbstractDynamicPersistentMethod.invoke(AbstractDynamicPersistentMethod.java:69)
+	at org.codehaus.groovy.grails.orm.hibernate.HibernateGormInstanceApi.save(HibernateGormInstanceApi.groovy:196)
+	at cscie56.fp.ProblemService.$tt__createProblem(ProblemService.groovy:25)
+	at cscie56.fp.ProblemService.createProblem_closure2(ProblemService.groovy)
+	at org.springsource.loaded.ri.ReflectiveInterceptor.jlrMethodInvoke(ReflectiveInterceptor.java:1426)
+	at groovy.lang.Closure.call(Closure.java:426)
+	at groovy.lang.Closure.call(Closure.java:442)
+	at org.codehaus.groovy.grails.orm.support.GrailsTransactionTemplate$2.doInTransaction(GrailsTransactionTemplate.groovy:90)
+	at org.springframework.transaction.support.TransactionTemplate.execute(TransactionTemplate.java:133)
+	at org.codehaus.groovy.grails.orm.support.GrailsTransactionTemplate.execute(GrailsTransactionTemplate.groovy:87)
+	at cscie56.fp.ProblemServiceIntegrationSpec.createProblem() method(ProblemServiceIntegrationSpec.groovy:28)
+2016-04-29 22:49:32,035 [main] ERROR StackTrace  - Full Stack Trace:
+org.springframework.dao.InvalidDataAccessApiUsageException: Not-null property references a transient value - transient instance must be saved before current operation : cscie56.fp.Problem.user -> cscie56.fp.User; nested exception is org.hibernate.TransientPropertyValueException: Not-null property references a transient value - transient instance must be saved before current operation : cscie56.fp.Problem.user -> cscie56.fp.User
+	at cscie56.fp.ProblemService.$tt__createProblem(ProblemService.groovy:25)
+	at cscie56.fp.ProblemServiceIntegrationSpec.createProblem() method(ProblemServiceIntegrationSpec.groovy:28)
+Caused by: org.hibernate.TransientPropertyValueException: Not-null property references a transient value - transient instance must be saved before current operation : cscie56.fp.Problem.user -> cscie56.fp.User
+	... 2 more
+2016-04-29 22:49:32,037 [main] ERROR StackTrace  - Full Stack Trace:
+org.springframework.dao.InvalidDataAccessApiUsageException: Not-null property references a transient value - transient instance must be saved before current operation : cscie56.fp.Problem.user -> cscie56.fp.User; nested exception is org.hibernate.TransientPropertyValueException: Not-null property references a transient value - transient instance must be saved before current operation : cscie56.fp.Problem.user -> cscie56.fp.User
+	at cscie56.fp.ProblemService.$tt__createProblem(ProblemService.groovy:25)
+	at cscie56.fp.ProblemServiceIntegrationSpec.createProblem() method(ProblemServiceIntegrationSpec.groovy:28)
+Caused by: org.hibernate.TransientPropertyValueException: Not-null property references a transient value - transient instance must be saved before current operation : cscie56.fp.Problem.user -> cscie56.fp.User
+	... 2 more
+2016-04-29 22:49:32,037 [main] ERROR StackTrace  - Full Stack Trace:
+org.hibernate.TransientPropertyValueException: Not-null property references a transient value - transient instance must be saved before current operation : cscie56.fp.Problem.user -> cscie56.fp.User
+	at cscie56.fp.ProblemService.$tt__createProblem(ProblemService.groovy:25)
+	at cscie56.fp.ProblemServiceIntegrationSpec.createProblem() method(ProblemServiceIntegrationSpec.groovy:28)
+2016-04-29 22:49:32,037 [main] ERROR StackTrace  - Full Stack Trace:
+org.springframework.dao.InvalidDataAccessApiUsageException: Not-null property references a transient value - transient instance must be saved before current operation : cscie56.fp.Problem.user -> cscie56.fp.User; nested exception is org.hibernate.TransientPropertyValueException: Not-null property references a transient value - transient instance must be saved before current operation : cscie56.fp.Problem.user -> cscie56.fp.User
+	at cscie56.fp.ProblemService.$tt__createProblem(ProblemService.groovy:25)
+	at cscie56.fp.ProblemServiceIntegrationSpec.createProblem() method(ProblemServiceIntegrationSpec.groovy:28)
+Caused by: org.hibernate.TransientPropertyValueException: Not-null property references a transient value - transient instance must be saved before current operation : cscie56.fp.Problem.user -> cscie56.fp.User
+	... 2 more
+2016-04-29 22:49:32,043 [main] ERROR StackTrace  - Full Stack Trace:
+org.springframework.dao.InvalidDataAccessApiUsageException: Not-null property references a transient value - transient instance must be saved before current operation : cscie56.fp.Problem.user -> cscie56.fp.User; nested exception is org.hibernate.TransientPropertyValueException: Not-null property references a transient value - transient instance must be saved before current operation : cscie56.fp.Problem.user -> cscie56.fp.User
+	at cscie56.fp.ProblemService.$tt__createProblem(ProblemService.groovy:25)
+	at cscie56.fp.ProblemServiceIntegrationSpec.createProblem() method(ProblemServiceIntegrationSpec.groovy:28)
+Caused by: org.hibernate.TransientPropertyValueException: Not-null property references a transient value - transient instance must be saved before current operation : cscie56.fp.Problem.user -> cscie56.fp.User
+	... 2 more
+2016-04-29 22:49:32,044 [main] ERROR StackTrace  - Full Stack Trace:
+org.hibernate.TransientPropertyValueException: Not-null property references a transient value - transient instance must be saved before current operation : cscie56.fp.Problem.user -> cscie56.fp.User
+	at cscie56.fp.ProblemService.$tt__createProblem(ProblemService.groovy:25)
+	at cscie56.fp.ProblemServiceIntegrationSpec.createProblem() method(ProblemServiceIntegrationSpec.groovy:28)
+2016-04-29 22:49:32,044 [main] ERROR StackTrace  - Full Stack Trace:
+org.springframework.dao.InvalidDataAccessApiUsageException: Not-null property references a transient value - transient instance must be saved before current operation : cscie56.fp.Problem.user -> cscie56.fp.User; nested exception is org.hibernate.TransientPropertyValueException: Not-null property references a transient value - transient instance must be saved before current operation : cscie56.fp.Problem.user -> cscie56.fp.User
+	at cscie56.fp.ProblemService.$tt__createProblem(ProblemService.groovy:25)
+	at cscie56.fp.ProblemServiceIntegrationSpec.createProblem() method(ProblemServiceIntegrationSpec.groovy:28)
+Caused by: org.hibernate.TransientPropertyValueException: Not-null property references a transient value - transient instance must be saved before current operation : cscie56.fp.Problem.user -> cscie56.fp.User
+	... 2 more
+2016-04-29 22:55:01,656 [main] ERROR StackTrace  - Full Stack Trace:
+grails.validation.ValidationException: Validation Error(s) occurred during save():
+- Field error in object 'cscie56.fp.User' on field 'username': rejected value [username]; codes [cscie56.fp.User.username.unique.error.cscie56.fp.User.username,cscie56.fp.User.username.unique.error.username,cscie56.fp.User.username.unique.error.java.lang.String,cscie56.fp.User.username.unique.error,user.username.unique.error.cscie56.fp.User.username,user.username.unique.error.username,user.username.unique.error.java.lang.String,user.username.unique.error,cscie56.fp.User.username.unique.cscie56.fp.User.username,cscie56.fp.User.username.unique.username,cscie56.fp.User.username.unique.java.lang.String,cscie56.fp.User.username.unique,user.username.unique.cscie56.fp.User.username,user.username.unique.username,user.username.unique.java.lang.String,user.username.unique,unique.cscie56.fp.User.username,unique.username,unique.java.lang.String,unique]; arguments [username,class cscie56.fp.User,username]; default message [Property [{0}] of class [{1}] with value [{2}] must be unique]
+
+	at org.codehaus.groovy.grails.orm.hibernate.metaclass.AbstractSavePersistentMethod.doInvokeInternal(AbstractSavePersistentMethod.java:190)
+	at org.codehaus.groovy.grails.orm.hibernate.metaclass.AbstractDynamicPersistentMethod.invoke(AbstractDynamicPersistentMethod.java:69)
+	at org.codehaus.groovy.grails.orm.hibernate.HibernateGormInstanceApi.save(HibernateGormInstanceApi.groovy:196)
+	at cscie56.fp.UserService.$tt__createUser(UserService.groovy:14)
+	at cscie56.fp.UserService.createUser_closure1(UserService.groovy)
+	at org.springsource.loaded.ri.ReflectiveInterceptor.jlrMethodInvoke(ReflectiveInterceptor.java:1426)
+	at groovy.lang.Closure.call(Closure.java:426)
+	at groovy.lang.Closure.call(Closure.java:442)
+	at org.codehaus.groovy.grails.orm.support.GrailsTransactionTemplate$2.doInTransaction(GrailsTransactionTemplate.groovy:90)
+	at org.springframework.transaction.support.TransactionTemplate.execute(TransactionTemplate.java:133)
+	at org.codehaus.groovy.grails.orm.support.GrailsTransactionTemplate.execute(GrailsTransactionTemplate.groovy:87)
+	at cscie56.fp.CarService.$tt__createCar(CarService.groovy:11)
+	at cscie56.fp.CarService.createCar_closure1(CarService.groovy)
+	at org.springsource.loaded.ri.ReflectiveInterceptor.jlrMethodInvoke(ReflectiveInterceptor.java:1426)
+	at groovy.lang.Closure.call(Closure.java:426)
+	at groovy.lang.Closure.call(Closure.java:442)
+	at org.codehaus.groovy.grails.orm.support.GrailsTransactionTemplate$2.doInTransaction(GrailsTransactionTemplate.groovy:90)
+	at org.springframework.transaction.support.TransactionTemplate.execute(TransactionTemplate.java:133)
+	at org.codehaus.groovy.grails.orm.support.GrailsTransactionTemplate.execute(GrailsTransactionTemplate.groovy:87)
+	at cscie56.fp.ProblemService.$tt__createProblem(ProblemService.groovy:17)
+	at cscie56.fp.ProblemService.createProblem_closure2(ProblemService.groovy)
+	at org.springsource.loaded.ri.ReflectiveInterceptor.jlrMethodInvoke(ReflectiveInterceptor.java:1426)
+	at groovy.lang.Closure.call(Closure.java:426)
+	at groovy.lang.Closure.call(Closure.java:442)
+	at org.codehaus.groovy.grails.orm.support.GrailsTransactionTemplate$2.doInTransaction(GrailsTransactionTemplate.groovy:90)
+	at org.springframework.transaction.support.TransactionTemplate.execute(TransactionTemplate.java:133)
+	at org.codehaus.groovy.grails.orm.support.GrailsTransactionTemplate.execute(GrailsTransactionTemplate.groovy:87)
+	at cscie56.fp.ProblemServiceIntegrationSpec.createProblem() method(ProblemServiceIntegrationSpec.groovy:28)
+2016-04-29 22:55:01,660 [main] ERROR StackTrace  - Full Stack Trace:
+grails.validation.ValidationException: Validation Error(s) occurred during save():
+- Field error in object 'cscie56.fp.User' on field 'username': rejected value [username]; codes [cscie56.fp.User.username.unique.error.cscie56.fp.User.username,cscie56.fp.User.username.unique.error.username,cscie56.fp.User.username.unique.error.java.lang.String,cscie56.fp.User.username.unique.error,user.username.unique.error.cscie56.fp.User.username,user.username.unique.error.username,user.username.unique.error.java.lang.String,user.username.unique.error,cscie56.fp.User.username.unique.cscie56.fp.User.username,cscie56.fp.User.username.unique.username,cscie56.fp.User.username.unique.java.lang.String,cscie56.fp.User.username.unique,user.username.unique.cscie56.fp.User.username,user.username.unique.username,user.username.unique.java.lang.String,user.username.unique,unique.cscie56.fp.User.username,unique.username,unique.java.lang.String,unique]; arguments [username,class cscie56.fp.User,username]; default message [Property [{0}] of class [{1}] with value [{2}] must be unique]
+
+	at cscie56.fp.UserService.$tt__createUser(UserService.groovy:14)
+	at cscie56.fp.CarService.$tt__createCar(CarService.groovy:11)
+	at cscie56.fp.ProblemService.$tt__createProblem(ProblemService.groovy:17)
+	at cscie56.fp.ProblemServiceIntegrationSpec.createProblem() method(ProblemServiceIntegrationSpec.groovy:28)
+2016-04-29 22:55:01,661 [main] ERROR StackTrace  - Full Stack Trace:
+grails.validation.ValidationException: Validation Error(s) occurred during save():
+- Field error in object 'cscie56.fp.User' on field 'username': rejected value [username]; codes [cscie56.fp.User.username.unique.error.cscie56.fp.User.username,cscie56.fp.User.username.unique.error.username,cscie56.fp.User.username.unique.error.java.lang.String,cscie56.fp.User.username.unique.error,user.username.unique.error.cscie56.fp.User.username,user.username.unique.error.username,user.username.unique.error.java.lang.String,user.username.unique.error,cscie56.fp.User.username.unique.cscie56.fp.User.username,cscie56.fp.User.username.unique.username,cscie56.fp.User.username.unique.java.lang.String,cscie56.fp.User.username.unique,user.username.unique.cscie56.fp.User.username,user.username.unique.username,user.username.unique.java.lang.String,user.username.unique,unique.cscie56.fp.User.username,unique.username,unique.java.lang.String,unique]; arguments [username,class cscie56.fp.User,username]; default message [Property [{0}] of class [{1}] with value [{2}] must be unique]
+
+	at cscie56.fp.UserService.$tt__createUser(UserService.groovy:14)
+	at cscie56.fp.CarService.$tt__createCar(CarService.groovy:11)
+	at cscie56.fp.ProblemService.$tt__createProblem(ProblemService.groovy:17)
+	at cscie56.fp.ProblemServiceIntegrationSpec.createProblem() method(ProblemServiceIntegrationSpec.groovy:28)
+2016-04-29 22:55:01,662 [main] ERROR StackTrace  - Full Stack Trace:
+grails.validation.ValidationException: Validation Error(s) occurred during save():
+- Field error in object 'cscie56.fp.User' on field 'username': rejected value [username]; codes [cscie56.fp.User.username.unique.error.cscie56.fp.User.username,cscie56.fp.User.username.unique.error.username,cscie56.fp.User.username.unique.error.java.lang.String,cscie56.fp.User.username.unique.error,user.username.unique.error.cscie56.fp.User.username,user.username.unique.error.username,user.username.unique.error.java.lang.String,user.username.unique.error,cscie56.fp.User.username.unique.cscie56.fp.User.username,cscie56.fp.User.username.unique.username,cscie56.fp.User.username.unique.java.lang.String,cscie56.fp.User.username.unique,user.username.unique.cscie56.fp.User.username,user.username.unique.username,user.username.unique.java.lang.String,user.username.unique,unique.cscie56.fp.User.username,unique.username,unique.java.lang.String,unique]; arguments [username,class cscie56.fp.User,username]; default message [Property [{0}] of class [{1}] with value [{2}] must be unique]
+
+	at cscie56.fp.UserService.$tt__createUser(UserService.groovy:14)
+	at cscie56.fp.CarService.$tt__createCar(CarService.groovy:11)
+	at cscie56.fp.ProblemService.$tt__createProblem(ProblemService.groovy:17)
+	at cscie56.fp.ProblemServiceIntegrationSpec.createProblem() method(ProblemServiceIntegrationSpec.groovy:28)
+2016-04-29 22:55:01,666 [main] ERROR StackTrace  - Full Stack Trace:
+grails.validation.ValidationException: Validation Error(s) occurred during save():
+- Field error in object 'cscie56.fp.User' on field 'username': rejected value [username]; codes [cscie56.fp.User.username.unique.error.cscie56.fp.User.username,cscie56.fp.User.username.unique.error.username,cscie56.fp.User.username.unique.error.java.lang.String,cscie56.fp.User.username.unique.error,user.username.unique.error.cscie56.fp.User.username,user.username.unique.error.username,user.username.unique.error.java.lang.String,user.username.unique.error,cscie56.fp.User.username.unique.cscie56.fp.User.username,cscie56.fp.User.username.unique.username,cscie56.fp.User.username.unique.java.lang.String,cscie56.fp.User.username.unique,user.username.unique.cscie56.fp.User.username,user.username.unique.username,user.username.unique.java.lang.String,user.username.unique,unique.cscie56.fp.User.username,unique.username,unique.java.lang.String,unique]; arguments [username,class cscie56.fp.User,username]; default message [Property [{0}] of class [{1}] with value [{2}] must be unique]
+
+	at cscie56.fp.UserService.$tt__createUser(UserService.groovy:14)
+	at cscie56.fp.CarService.$tt__createCar(CarService.groovy:11)
+	at cscie56.fp.ProblemService.$tt__createProblem(ProblemService.groovy:17)
+	at cscie56.fp.ProblemServiceIntegrationSpec.createProblem() method(ProblemServiceIntegrationSpec.groovy:28)
+2016-04-29 22:55:01,666 [main] ERROR StackTrace  - Full Stack Trace:
+grails.validation.ValidationException: Validation Error(s) occurred during save():
+- Field error in object 'cscie56.fp.User' on field 'username': rejected value [username]; codes [cscie56.fp.User.username.unique.error.cscie56.fp.User.username,cscie56.fp.User.username.unique.error.username,cscie56.fp.User.username.unique.error.java.lang.String,cscie56.fp.User.username.unique.error,user.username.unique.error.cscie56.fp.User.username,user.username.unique.error.username,user.username.unique.error.java.lang.String,user.username.unique.error,cscie56.fp.User.username.unique.cscie56.fp.User.username,cscie56.fp.User.username.unique.username,cscie56.fp.User.username.unique.java.lang.String,cscie56.fp.User.username.unique,user.username.unique.cscie56.fp.User.username,user.username.unique.username,user.username.unique.java.lang.String,user.username.unique,unique.cscie56.fp.User.username,unique.username,unique.java.lang.String,unique]; arguments [username,class cscie56.fp.User,username]; default message [Property [{0}] of class [{1}] with value [{2}] must be unique]
+
+	at cscie56.fp.UserService.$tt__createUser(UserService.groovy:14)
+	at cscie56.fp.CarService.$tt__createCar(CarService.groovy:11)
+	at cscie56.fp.ProblemService.$tt__createProblem(ProblemService.groovy:17)
+	at cscie56.fp.ProblemServiceIntegrationSpec.createProblem() method(ProblemServiceIntegrationSpec.groovy:28)

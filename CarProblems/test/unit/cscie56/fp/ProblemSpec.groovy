@@ -16,7 +16,7 @@ class ProblemSpec extends ConstraintUnitSpec {
         //mock Problem
         User testUser = new User(username: 'username', password: 'password')
         Car testCar = new Car(user:testUser, manufacturer:'Test Car Motors', carModel: '2016 Sport', year: 2016, fuel: 'Diesel', doors: 5)
-        Problem testProblem = new Problem(car: testCar, system: 'system', description: 'description', approved: true)
+        Problem testProblem = new Problem(user: testUser, car: testCar, system: 'system', description: 'description', approved: true)
         mockForConstraintsTests(Problem,[testProblem])
     }
 
@@ -53,7 +53,7 @@ class ProblemSpec extends ConstraintUnitSpec {
         'nullable' | 'description' | ' '
         'nullable' | 'description' | null
         'matches'  | 'description' | 'descrip/tion'
-        'valid'  | 'description' | 'des cription'
+        'valid'    | 'description' | 'des cription'
         'size'     | 'description' | getLongString(251)
         'valid'    | 'description' | getLongString(250)
         'valid'    | 'description' | getLongString(50)

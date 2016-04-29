@@ -2,7 +2,7 @@ package cscie56.fp
 
 class Problem {
 
-    static belongsTo = [car:Car]
+    static belongsTo = [car:Car, user:User]
 
     String system
     String description
