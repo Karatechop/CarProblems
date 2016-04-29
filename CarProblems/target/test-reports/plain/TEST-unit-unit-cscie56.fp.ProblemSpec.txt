@@ -1,5 +1,5 @@
 Testsuite: cscie56.fp.ProblemSpec
-Tests run: 16, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0,378 sec
+Tests run: 16, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0,347 sec
 ------------- Standard Output ---------------
 --Output from test problem all constraints system is nullable--
 --Output from test problem all constraints system is nullable--
@@ -37,19 +37,19 @@ Tests run: 16, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0,378 sec
 --Output from test problem all constraints description is valid--
 ------------- ---------------- ---------------
 
-Testcase: test problem all constraints system is nullable took 0,1 sec
-Testcase: test problem all constraints system is nullable took 0,019 sec
-Testcase: test problem all constraints system is matches took 0,018 sec
-Testcase: test problem all constraints system is valid took 0,018 sec
-Testcase: test problem all constraints system is size took 0,019 sec
-Testcase: test problem all constraints system is valid took 0,021 sec
-Testcase: test problem all constraints system is valid took 0,017 sec
+Testcase: test problem all constraints system is nullable took 0,076 sec
+Testcase: test problem all constraints system is nullable took 0,016 sec
+Testcase: test problem all constraints system is matches took 0,015 sec
 Testcase: test problem all constraints system is valid took 0,016 sec
+Testcase: test problem all constraints system is size took 0,015 sec
+Testcase: test problem all constraints system is valid took 0,02 sec
+Testcase: test problem all constraints system is valid took 0,016 sec
+Testcase: test problem all constraints system is valid took 0,015 sec
 Testcase: test problem all constraints description is nullable took 0,016 sec
-Testcase: test problem all constraints description is nullable took 0,015 sec
-Testcase: test problem all constraints description is matches took 0,016 sec
-Testcase: test problem all constraints description is valid took 0,014 sec
-Testcase: test problem all constraints description is size took 0,014 sec
-Testcase: test problem all constraints description is valid took 0,015 sec
-Testcase: test problem all constraints description is valid took 0,015 sec
-Testcase: test problem all constraints description is valid took 0,034 sec
+Testcase: test problem all constraints description is nullable took 0,021 sec
+Testcase: test problem all constraints description is matches took 0,018 sec
+Testcase: test problem all constraints description is valid took 0,018 sec
+Testcase: test problem all constraints description is size took 0,015 sec
+Testcase: test problem all constraints description is valid took 0,017 sec
+Testcase: test problem all constraints description is valid took 0,019 sec
+Testcase: test problem all constraints description is valid took 0,019 sec

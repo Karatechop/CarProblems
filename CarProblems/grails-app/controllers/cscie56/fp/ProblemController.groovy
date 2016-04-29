@@ -26,6 +26,7 @@ class ProblemController {
     }
 
     @Transactional
+    @Secured(['ROLE_ADMIN', 'ROLE_USER'])
     def save(Problem problemInstance) {
         if (problemInstance == null) {
             notFound()

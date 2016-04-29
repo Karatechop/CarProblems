@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite errors="0" failures="0" hostname="xmgbr-PC" name="cscie56.fp.ProblemControllerSpec" skipped="0" tests="7" time="0.498" timestamp="2016-04-29T20:59:33">
+<testsuite errors="0" failures="0" hostname="xmgbr-PC" name="cscie56.fp.ProblemControllerSpec" skipped="0" tests="7" time="0.49" timestamp="2016-04-29T21:07:25">
   <properties />
-  <testcase classname="cscie56.fp.ProblemControllerSpec" name="Test the index action returns the correct model" time="0.238" />
+  <testcase classname="cscie56.fp.ProblemControllerSpec" name="Test the index action returns the correct model" time="0.206" />
   <testcase classname="cscie56.fp.ProblemControllerSpec" name="Test the create action returns the correct model" time="0.022" />
-  <testcase classname="cscie56.fp.ProblemControllerSpec" name="Test the save action correctly persists an instance" time="0.063" />
-  <testcase classname="cscie56.fp.ProblemControllerSpec" name="Test that the show action returns the correct model" time="0.025" />
-  <testcase classname="cscie56.fp.ProblemControllerSpec" name="Test that the edit action returns the correct model" time="0.025" />
+  <testcase classname="cscie56.fp.ProblemControllerSpec" name="Test the save action correctly persists an instance" time="0.065" />
+  <testcase classname="cscie56.fp.ProblemControllerSpec" name="Test that the show action returns the correct model" time="0.029" />
+  <testcase classname="cscie56.fp.ProblemControllerSpec" name="Test that the edit action returns the correct model" time="0.029" />
   <testcase classname="cscie56.fp.ProblemControllerSpec" name="Test the update action performs an update on a valid domain instance" time="0.068" />
-  <testcase classname="cscie56.fp.ProblemControllerSpec" name="Test that the delete action deletes an instance if it exists" time="0.045" />
+  <testcase classname="cscie56.fp.ProblemControllerSpec" name="Test that the delete action deletes an instance if it exists" time="0.057" />
   <system-out><![CDATA[--Output from Test the index action returns the correct model--
 --Output from Test the create action returns the correct model--
 --Output from Test the save action correctly persists an instance--

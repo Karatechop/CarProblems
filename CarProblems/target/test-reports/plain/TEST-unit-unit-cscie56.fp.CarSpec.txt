@@ -1,5 +1,5 @@
 Testsuite: cscie56.fp.CarSpec
-Tests run: 30, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0,982 sec
+Tests run: 30, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1,043 sec
 ------------- Standard Output ---------------
 --Output from test car all constraints manufacturer is nullable--
 --Output from test car all constraints manufacturer is nullable--
@@ -65,33 +65,33 @@ Tests run: 30, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0,982 sec
 --Output from test car all constraints doors is validator--
 ------------- ---------------- ---------------
 
-Testcase: test car all constraints manufacturer is nullable took 0,283 sec
-Testcase: test car all constraints manufacturer is nullable took 0,027 sec
-Testcase: test car all constraints manufacturer is matches took 0,025 sec
-Testcase: test car all constraints manufacturer is valid took 0,023 sec
+Testcase: test car all constraints manufacturer is nullable took 0,269 sec
+Testcase: test car all constraints manufacturer is nullable took 0,038 sec
+Testcase: test car all constraints manufacturer is matches took 0,034 sec
+Testcase: test car all constraints manufacturer is valid took 0,031 sec
 Testcase: test car all constraints manufacturer is size took 0,03 sec
-Testcase: test car all constraints manufacturer is valid took 0,026 sec
-Testcase: test car all constraints manufacturer is valid took 0,024 sec
-Testcase: test car all constraints manufacturer is valid took 0,026 sec
-Testcase: test car all constraints carModel is nullable took 0,032 sec
+Testcase: test car all constraints manufacturer is valid took 0,036 sec
+Testcase: test car all constraints manufacturer is valid took 0,033 sec
+Testcase: test car all constraints manufacturer is valid took 0,033 sec
+Testcase: test car all constraints carModel is nullable took 0,034 sec
 Testcase: test car all constraints carModel is nullable took 0,024 sec
-Testcase: test car all constraints carModel is unique took 0,027 sec
-Testcase: test car all constraints carModel is matches took 0,023 sec
+Testcase: test car all constraints carModel is unique took 0,026 sec
+Testcase: test car all constraints carModel is matches took 0,024 sec
 Testcase: test car all constraints carModel is valid took 0,024 sec
-Testcase: test car all constraints carModel is size took 0,022 sec
-Testcase: test car all constraints carModel is valid took 0,022 sec
-Testcase: test car all constraints carModel is valid took 0,027 sec
-Testcase: test car all constraints carModel is valid took 0,023 sec
+Testcase: test car all constraints carModel is size took 0,031 sec
+Testcase: test car all constraints carModel is valid took 0,029 sec
+Testcase: test car all constraints carModel is valid took 0,034 sec
+Testcase: test car all constraints carModel is valid took 0,025 sec
 Testcase: test car all constraints carModel is validator took 0,024 sec
-Testcase: test car all constraints year is nullable took 0,023 sec
-Testcase: test car all constraints year is nullable took 0,019 sec
-Testcase: test car all constraints year is valid took 0,019 sec
+Testcase: test car all constraints year is nullable took 0,025 sec
+Testcase: test car all constraints year is nullable took 0,022 sec
 Testcase: test car all constraints year is valid took 0,02 sec
+Testcase: test car all constraints year is valid took 0,021 sec
 Testcase: test car all constraints year is validator took 0,019 sec
-Testcase: test car all constraints doors is nullable took 0,018 sec
-Testcase: test car all constraints doors is nullable took 0,018 sec
-Testcase: test car all constraints doors is valid took 0,019 sec
-Testcase: test car all constraints doors is valid took 0,022 sec
-Testcase: test car all constraints doors is valid took 0,025 sec
-Testcase: test car all constraints doors is validator took 0,02 sec
-Testcase: test car all constraints doors is validator took 0,026 sec
+Testcase: test car all constraints doors is nullable took 0,02 sec
+Testcase: test car all constraints doors is nullable took 0,021 sec
+Testcase: test car all constraints doors is valid took 0,018 sec
+Testcase: test car all constraints doors is valid took 0,02 sec
+Testcase: test car all constraints doors is valid took 0,016 sec
+Testcase: test car all constraints doors is validator took 0,019 sec
+Testcase: test car all constraints doors is validator took 0,018 sec

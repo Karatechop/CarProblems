@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite errors="0" failures="0" hostname="xmgbr-PC" name="cscie56.fp.UserControllerSpec" skipped="0" tests="7" time="0.375" timestamp="2016-04-29T20:59:34">
+<testsuite errors="0" failures="0" hostname="xmgbr-PC" name="cscie56.fp.UserControllerSpec" skipped="0" tests="7" time="0.437" timestamp="2016-04-29T21:07:25">
   <properties />
-  <testcase classname="cscie56.fp.UserControllerSpec" name="Test the index action returns the correct model" time="0.158" />
-  <testcase classname="cscie56.fp.UserControllerSpec" name="Test the create action returns the correct model" time="0.018" />
-  <testcase classname="cscie56.fp.UserControllerSpec" name="Test the save action correctly persists an instance" time="0.046" />
-  <testcase classname="cscie56.fp.UserControllerSpec" name="Test that the show action returns the correct model" time="0.02" />
+  <testcase classname="cscie56.fp.UserControllerSpec" name="Test the index action returns the correct model" time="0.211" />
+  <testcase classname="cscie56.fp.UserControllerSpec" name="Test the create action returns the correct model" time="0.017" />
+  <testcase classname="cscie56.fp.UserControllerSpec" name="Test the save action correctly persists an instance" time="0.052" />
+  <testcase classname="cscie56.fp.UserControllerSpec" name="Test that the show action returns the correct model" time="0.022" />
   <testcase classname="cscie56.fp.UserControllerSpec" name="Test that the edit action returns the correct model" time="0.018" />
-  <testcase classname="cscie56.fp.UserControllerSpec" name="Test the update action performs an update on a valid domain instance" time="0.059" />
-  <testcase classname="cscie56.fp.UserControllerSpec" name="Test that the delete action deletes an instance if it exists" time="0.045" />
+  <testcase classname="cscie56.fp.UserControllerSpec" name="Test the update action performs an update on a valid domain instance" time="0.061" />
+  <testcase classname="cscie56.fp.UserControllerSpec" name="Test that the delete action deletes an instance if it exists" time="0.044" />
   <system-out><![CDATA[--Output from Test the index action returns the correct model--
 --Output from Test the create action returns the correct model--
 --Output from Test the save action correctly persists an instance--
