@@ -6,10 +6,18 @@ class Problem {
 
     String system
     String description
-    boolean approved
+    Integer mileage
+    Date dateSubmitted = new Date()
+    Boolean approved = null
 
     static constraints = {
-        system (blank: false, matches: "[a-zA-Z0-9 ]*", size: 1..50)
+        system (blank: false, inList: ["Transmission", "Body/Paint", "Interior accessories", "Wheels/Hubs",
+                                       "Drivetrain", "Windows/Windshield", "Engine", "Suspension",
+                                       "AC/Heater", "Exterior accessories", "Electrics", "Seat belt/Air bag",
+                                       "Brakes", "Fuel system", "Lights", "Steering", "Cooling system",
+                                       "Clutch", "Exhaust", "Misc"])
         description (blank: false, matches: "[a-zA-Z0-9 ]*", size: 1..250)
+        mileage (blank: false, validator:{val -> val>=0 && val<550000})
+        approved (nullable: true)
             }
 }

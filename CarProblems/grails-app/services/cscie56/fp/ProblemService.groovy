@@ -12,12 +12,13 @@ class ProblemService {
         return d
     }
 
-    def createProblem(String system, String description, boolean approved) {
+    def createProblem(String system, Integer mileage, String description, boolean approved) {
         User testUser = new User(username: 'username1', password: 'password').save()
-        Car testCar = carService.createCar('Test Car Motors', '2016 Sport', 2016, 'Diesel', 5)
+        Car testCar = carService.createCar('Test Car Motors', '2016 Sport test', 2016, 'Diesel', 5)
         Problem problem = new Problem()
         problem.user = testUser
         problem.car = testCar
+        problem.mileage = mileage
         problem.system = system
         problem.description = description
         problem.approved = approved

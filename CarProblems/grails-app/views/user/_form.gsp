@@ -7,7 +7,7 @@
 		<g:message code="user.username.label" default="Username" />
 		<span class="required-indicator">*</span>
 	</label>
-	<g:textField name="username" required="" value="${userInstance?.username}"/>
+	<g:textField name="username" maxlength="30" pattern="${userInstance.constraints.username.matches}" required="" value="${userInstance?.username}"/>
 
 </div>
 

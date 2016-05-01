@@ -11,7 +11,7 @@ class User implements Serializable {
 
 	transient springSecurityService
 
-	static hasMany = [users:User]
+	static hasMany = [cars:Car]
 	String username
 	String password
 	boolean enabled = true
@@ -48,7 +48,7 @@ class User implements Serializable {
 	static constraints = {
 		username blank: false, unique: true, matches: "[a-zA-Z0-9 ]*", size: 1..30
 		password blank: false
-		users nullable: true
+		cars nullable: true
 	}
 
 	static mapping = {

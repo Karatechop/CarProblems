@@ -24,11 +24,31 @@
 			<thead>
 					<tr>
 					
+						<g:sortableColumn property="system" title="${message(code: 'problem.system.label', default: 'System')}" />
+					
+						<g:sortableColumn property="description" title="${message(code: 'problem.description.label', default: 'Description')}" />
+					
+						<g:sortableColumn property="approved" title="${message(code: 'problem.approved.label', default: 'Approved')}" />
+					
+						<th><g:message code="problem.car.label" default="Car" /></th>
+					
+						<th><g:message code="problem.user.label" default="User" /></th>
+					
 					</tr>
 				</thead>
 				<tbody>
 				<g:each in="${problemInstanceList}" status="i" var="problemInstance">
 					<tr class="${(i % 2) == 0 ? 'even' : 'odd'}">
+					
+						<td><g:link action="show" id="${problemInstance.id}">${fieldValue(bean: problemInstance, field: "system")}</g:link></td>
+					
+						<td>${fieldValue(bean: problemInstance, field: "description")}</td>
+					
+						<td><g:formatBoolean boolean="${problemInstance.approved}" /></td>
+					
+						<td>${fieldValue(bean: problemInstance, field: "car")}</td>
+					
+						<td>${fieldValue(bean: problemInstance, field: "user")}</td>
 					
 					</tr>
 				</g:each>

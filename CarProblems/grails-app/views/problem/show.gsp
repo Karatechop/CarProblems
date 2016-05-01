@@ -23,6 +23,51 @@
 			</g:if>
 			<ol class="property-list problem">
 			
+				<g:if test="${problemInstance?.system}">
+				<li class="fieldcontain">
+					<span id="system-label" class="property-label"><g:message code="problem.system.label" default="System" /></span>
+					
+						<span class="property-value" aria-labelledby="system-label"><g:fieldValue bean="${problemInstance}" field="system"/></span>
+					
+				</li>
+				</g:if>
+			
+				<g:if test="${problemInstance?.description}">
+				<li class="fieldcontain">
+					<span id="description-label" class="property-label"><g:message code="problem.description.label" default="Description" /></span>
+					
+						<span class="property-value" aria-labelledby="description-label"><g:fieldValue bean="${problemInstance}" field="description"/></span>
+					
+				</li>
+				</g:if>
+			
+				<g:if test="${problemInstance?.approved}">
+				<li class="fieldcontain">
+					<span id="approved-label" class="property-label"><g:message code="problem.approved.label" default="Approved" /></span>
+					
+						<span class="property-value" aria-labelledby="approved-label"><g:formatBoolean boolean="${problemInstance?.approved}" /></span>
+					
+				</li>
+				</g:if>
+			
+				<g:if test="${problemInstance?.car}">
+				<li class="fieldcontain">
+					<span id="car-label" class="property-label"><g:message code="problem.car.label" default="Car" /></span>
+					
+						<span class="property-value" aria-labelledby="car-label"><g:link controller="car" action="show" id="${problemInstance?.car?.id}">${problemInstance?.car?.encodeAsHTML()}</g:link></span>
+					
+				</li>
+				</g:if>
+			
+				<g:if test="${problemInstance?.user}">
+				<li class="fieldcontain">
+					<span id="user-label" class="property-label"><g:message code="problem.user.label" default="User" /></span>
+					
+						<span class="property-value" aria-labelledby="user-label"><g:link controller="user" action="show" id="${problemInstance?.user?.id}">${problemInstance?.user?.encodeAsHTML()}</g:link></span>
+					
+				</li>
+				</g:if>
+			
 			</ol>
 			<g:form url="[resource:problemInstance, action:'delete']" method="DELETE">
 				<fieldset class="buttons">

@@ -15,10 +15,11 @@ class CarServiceIntegrationSpec extends IntegrationSpec {
     void "createCar() method"() {
 
         when: 'createCar() method is used'
-        carService.createCar('Test Car Motors', '2016 Sport', 2016, 'Diesel', 5)
+        Integer carCountBefore = Car.count()
+        carService.createCar('Test Car Motors', '2016 Sport test', 2016, 'Diesel', 5)
 
-        then: 'check if the Car table in db contains 1 entry'
-        Car.count() == 1
+        then: 'check if the Car table in db contains 1 more Car entry'
+        Car.count() - carCountBefore == 1
 
     }
 }

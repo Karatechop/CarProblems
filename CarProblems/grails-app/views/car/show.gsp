@@ -23,6 +23,73 @@
 			</g:if>
 			<ol class="property-list car">
 			
+				<g:if test="${carInstance?.manufacturer}">
+				<li class="fieldcontain">
+					<span id="manufacturer-label" class="property-label"><g:message code="car.manufacturer.label" default="Manufacturer" /></span>
+					
+						<span class="property-value" aria-labelledby="manufacturer-label"><g:fieldValue bean="${carInstance}" field="manufacturer"/></span>
+					
+				</li>
+				</g:if>
+			
+				<g:if test="${carInstance?.carModel}">
+				<li class="fieldcontain">
+					<span id="carModel-label" class="property-label"><g:message code="car.carModel.label" default="Car Model" /></span>
+					
+						<span class="property-value" aria-labelledby="carModel-label"><g:fieldValue bean="${carInstance}" field="carModel"/></span>
+					
+				</li>
+				</g:if>
+			
+				<g:if test="${carInstance?.year}">
+				<li class="fieldcontain">
+					<span id="year-label" class="property-label"><g:message code="car.year.label" default="Year" /></span>
+					
+						<span class="property-value" aria-labelledby="year-label">${carInstance.year}</span>
+					
+				</li>
+				</g:if>
+			
+				<g:if test="${carInstance?.fuel}">
+				<li class="fieldcontain">
+					<span id="fuel-label" class="property-label"><g:message code="car.fuel.label" default="Fuel" /></span>
+					
+						<span class="property-value" aria-labelledby="fuel-label"><g:fieldValue bean="${carInstance}" field="fuel"/></span>
+					
+				</li>
+				</g:if>
+			
+				<g:if test="${carInstance?.doors}">
+				<li class="fieldcontain">
+					<span id="doors-label" class="property-label"><g:message code="car.doors.label" default="Doors" /></span>
+					
+						<span class="property-value" aria-labelledby="doors-label"><g:fieldValue bean="${carInstance}" field="doors"/></span>
+					
+				</li>
+				</g:if>
+			
+				<g:if test="${carInstance?.problems}">
+				<li class="fieldcontain">
+					<span id="problems-label" class="property-label"><g:message code="car.problems.label" default="Problems" /></span>
+					
+						<g:each in="${carInstance.problems}" var="p">
+						<span class="property-value" aria-labelledby="problems-label"><g:link controller="problem" action="show" id="${p.id}">${p?.encodeAsHTML()}</g:link></span>
+						</g:each>
+					
+				</li>
+				</g:if>
+			
+				<g:if test="${carInstance?.users}">
+				<li class="fieldcontain">
+					<span id="users-label" class="property-label"><g:message code="car.users.label" default="Users" /></span>
+
+						<g:each in="${carInstance.users}" var="u">
+						<span class="property-value" aria-labelledby="users-label"><g:link controller="user" action="show" id="${u.id}">${u?.encodeAsHTML()}</g:link></span>
+						</g:each>
+					
+				</li>
+				</g:if>
+			
 			</ol>
 			<g:form url="[resource:carInstance, action:'delete']" method="DELETE">
 				<fieldset class="buttons">

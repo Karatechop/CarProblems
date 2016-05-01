@@ -6,11 +6,22 @@ import static org.springframework.http.HttpStatus.*
 import grails.transaction.Transactional
 
 @Transactional(readOnly = true)
-@Secured(['ROLE_ADMIN'])
+
 class CarController {
 
     static allowedMethods = [save: "POST", update: "PUT", delete: "DELETE"]
 
+    @Secured(['ROLE_ADMIN', 'ROLE_USER', 'ROLE_ANONYMOUS'])
+    def welcomePage() {
+        respond Car.list()
+    }
+
+    @Secured(['ROLE_ADMIN', 'ROLE_USER', 'ROLE_ANONYMOUS'])
+    def example() {
+        respond Car.get(1), view: 'show'
+    }
+
+    @Secured(['ROLE_ADMIN'])
     def index(Integer max) {
         params.max = Math.min(max ?: 10, 100)
         respond Car.list(params), model:[carInstanceCount: Car.count()]
@@ -21,11 +32,13 @@ class CarController {
         respond carInstance
     }
 
+    @Secured(['ROLE_ADMIN'])
     def create() {
         respond new Car(params)
     }
 
     @Transactional
+    @Secured(['ROLE_ADMIN'])
     def save(Car carInstance) {
         if (carInstance == null) {
             notFound()
@@ -48,6 +61,7 @@ class CarController {
         }
     }
 
+    @Secured(['ROLE_ADMIN'])
     def edit(Car carInstance) {
         respond carInstance
     }
@@ -76,6 +90,7 @@ class CarController {
     }
 
     @Transactional
+    @Secured(['ROLE_ADMIN'])
     def delete(Car carInstance) {
 
         if (carInstance == null) {

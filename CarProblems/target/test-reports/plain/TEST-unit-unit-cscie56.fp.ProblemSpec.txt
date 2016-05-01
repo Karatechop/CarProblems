@@ -1,12 +1,9 @@
 Testsuite: cscie56.fp.ProblemSpec
-Tests run: 16, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0,347 sec
+Tests run: 21, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4,011 sec
 ------------- Standard Output ---------------
 --Output from test problem all constraints system is nullable--
 --Output from test problem all constraints system is nullable--
---Output from test problem all constraints system is matches--
---Output from test problem all constraints system is valid--
---Output from test problem all constraints system is size--
---Output from test problem all constraints system is valid--
+--Output from test problem all constraints system is inList--
 --Output from test problem all constraints system is valid--
 --Output from test problem all constraints system is valid--
 --Output from test problem all constraints description is nullable--
@@ -17,14 +14,19 @@ Tests run: 16, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0,347 sec
 --Output from test problem all constraints description is valid--
 --Output from test problem all constraints description is valid--
 --Output from test problem all constraints description is valid--
+--Output from test problem all constraints mileage is nullable--
+--Output from test problem all constraints mileage is nullable--
+--Output from test problem all constraints mileage is validator--
+--Output from test problem all constraints mileage is valid--
+--Output from test problem all constraints mileage is validator--
+--Output from test problem all constraints mileage is valid--
+--Output from test problem all constraints mileage is valid--
+--Output from test problem all constraints approved is valid--
 ------------- ---------------- ---------------
 ------------- Standard Error -----------------
 --Output from test problem all constraints system is nullable--
 --Output from test problem all constraints system is nullable--
---Output from test problem all constraints system is matches--
---Output from test problem all constraints system is valid--
---Output from test problem all constraints system is size--
---Output from test problem all constraints system is valid--
+--Output from test problem all constraints system is inList--
 --Output from test problem all constraints system is valid--
 --Output from test problem all constraints system is valid--
 --Output from test problem all constraints description is nullable--
@@ -35,21 +37,34 @@ Tests run: 16, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0,347 sec
 --Output from test problem all constraints description is valid--
 --Output from test problem all constraints description is valid--
 --Output from test problem all constraints description is valid--
+--Output from test problem all constraints mileage is nullable--
+--Output from test problem all constraints mileage is nullable--
+--Output from test problem all constraints mileage is validator--
+--Output from test problem all constraints mileage is valid--
+--Output from test problem all constraints mileage is validator--
+--Output from test problem all constraints mileage is valid--
+--Output from test problem all constraints mileage is valid--
+--Output from test problem all constraints approved is valid--
 ------------- ---------------- ---------------
 
-Testcase: test problem all constraints system is nullable took 0,076 sec
-Testcase: test problem all constraints system is nullable took 0,016 sec
-Testcase: test problem all constraints system is matches took 0,015 sec
-Testcase: test problem all constraints system is valid took 0,016 sec
-Testcase: test problem all constraints system is size took 0,015 sec
-Testcase: test problem all constraints system is valid took 0,02 sec
-Testcase: test problem all constraints system is valid took 0,016 sec
-Testcase: test problem all constraints system is valid took 0,015 sec
-Testcase: test problem all constraints description is nullable took 0,016 sec
-Testcase: test problem all constraints description is nullable took 0,021 sec
-Testcase: test problem all constraints description is matches took 0,018 sec
-Testcase: test problem all constraints description is valid took 0,018 sec
-Testcase: test problem all constraints description is size took 0,015 sec
-Testcase: test problem all constraints description is valid took 0,017 sec
-Testcase: test problem all constraints description is valid took 0,019 sec
-Testcase: test problem all constraints description is valid took 0,019 sec
+Testcase: test problem all constraints system is nullable took 3,1 sec
+Testcase: test problem all constraints system is nullable took 0,075 sec
+Testcase: test problem all constraints system is inList took 0,257 sec
+Testcase: test problem all constraints system is valid took 0,035 sec
+Testcase: test problem all constraints system is valid took 0,035 sec
+Testcase: test problem all constraints description is nullable took 0,042 sec
+Testcase: test problem all constraints description is nullable took 0,032 sec
+Testcase: test problem all constraints description is matches took 0,034 sec
+Testcase: test problem all constraints description is valid took 0,026 sec
+Testcase: test problem all constraints description is size took 0,024 sec
+Testcase: test problem all constraints description is valid took 0,033 sec
+Testcase: test problem all constraints description is valid took 0,024 sec
+Testcase: test problem all constraints description is valid took 0,027 sec
+Testcase: test problem all constraints mileage is nullable took 0,022 sec
+Testcase: test problem all constraints mileage is nullable took 0,024 sec
+Testcase: test problem all constraints mileage is validator took 0,037 sec
+Testcase: test problem all constraints mileage is valid took 0,024 sec
+Testcase: test problem all constraints mileage is validator took 0,023 sec
+Testcase: test problem all constraints mileage is valid took 0,02 sec
+Testcase: test problem all constraints mileage is valid took 0,019 sec
+Testcase: test problem all constraints approved is valid took 0,019 sec

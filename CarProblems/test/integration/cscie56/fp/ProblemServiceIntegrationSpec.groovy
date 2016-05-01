@@ -25,7 +25,7 @@ class ProblemServiceIntegrationSpec extends IntegrationSpec {
     void "createProblem() method"() {
 
         when: 'createProblem() method is used'
-        problemService.createProblem('test system', 'description', false)
+        problemService.createProblem('Transmission', 100000, 'description', false)
 
         then: 'check if the Problem table in db contains 1 entry'
         Problem.count() == 1

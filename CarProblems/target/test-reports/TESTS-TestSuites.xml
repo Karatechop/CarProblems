@@ -1,274 +1,53 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <testsuites>
-  <testsuite errors="0" failures="0" hostname="xmgbr-PC" id="0" name="CarServiceIntegrationSpec" package="cscie56.fp" skipped="0" tests="1" time="0.258" timestamp="2016-04-29T21:07:35">
+  <testsuite errors="0" failures="0" hostname="xmgbr-PC" id="0" name="ProblemSpec" package="cscie56.fp" skipped="0" tests="21" time="4.011" timestamp="2016-05-01T14:00:02">
       <properties />
 
-      <testcase classname="cscie56.fp.CarServiceIntegrationSpec" name="createCar() method" time="0.253" />
-
-      <system-out><![CDATA[--Output from createCar() method--
-]]></system-out>
-
-      <system-err><![CDATA[--Output from createCar() method--
-]]></system-err>
-
-  </testsuite>
-  <testsuite errors="0" failures="0" hostname="xmgbr-PC" id="1" name="ProblemServiceIntegrationSpec" package="cscie56.fp" skipped="0" tests="2" time="0.221" timestamp="2016-04-29T21:07:36">
-      <properties />
-
-      <testcase classname="cscie56.fp.ProblemServiceIntegrationSpec" name="createProblemDescription() method" time="0.011" />
-
-      <testcase classname="cscie56.fp.ProblemServiceIntegrationSpec" name="createProblem() method" time="0.21" />
-
-      <system-out><![CDATA[--Output from createProblemDescription() method--
---Output from createProblem() method--
-]]></system-out>
-
-      <system-err><![CDATA[--Output from createProblemDescription() method--
---Output from createProblem() method--
-]]></system-err>
-
-  </testsuite>
-  <testsuite errors="0" failures="0" hostname="xmgbr-PC" id="2" name="CarControllerSpec" package="cscie56.fp" skipped="0" tests="7" time="5.32" timestamp="2016-04-29T21:07:18">
-      <properties />
-
-      <testcase classname="cscie56.fp.CarControllerSpec" name="Test the index action returns the correct model" time="4.463" />
-
-      <testcase classname="cscie56.fp.CarControllerSpec" name="Test the create action returns the correct model" time="0.116" />
-
-      <testcase classname="cscie56.fp.CarControllerSpec" name="Test the save action correctly persists an instance" time="0.419" />
-
-      <testcase classname="cscie56.fp.CarControllerSpec" name="Test that the show action returns the correct model" time="0.035" />
-
-      <testcase classname="cscie56.fp.CarControllerSpec" name="Test that the edit action returns the correct model" time="0.031" />
-
-      <testcase classname="cscie56.fp.CarControllerSpec" name="Test the update action performs an update on a valid domain instance" time="0.109" />
-
-      <testcase classname="cscie56.fp.CarControllerSpec" name="Test that the delete action deletes an instance if it exists" time="0.076" />
-
-      <system-out><![CDATA[--Output from Test the index action returns the correct model--
---Output from Test the create action returns the correct model--
---Output from Test the save action correctly persists an instance--
---Output from Test that the show action returns the correct model--
---Output from Test that the edit action returns the correct model--
---Output from Test the update action performs an update on a valid domain instance--
---Output from Test that the delete action deletes an instance if it exists--
-]]></system-out>
-
-      <system-err><![CDATA[--Output from Test the index action returns the correct model--
---Output from Test the create action returns the correct model--
---Output from Test the save action correctly persists an instance--
---Output from Test that the show action returns the correct model--
---Output from Test that the edit action returns the correct model--
---Output from Test the update action performs an update on a valid domain instance--
---Output from Test that the delete action deletes an instance if it exists--
-]]></system-err>
-
-  </testsuite>
-  <testsuite errors="0" failures="0" hostname="xmgbr-PC" id="3" name="CarSpec" package="cscie56.fp" skipped="0" tests="30" time="1.043" timestamp="2016-04-29T21:07:24">
-      <properties />
-
-      <testcase classname="cscie56.fp.CarSpec" name="test car all constraints manufacturer is nullable" time="0.269" />
-
-      <testcase classname="cscie56.fp.CarSpec" name="test car all constraints manufacturer is nullable" time="0.038" />
-
-      <testcase classname="cscie56.fp.CarSpec" name="test car all constraints manufacturer is matches" time="0.034" />
-
-      <testcase classname="cscie56.fp.CarSpec" name="test car all constraints manufacturer is valid" time="0.031" />
-
-      <testcase classname="cscie56.fp.CarSpec" name="test car all constraints manufacturer is size" time="0.03" />
-
-      <testcase classname="cscie56.fp.CarSpec" name="test car all constraints manufacturer is valid" time="0.036" />
-
-      <testcase classname="cscie56.fp.CarSpec" name="test car all constraints manufacturer is valid" time="0.033" />
-
-      <testcase classname="cscie56.fp.CarSpec" name="test car all constraints manufacturer is valid" time="0.033" />
-
-      <testcase classname="cscie56.fp.CarSpec" name="test car all constraints carModel is nullable" time="0.034" />
-
-      <testcase classname="cscie56.fp.CarSpec" name="test car all constraints carModel is nullable" time="0.024" />
-
-      <testcase classname="cscie56.fp.CarSpec" name="test car all constraints carModel is unique" time="0.026" />
-
-      <testcase classname="cscie56.fp.CarSpec" name="test car all constraints carModel is matches" time="0.024" />
-
-      <testcase classname="cscie56.fp.CarSpec" name="test car all constraints carModel is valid" time="0.024" />
-
-      <testcase classname="cscie56.fp.CarSpec" name="test car all constraints carModel is size" time="0.031" />
-
-      <testcase classname="cscie56.fp.CarSpec" name="test car all constraints carModel is valid" time="0.029" />
-
-      <testcase classname="cscie56.fp.CarSpec" name="test car all constraints carModel is valid" time="0.034" />
-
-      <testcase classname="cscie56.fp.CarSpec" name="test car all constraints carModel is valid" time="0.025" />
-
-      <testcase classname="cscie56.fp.CarSpec" name="test car all constraints carModel is validator" time="0.024" />
-
-      <testcase classname="cscie56.fp.CarSpec" name="test car all constraints year is nullable" time="0.025" />
-
-      <testcase classname="cscie56.fp.CarSpec" name="test car all constraints year is nullable" time="0.022" />
-
-      <testcase classname="cscie56.fp.CarSpec" name="test car all constraints year is valid" time="0.02" />
-
-      <testcase classname="cscie56.fp.CarSpec" name="test car all constraints year is valid" time="0.021" />
-
-      <testcase classname="cscie56.fp.CarSpec" name="test car all constraints year is validator" time="0.019" />
-
-      <testcase classname="cscie56.fp.CarSpec" name="test car all constraints doors is nullable" time="0.02" />
-
-      <testcase classname="cscie56.fp.CarSpec" name="test car all constraints doors is nullable" time="0.021" />
-
-      <testcase classname="cscie56.fp.CarSpec" name="test car all constraints doors is valid" time="0.018" />
-
-      <testcase classname="cscie56.fp.CarSpec" name="test car all constraints doors is valid" time="0.02" />
-
-      <testcase classname="cscie56.fp.CarSpec" name="test car all constraints doors is valid" time="0.016" />
-
-      <testcase classname="cscie56.fp.CarSpec" name="test car all constraints doors is validator" time="0.019" />
-
-      <testcase classname="cscie56.fp.CarSpec" name="test car all constraints doors is validator" time="0.018" />
-
-      <system-out><![CDATA[--Output from test car all constraints manufacturer is nullable--
---Output from test car all constraints manufacturer is nullable--
---Output from test car all constraints manufacturer is matches--
---Output from test car all constraints manufacturer is valid--
---Output from test car all constraints manufacturer is size--
---Output from test car all constraints manufacturer is valid--
---Output from test car all constraints manufacturer is valid--
---Output from test car all constraints manufacturer is valid--
---Output from test car all constraints carModel is nullable--
---Output from test car all constraints carModel is nullable--
---Output from test car all constraints carModel is unique--
---Output from test car all constraints carModel is matches--
---Output from test car all constraints carModel is valid--
---Output from test car all constraints carModel is size--
---Output from test car all constraints carModel is valid--
---Output from test car all constraints carModel is valid--
---Output from test car all constraints carModel is valid--
---Output from test car all constraints carModel is validator--
---Output from test car all constraints year is nullable--
---Output from test car all constraints year is nullable--
---Output from test car all constraints year is valid--
---Output from test car all constraints year is valid--
---Output from test car all constraints year is validator--
---Output from test car all constraints doors is nullable--
---Output from test car all constraints doors is nullable--
---Output from test car all constraints doors is valid--
---Output from test car all constraints doors is valid--
---Output from test car all constraints doors is valid--
---Output from test car all constraints doors is validator--
---Output from test car all constraints doors is validator--
-]]></system-out>
-
-      <system-err><![CDATA[--Output from test car all constraints manufacturer is nullable--
---Output from test car all constraints manufacturer is nullable--
---Output from test car all constraints manufacturer is matches--
---Output from test car all constraints manufacturer is valid--
---Output from test car all constraints manufacturer is size--
---Output from test car all constraints manufacturer is valid--
---Output from test car all constraints manufacturer is valid--
---Output from test car all constraints manufacturer is valid--
---Output from test car all constraints carModel is nullable--
---Output from test car all constraints carModel is nullable--
---Output from test car all constraints carModel is unique--
---Output from test car all constraints carModel is matches--
---Output from test car all constraints carModel is valid--
---Output from test car all constraints carModel is size--
---Output from test car all constraints carModel is valid--
---Output from test car all constraints carModel is valid--
---Output from test car all constraints carModel is valid--
---Output from test car all constraints carModel is validator--
---Output from test car all constraints year is nullable--
---Output from test car all constraints year is nullable--
---Output from test car all constraints year is valid--
---Output from test car all constraints year is valid--
---Output from test car all constraints year is validator--
---Output from test car all constraints doors is nullable--
---Output from test car all constraints doors is nullable--
---Output from test car all constraints doors is valid--
---Output from test car all constraints doors is valid--
---Output from test car all constraints doors is valid--
---Output from test car all constraints doors is validator--
---Output from test car all constraints doors is validator--
-]]></system-err>
-
-  </testsuite>
-  <testsuite errors="0" failures="0" hostname="xmgbr-PC" id="4" name="ProblemControllerSpec" package="cscie56.fp" skipped="0" tests="7" time="0.49" timestamp="2016-04-29T21:07:25">
-      <properties />
-
-      <testcase classname="cscie56.fp.ProblemControllerSpec" name="Test the index action returns the correct model" time="0.206" />
-
-      <testcase classname="cscie56.fp.ProblemControllerSpec" name="Test the create action returns the correct model" time="0.022" />
-
-      <testcase classname="cscie56.fp.ProblemControllerSpec" name="Test the save action correctly persists an instance" time="0.065" />
-
-      <testcase classname="cscie56.fp.ProblemControllerSpec" name="Test that the show action returns the correct model" time="0.029" />
-
-      <testcase classname="cscie56.fp.ProblemControllerSpec" name="Test that the edit action returns the correct model" time="0.029" />
-
-      <testcase classname="cscie56.fp.ProblemControllerSpec" name="Test the update action performs an update on a valid domain instance" time="0.068" />
-
-      <testcase classname="cscie56.fp.ProblemControllerSpec" name="Test that the delete action deletes an instance if it exists" time="0.057" />
-
-      <system-out><![CDATA[--Output from Test the index action returns the correct model--
---Output from Test the create action returns the correct model--
---Output from Test the save action correctly persists an instance--
---Output from Test that the show action returns the correct model--
---Output from Test that the edit action returns the correct model--
---Output from Test the update action performs an update on a valid domain instance--
---Output from Test that the delete action deletes an instance if it exists--
-]]></system-out>
-
-      <system-err><![CDATA[--Output from Test the index action returns the correct model--
---Output from Test the create action returns the correct model--
---Output from Test the save action correctly persists an instance--
---Output from Test that the show action returns the correct model--
---Output from Test that the edit action returns the correct model--
---Output from Test the update action performs an update on a valid domain instance--
---Output from Test that the delete action deletes an instance if it exists--
-]]></system-err>
-
-  </testsuite>
-  <testsuite errors="0" failures="0" hostname="xmgbr-PC" id="5" name="ProblemSpec" package="cscie56.fp" skipped="0" tests="16" time="0.347" timestamp="2016-04-29T21:07:25">
-      <properties />
+      <testcase classname="cscie56.fp.ProblemSpec" name="test problem all constraints system is nullable" time="3.1" />
 
       <testcase classname="cscie56.fp.ProblemSpec" name="test problem all constraints system is nullable" time="0.075" />
 
-      <testcase classname="cscie56.fp.ProblemSpec" name="test problem all constraints system is nullable" time="0.016" />
+      <testcase classname="cscie56.fp.ProblemSpec" name="test problem all constraints system is inList" time="0.257" />
 
-      <testcase classname="cscie56.fp.ProblemSpec" name="test problem all constraints system is matches" time="0.015" />
+      <testcase classname="cscie56.fp.ProblemSpec" name="test problem all constraints system is valid" time="0.035" />
 
-      <testcase classname="cscie56.fp.ProblemSpec" name="test problem all constraints system is valid" time="0.016" />
+      <testcase classname="cscie56.fp.ProblemSpec" name="test problem all constraints system is valid" time="0.035" />
 
-      <testcase classname="cscie56.fp.ProblemSpec" name="test problem all constraints system is size" time="0.015" />
+      <testcase classname="cscie56.fp.ProblemSpec" name="test problem all constraints description is nullable" time="0.042" />
 
-      <testcase classname="cscie56.fp.ProblemSpec" name="test problem all constraints system is valid" time="0.02" />
+      <testcase classname="cscie56.fp.ProblemSpec" name="test problem all constraints description is nullable" time="0.032" />
 
-      <testcase classname="cscie56.fp.ProblemSpec" name="test problem all constraints system is valid" time="0.016" />
+      <testcase classname="cscie56.fp.ProblemSpec" name="test problem all constraints description is matches" time="0.034" />
 
-      <testcase classname="cscie56.fp.ProblemSpec" name="test problem all constraints system is valid" time="0.015" />
+      <testcase classname="cscie56.fp.ProblemSpec" name="test problem all constraints description is valid" time="0.026" />
 
-      <testcase classname="cscie56.fp.ProblemSpec" name="test problem all constraints description is nullable" time="0.016" />
+      <testcase classname="cscie56.fp.ProblemSpec" name="test problem all constraints description is size" time="0.024" />
 
-      <testcase classname="cscie56.fp.ProblemSpec" name="test problem all constraints description is nullable" time="0.021" />
+      <testcase classname="cscie56.fp.ProblemSpec" name="test problem all constraints description is valid" time="0.033" />
 
-      <testcase classname="cscie56.fp.ProblemSpec" name="test problem all constraints description is matches" time="0.018" />
+      <testcase classname="cscie56.fp.ProblemSpec" name="test problem all constraints description is valid" time="0.024" />
 
-      <testcase classname="cscie56.fp.ProblemSpec" name="test problem all constraints description is valid" time="0.018" />
+      <testcase classname="cscie56.fp.ProblemSpec" name="test problem all constraints description is valid" time="0.027" />
 
-      <testcase classname="cscie56.fp.ProblemSpec" name="test problem all constraints description is size" time="0.015" />
+      <testcase classname="cscie56.fp.ProblemSpec" name="test problem all constraints mileage is nullable" time="0.022" />
 
-      <testcase classname="cscie56.fp.ProblemSpec" name="test problem all constraints description is valid" time="0.017" />
+      <testcase classname="cscie56.fp.ProblemSpec" name="test problem all constraints mileage is nullable" time="0.024" />
 
-      <testcase classname="cscie56.fp.ProblemSpec" name="test problem all constraints description is valid" time="0.019" />
+      <testcase classname="cscie56.fp.ProblemSpec" name="test problem all constraints mileage is validator" time="0.037" />
 
-      <testcase classname="cscie56.fp.ProblemSpec" name="test problem all constraints description is valid" time="0.019" />
+      <testcase classname="cscie56.fp.ProblemSpec" name="test problem all constraints mileage is valid" time="0.024" />
+
+      <testcase classname="cscie56.fp.ProblemSpec" name="test problem all constraints mileage is validator" time="0.023" />
+
+      <testcase classname="cscie56.fp.ProblemSpec" name="test problem all constraints mileage is valid" time="0.02" />
+
+      <testcase classname="cscie56.fp.ProblemSpec" name="test problem all constraints mileage is valid" time="0.019" />
+
+      <testcase classname="cscie56.fp.ProblemSpec" name="test problem all constraints approved is valid" time="0.019" />
 
       <system-out><![CDATA[--Output from test problem all constraints system is nullable--
 --Output from test problem all constraints system is nullable--
---Output from test problem all constraints system is matches--
---Output from test problem all constraints system is valid--
---Output from test problem all constraints system is size--
---Output from test problem all constraints system is valid--
+--Output from test problem all constraints system is inList--
 --Output from test problem all constraints system is valid--
 --Output from test problem all constraints system is valid--
 --Output from test problem all constraints description is nullable--
@@ -279,14 +58,19 @@
 --Output from test problem all constraints description is valid--
 --Output from test problem all constraints description is valid--
 --Output from test problem all constraints description is valid--
+--Output from test problem all constraints mileage is nullable--
+--Output from test problem all constraints mileage is nullable--
+--Output from test problem all constraints mileage is validator--
+--Output from test problem all constraints mileage is valid--
+--Output from test problem all constraints mileage is validator--
+--Output from test problem all constraints mileage is valid--
+--Output from test problem all constraints mileage is valid--
+--Output from test problem all constraints approved is valid--
 ]]></system-out>
 
       <system-err><![CDATA[--Output from test problem all constraints system is nullable--
 --Output from test problem all constraints system is nullable--
---Output from test problem all constraints system is matches--
---Output from test problem all constraints system is valid--
---Output from test problem all constraints system is size--
---Output from test problem all constraints system is valid--
+--Output from test problem all constraints system is inList--
 --Output from test problem all constraints system is valid--
 --Output from test problem all constraints system is valid--
 --Output from test problem all constraints description is nullable--
@@ -297,94 +81,14 @@
 --Output from test problem all constraints description is valid--
 --Output from test problem all constraints description is valid--
 --Output from test problem all constraints description is valid--
-]]></system-err>
-
-  </testsuite>
-  <testsuite errors="0" failures="0" hostname="xmgbr-PC" id="6" name="UserControllerSpec" package="cscie56.fp" skipped="0" tests="7" time="0.437" timestamp="2016-04-29T21:07:25">
-      <properties />
-
-      <testcase classname="cscie56.fp.UserControllerSpec" name="Test the index action returns the correct model" time="0.211" />
-
-      <testcase classname="cscie56.fp.UserControllerSpec" name="Test the create action returns the correct model" time="0.017" />
-
-      <testcase classname="cscie56.fp.UserControllerSpec" name="Test the save action correctly persists an instance" time="0.052" />
-
-      <testcase classname="cscie56.fp.UserControllerSpec" name="Test that the show action returns the correct model" time="0.022" />
-
-      <testcase classname="cscie56.fp.UserControllerSpec" name="Test that the edit action returns the correct model" time="0.018" />
-
-      <testcase classname="cscie56.fp.UserControllerSpec" name="Test the update action performs an update on a valid domain instance" time="0.061" />
-
-      <testcase classname="cscie56.fp.UserControllerSpec" name="Test that the delete action deletes an instance if it exists" time="0.044" />
-
-      <system-out><![CDATA[--Output from Test the index action returns the correct model--
---Output from Test the create action returns the correct model--
---Output from Test the save action correctly persists an instance--
---Output from Test that the show action returns the correct model--
---Output from Test that the edit action returns the correct model--
---Output from Test the update action performs an update on a valid domain instance--
---Output from Test that the delete action deletes an instance if it exists--
-]]></system-out>
-
-      <system-err><![CDATA[--Output from Test the index action returns the correct model--
---Output from Test the create action returns the correct model--
---Output from Test the save action correctly persists an instance--
---Output from Test that the show action returns the correct model--
---Output from Test that the edit action returns the correct model--
---Output from Test the update action performs an update on a valid domain instance--
---Output from Test that the delete action deletes an instance if it exists--
-]]></system-err>
-
-  </testsuite>
-  <testsuite errors="0" failures="0" hostname="xmgbr-PC" id="7" name="UserSpec" package="cscie56.fp" skipped="0" tests="11" time="0.176" timestamp="2016-04-29T21:07:26">
-      <properties />
-
-      <testcase classname="cscie56.fp.UserSpec" name="test user all constraints username is nullable" time="0.065" />
-
-      <testcase classname="cscie56.fp.UserSpec" name="test user all constraints username is unique" time="0.012" />
-
-      <testcase classname="cscie56.fp.UserSpec" name="test user all constraints username is nullable" time="0.01" />
-
-      <testcase classname="cscie56.fp.UserSpec" name="test user all constraints username is matches" time="0.01" />
-
-      <testcase classname="cscie56.fp.UserSpec" name="test user all constraints username is valid" time="0.012" />
-
-      <testcase classname="cscie56.fp.UserSpec" name="test user all constraints username is size" time="0.01" />
-
-      <testcase classname="cscie56.fp.UserSpec" name="test user all constraints username is valid" time="0.011" />
-
-      <testcase classname="cscie56.fp.UserSpec" name="test user all constraints username is valid" time="0.01" />
-
-      <testcase classname="cscie56.fp.UserSpec" name="test user all constraints username is valid" time="0.009" />
-
-      <testcase classname="cscie56.fp.UserSpec" name="test user all constraints password is nullable" time="0.009" />
-
-      <testcase classname="cscie56.fp.UserSpec" name="test user all constraints password is nullable" time="0.009" />
-
-      <system-out><![CDATA[--Output from test user all constraints username is nullable--
---Output from test user all constraints username is unique--
---Output from test user all constraints username is nullable--
---Output from test user all constraints username is matches--
---Output from test user all constraints username is valid--
---Output from test user all constraints username is size--
---Output from test user all constraints username is valid--
---Output from test user all constraints username is valid--
---Output from test user all constraints username is valid--
---Output from test user all constraints password is nullable--
---Output from test user all constraints password is nullable--
-]]></system-out>
-
-      <system-err><![CDATA[--Output from test user all constraints username is nullable--
---Output from test user all constraints username is unique--
---Output from test user all constraints username is nullable--
---Output from test user all constraints username is matches--
---Output from test user all constraints username is valid--
---Output from test user all constraints username is size--
---Output from test user all constraints username is valid--
---Output from test user all constraints username is valid--
---Output from test user all constraints username is valid--
---Output from test user all constraints password is nullable--
---Output from test user all constraints password is nullable--
+--Output from test problem all constraints mileage is nullable--
+--Output from test problem all constraints mileage is nullable--
+--Output from test problem all constraints mileage is validator--
+--Output from test problem all constraints mileage is valid--
+--Output from test problem all constraints mileage is validator--
+--Output from test problem all constraints mileage is valid--
+--Output from test problem all constraints mileage is valid--
+--Output from test problem all constraints approved is valid--
 ]]></system-err>
 
   </testsuite>

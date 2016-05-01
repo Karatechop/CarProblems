@@ -8,9 +8,9 @@ class CarService {
     def userService
 
         Car createCar(String manufacturer, String carModel, Integer year, String fuel, Integer doors) {
-            User carUser = userService.createUser('username', 'password')
+            User carUser1 = userService.createUser('username', 'password')
             Car testCar = new Car()
-            testCar.user = carUser
+            testCar.users = [carUser1]
             testCar.manufacturer = manufacturer
             testCar.carModel = carModel
             testCar.year = year

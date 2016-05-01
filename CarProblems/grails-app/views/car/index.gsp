@@ -24,11 +24,31 @@
 			<thead>
 					<tr>
 					
+						<g:sortableColumn property="manufacturer" title="${message(code: 'car.manufacturer.label', default: 'Manufacturer')}" />
+					
+						<g:sortableColumn property="carModel" title="${message(code: 'car.carModel.label', default: 'Car Model')}" />
+					
+						<g:sortableColumn property="year" title="${message(code: 'car.year.label', default: 'Year')}" />
+					
+						<g:sortableColumn property="fuel" title="${message(code: 'car.fuel.label', default: 'Fuel')}" />
+					
+						<g:sortableColumn property="doors" title="${message(code: 'car.doors.label', default: 'Doors')}" />
+					
 					</tr>
 				</thead>
 				<tbody>
 				<g:each in="${carInstanceList}" status="i" var="carInstance">
 					<tr class="${(i % 2) == 0 ? 'even' : 'odd'}">
+					
+						<td><g:link action="show" id="${carInstance.id}">${fieldValue(bean: carInstance, field: "manufacturer")}</g:link></td>
+					
+						<td>${fieldValue(bean: carInstance, field: "carModel")}</td>
+					
+						<td>${carInstance.year}</td>
+					
+						<td>${fieldValue(bean: carInstance, field: "fuel")}</td>
+					
+						<td>${fieldValue(bean: carInstance, field: "doors")}</td>
 					
 					</tr>
 				</g:each>

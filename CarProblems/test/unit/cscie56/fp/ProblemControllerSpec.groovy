@@ -19,7 +19,8 @@ class ProblemControllerSpec extends Specification {
         params << [
                 user: testUser,
                 car:testCar,
-                system: 'Test System',
+                system: 'Transmission',
+                mileage: 100000,
                 description: 'description',
                 approved: false
         ]
