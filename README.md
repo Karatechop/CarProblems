@@ -21,10 +21,10 @@ Admin users will have a dashboard displaying all problem submissions awaiting co
 + Bootstrap css
 + Main landing page with login functionality
 + Example car page
-+ carProfile page with car details, promlems summary and all problems sections. Median mileage is used for summary report (more robust than mean value)
++ carProfile page with car details, problems summary and all problems sections. Median mileage is used for summary report (more robust than mean value)
 + Bootstrap.groovy provides test data
 
-## Current state at chaeckpoint 1
+## Current state at checkpoint 1
 + Domain models (simplified for MVP)
 + Domain models' unit tests
 + Simple services for creation of domain model instances
