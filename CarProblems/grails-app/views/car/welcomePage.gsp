@@ -10,7 +10,7 @@
 
         <div class="jumbotron">
             <h1>Welcome to CarProblems!</h1>
-            <p>Buying pre-owned cars is a gamble. Community sourced information on typical mileage related "health" issues of a given car model might provide critical information required for a successful purchase.</p>
+            <p>Buying pre-owned cars is a gamble. This application aims to provide its users community sourced information on typical mileage related car "health" issues.</p>
             <p><a class="btn btn-primary btn-lg" href="/CarProblems/example" role="button">See an example car</a></p>
         </div>
 
