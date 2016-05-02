@@ -13,11 +13,11 @@ Registered users will be able to login. Upon that they will be able to add to th
 Admin users will have a dashboard displaying all problem submissions awaiting confirmation as well as lists of all users, cars and problems with buttons that allow basic CRUD functionalities.
 
 ##NOTES
-+ to log in as admin use un: admin, p: pass
-+ to log in as user use un: testUser1, p: pass
-+ check 2002 Ford Explorer for best functionality representation
++ Log in as admin - use un: admin, p: pass
++ Log in as user - use un: testUser1, p: pass
++ Check 2002 Ford Explorer for best functionality representation
 
-## Current state at chaeckpoint 2
+## Current state at checkpoint 2
 + Bootstrap css
 + Main landing page with login functionality
 + Example car page
@@ -34,10 +34,12 @@ Admin users will have a dashboard displaying all problem submissions awaiting co
 ##TODOs
 + Expand services with methods required for operation with domain model instances - partly achieved, but there is still more work to do
 + More unit or integration tests for service methods - some additional unit tests added, more integration tests still required
-+ Create admin dashboard - 
++ Create admin dashboard
 + Create user profile
 + Create problem submission functionality with admin approval
-+ Create car addition for users
++ Create car addition functionality for users
++ Bootstrap more data
++ Add mobile friendly features
 + Create functional tests
 
 ## Dependencies
