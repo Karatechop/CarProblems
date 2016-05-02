@@ -35,7 +35,7 @@
 
                         <h2>Select car model</h2>
 
-                            <g:form class="form-horizontal" action='show'  method="GET" >
+                            <g:form class="form-horizontal" action='carProfile'  method="GET" >
 
                                 <fieldset>
                                     <div class="form-group">
@@ -119,9 +119,7 @@
 
 
 
-            </div>
-        </div>
-    </div>
+
 
 </body>
 </html>

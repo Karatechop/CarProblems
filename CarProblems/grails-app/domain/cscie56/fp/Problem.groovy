@@ -16,7 +16,7 @@ class Problem {
                                        "AC/Heater", "Exterior accessories", "Electrics", "Seat belt/Air bag",
                                        "Brakes", "Fuel system", "Lights", "Steering", "Cooling system",
                                        "Clutch", "Exhaust", "Misc"])
-        description (blank: false, matches: "[a-zA-Z0-9 ]*", size: 1..250)
+        description (blank: false, matches: "[a-zA-Z0-9,. ]*", size: 1..500)
         mileage (blank: false, validator:{val -> val>=0 && val<550000})
         approved (nullable: true)
             }

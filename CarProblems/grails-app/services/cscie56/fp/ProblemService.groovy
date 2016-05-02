@@ -8,7 +8,7 @@ class ProblemService {
     def carService
 
     def createProblemDescription() {
-        String d = 'd' * 250
+        String d = 'd' * 500
         return d
     }
 

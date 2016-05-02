@@ -21,4 +21,51 @@ class CarService {
 
             return testCar
         }
+
+    def generateCarProblemsSummaryReport (Car carInstance) {
+
+        List carProblemsSummaryReport = []
+        List allCarProblems = Problem.findAllByCar(carInstance)
+
+        List systems = []
+        allCarProblems.each {systems << "${it.system}"}
+        systems = systems.unique { a, b -> a <=> b }
+
+        Integer i
+        List mileages = []
+        List summary = []
+        def mileagesSize
+        int midNumber
+        def medianMileage
+
+
+        for (i = 0; i < systems.size(); i++) {
+            summary = []
+            summary << systems[i]
+
+            allCarProblems.each {
+                if ("${it.system}" == systems[i]){
+                    mileages << "${it.mileage}".toInteger()
+
+                }
+            }
+
+
+            mileages.sort { a, b -> a <=> b }
+            mileagesSize = mileages.size()
+            midNumber = mileagesSize / 2
+            medianMileage = mileagesSize % 2 != 0 ? mileages[midNumber] : (mileages[midNumber] + mileages[midNumber - 1]) / 2
+
+
+            summary << medianMileage
+            summary << mileages.min()
+            summary << mileages.max()
+
+            carProblemsSummaryReport << summary
+        }
+
+
+        return carProblemsSummaryReport
+    }
+
 }

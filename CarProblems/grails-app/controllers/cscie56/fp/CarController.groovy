@@ -11,14 +11,31 @@ class CarController {
 
     static allowedMethods = [save: "POST", update: "PUT", delete: "DELETE"]
 
+    def userService
+    def carService
+
     @Secured(['ROLE_ADMIN', 'ROLE_USER', 'ROLE_ANONYMOUS'])
     def welcomePage() {
-        respond Car.list()
+        Boolean isAdminLoggedin = userService.isAdminLoggedin()
+        respond Car.list(), model: [isAdminLoggedin:isAdminLoggedin]
     }
 
     @Secured(['ROLE_ADMIN', 'ROLE_USER', 'ROLE_ANONYMOUS'])
     def example() {
-        respond Car.get(1), view: 'show'
+        Car carInstance = Car.get(1)
+        List carProblemsSummaryReport = carService.generateCarProblemsSummaryReport(carInstance)
+        List allCarProblems = Problem.findAllByCarAndApproved(carInstance, true, [sort:"dateSubmitted", order: "desc"])
+        respond Car.get(1), view: 'carProfile', model: [carProblemsSummaryReport:carProblemsSummaryReport, allCarProblems:allCarProblems]
+    }
+
+    @Secured(['ROLE_ADMIN', 'ROLE_USER', 'ROLE_ANONYMOUS'])
+    def carProfile (Car carInstance) {
+
+        List carProblemsSummaryReport = carService.generateCarProblemsSummaryReport(carInstance)
+        List allCarProblems = Problem.findAllByCarAndApproved(carInstance, true, [sort:"dateSubmitted", order: "desc"])
+        Boolean isAdminLoggedin = userService.isAdminLoggedin()
+        respond carInstance, model: [isAdminLoggedin:isAdminLoggedin, carProblemsSummaryReport:carProblemsSummaryReport, allCarProblems:allCarProblems]
+
     }
 
     @Secured(['ROLE_ADMIN'])
@@ -27,7 +44,7 @@ class CarController {
         respond Car.list(params), model:[carInstanceCount: Car.count()]
     }
 
-    @Secured(['ROLE_ADMIN', 'ROLE_USER', 'ROLE_ANONYMOUS'])
+    @Secured(['ROLE_ADMIN'])
     def show(Car carInstance) {
         respond carInstance
     }

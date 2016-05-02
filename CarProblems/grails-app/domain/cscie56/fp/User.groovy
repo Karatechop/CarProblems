@@ -19,6 +19,10 @@ class User implements Serializable {
 	boolean accountLocked
 	boolean passwordExpired
 
+	String toString() {
+		username
+	}
+
 	User(String username, String password) {
 		this()
 		this.username = username

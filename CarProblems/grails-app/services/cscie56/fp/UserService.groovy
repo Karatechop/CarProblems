@@ -6,6 +6,8 @@ import cscie56.fp.UserRole
 @Transactional
 class UserService {
 
+        def springSecurityService
+
         def createUser(String username, String password) {
 
             User user = new User()
@@ -15,4 +17,14 @@ class UserService {
             return user
         }
 
+        def isAdminLoggedin() {
+            Boolean isAdminLoggedin = false
+            def user = springSecurityService.isLoggedIn() ?
+                    springSecurityService.currentUser :
+                    null
+            if (user){
+                user.getAuthorities().authority == ['ROLE_ADMIN'] ? isAdminLoggedin = true : null
+            }
+            return isAdminLoggedin
+        }
 }

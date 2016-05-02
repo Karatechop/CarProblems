@@ -3,8 +3,9 @@
 <!--[if IE 7 ]>    <html lang="en" class="no-js ie7"> <![endif]-->
 <!--[if IE 8 ]>    <html lang="en" class="no-js ie8"> <![endif]-->
 <!--[if IE 9 ]>    <html lang="en" class="no-js ie9"> <![endif]-->
-<!--[if (gt IE 9)|!(IE)]><!--> <div lang="en" class="no-js"><!--<![endif]-->
-	<head>
+<!--[if (gt IE 9)|!(IE)]><!--> <html lang="en" class="no-js"><!--<![endif]-->
+
+<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 		<meta name="viewport" content="width=device-width, initial-scale=1"/>
@@ -19,19 +20,23 @@
 	<div class="row">
 		<div class="center-block col-md-10" style="float: none;">
 
+			<div class="pull-right">
+				<sec:ifLoggedIn>
+					<p>Logged in as <span class="badge"><sec:username/></span>
+				<g:if test="${isAdminLoggedin == true}">
+					<a class="btn btn-success btn-sm" href="#" role="button">Admin dashboard</a>
+				</g:if>
+				<g:else>
+					<a class="btn btn-success btn-sm" href="#" role="button">User profile</a>
+				</g:else>
+					<g:remoteLink class="logout btn btn-warning btn-sm" controller="logout" method="post" asynchronous="false" onSuccess="location.reload()">Logout</g:remoteLink></p>
+				</sec:ifLoggedIn>
+			</div>
+		<br><br><hr>
 
-
-
-		<div class="pull-right">
-		<sec:ifLoggedIn>
-			<p><g:remoteLink class="logout" controller="logout" method="post" asynchronous="false" onSuccess="location.reload()">Logout</g:remoteLink>
-
-			Logged in as <span class="badge"><sec:username/></span></p>
-		</sec:ifLoggedIn>
+		<g:layoutBody/>
+		</div>
 	</div>
-			<br><hr>
-
-<g:layoutBody/>
-
+</div>
 </body>
 </html>

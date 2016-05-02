@@ -51,8 +51,8 @@ class ProblemSpec extends ConstraintUnitSpec {
         'nullable' | 'description' | null
         'matches'  | 'description' | 'descrip/tion'
         'valid'    | 'description' | 'des cription'
-        'size'     | 'description' | getLongString(251)
-        'valid'    | 'description' | getLongString(250)
+        'size'     | 'description' | getLongString(501)
+        'valid'    | 'description' | getLongString(500)
         'valid'    | 'description' | getLongString(50)
         'valid'    | 'description' | 'd'
     }
