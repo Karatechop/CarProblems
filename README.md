@@ -38,9 +38,11 @@ Admin users will have a dashboard displaying all problem submissions awaiting co
 + Create user profile
 + Create problem submission functionality with admin approval
 + Create car addition functionality for users
++ Implement bootstrap for crud forms
 + Bootstrap more data
 + Add mobile friendly features
 + Create functional tests
++ Remove test controller when done
 
 ## Dependencies
 
