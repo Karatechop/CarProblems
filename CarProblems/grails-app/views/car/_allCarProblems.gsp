@@ -21,7 +21,7 @@
                     <td>${acp.mileage}</td>
                     <td>${acp.description}</td>
                     <td>${acp.dateSubmitted}</td>
-                    <td>${acp.user}</td>
+                    <td><g:link controller="user" action="userProfile" id="${acp.user.id}">${acp.user}</g:link></td>
                 </tr>
             </g:each>
 

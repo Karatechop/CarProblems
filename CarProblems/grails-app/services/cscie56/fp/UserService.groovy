@@ -17,14 +17,38 @@ class UserService {
             return user
         }
 
+        def getUser() {
+            def user = springSecurityService.isLoggedIn() ?
+                    springSecurityService.currentUser :
+                    null
+            return user
+        }
+
         def isAdminLoggedin() {
-            Boolean isAdminLoggedin = false
+            String isAdminLoggedin = 'no'
             def user = springSecurityService.isLoggedIn() ?
                     springSecurityService.currentUser :
                     null
             if (user){
-                user.getAuthorities().authority == ['ROLE_ADMIN'] ? isAdminLoggedin = true : null
+               if ( user.getAuthorities().authority == ['ROLE_ADMIN'] ){
+                   isAdminLoggedin = 'yes'
+               } else {
+                   isAdminLoggedin = 'no'}
             }
             return isAdminLoggedin
+        }
+
+        def profileOwnerIsLoggedin(User userInstance) {
+            String profileOwnerIsLoggedin = 'no'
+            def user = springSecurityService.isLoggedIn() ?
+                    springSecurityService.currentUser :
+                    null
+            if (user){
+               if( user.id == userInstance.id ) {
+                   profileOwnerIsLoggedin = 'yes'
+               } else {
+                   profileOwnerIsLoggedin = 'no'}
+            }
+            return profileOwnerIsLoggedin
         }
 }

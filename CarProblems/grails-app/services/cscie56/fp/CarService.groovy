@@ -25,7 +25,7 @@ class CarService {
     def generateCarProblemsSummaryReport (Car carInstance) {
 
         List carProblemsSummaryReport = []
-        List allCarProblems = Problem.findAllByCar(carInstance)
+        List allCarProblems = Problem.findAllByCarAndApproved(carInstance, true)
 
         List systems = []
         allCarProblems.each {systems << "${it.system}"}
@@ -40,6 +40,7 @@ class CarService {
 
 
         for (i = 0; i < systems.size(); i++) {
+            mileages = []
             summary = []
             summary << systems[i]
 

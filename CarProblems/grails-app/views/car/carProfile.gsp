@@ -1,7 +1,7 @@
 
 <%@ page import="cscie56.fp.Car" %>
 <!DOCTYPE html>
-<>
+<html>
 <head>
     <meta name="layout" content="main">
     <title>${carInstance.manufacturer + " - " + carInstance.carModel}</title>
@@ -22,7 +22,7 @@
     <g:render template="carDetails"/>
 
         <sec:ifLoggedIn>
-        <g:if test="${isAdminLoggedin == true}">
+        <g:if test="${isAdminLoggedin == 'yes'}">
         <g:form url="[resource:carInstance, action:'delete']" method="DELETE">
             <fieldset class="buttons">
                 <g:link class="edit btn btn-warning" action="edit" resource="${carInstance}"><g:message code="default.button.edit.label" default="Edit" /></g:link>

@@ -23,13 +23,13 @@
 			<div class="pull-right">
 				<sec:ifLoggedIn>
 					<p>Logged in as <span class="badge"><sec:username/></span>
-				<g:if test="${isAdminLoggedin == true}">
-					<a class="btn btn-success btn-sm" href="#" role="button">Admin dashboard</a>
+				<g:if test="${isAdminLoggedin == 'yes' && userInstance}">
+					<g:link class="btn btn-success btn-sm" controller="user" action="adminDashboard" id="${userInstance.id}">Admin dashboard</g:link>
 				</g:if>
-				<g:else>
-					<a class="btn btn-success btn-sm" href="#" role="button">User profile</a>
-				</g:else>
-					<g:remoteLink class="logout btn btn-warning btn-sm" controller="logout" method="post" asynchronous="false" onSuccess="location.reload()">Logout</g:remoteLink></p>
+				<g:elseif test="${userInstance}">
+					<g:link class="btn btn-success btn-sm" controller="user" action="userProfile" id="${userInstance.id}">User profile</g:link>
+				</g:elseif>
+					<g:remoteLink class="logout btn btn-warning btn-sm" controller="logout" method="post" asynchronous="false" onSuccess="location.href = '/CarProblems'">Logout</g:remoteLink></p>
 				</sec:ifLoggedIn>
 			</div>
 		<br><br><hr>

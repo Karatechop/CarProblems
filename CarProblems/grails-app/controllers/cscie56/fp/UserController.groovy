@@ -11,6 +11,21 @@ class UserController {
 
     static allowedMethods = [save: "POST", update: "PUT", delete: "DELETE"]
 
+    def userService
+
+    @Secured(['ROLE_ADMIN', 'ROLE_USER'])
+    def userProfile(User userInstance) {
+        def isAdminLoggedin = userService.isAdminLoggedin()
+        Set userCars = userInstance.cars
+        String profileOwnerIsLoggedin = userService.profileOwnerIsLoggedin(userInstance)
+
+        respond userInstance, model: [isAdminLoggedin:isAdminLoggedin, profileOwnerIsLoggedin:profileOwnerIsLoggedin, userCars:userCars]
+    }
+
+    def adminDashboard(User userInstance) {
+        respond userInstance, view:show
+    }
+
     def index(Integer max) {
         params.max = Math.min(max ?: 10, 100)
         respond User.list(params), model:[userInstanceCount: User.count()]

@@ -15,10 +15,10 @@
         </div>
 
         <ul class="nav nav-tabs nav-justified">
-            <li class="active"><a data-toggle="tab" href="#browsCars">Brows cars for problems</a></li>
+                <li class="active"><a data-toggle="tab" href="#browsCars">Brows cars for problems</a></li>
 
             <sec:ifNotLoggedIn>
-            <li><a data-toggle="tab" href="#logInTab">Log in</a></li>
+                <li><a data-toggle="tab" href="#logInTab">Log in</a></li>
             </sec:ifNotLoggedIn>
 
         </ul>
