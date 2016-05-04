@@ -35,11 +35,14 @@ class CarController {
         List carProblemsSummaryReport = carService.generateCarProblemsSummaryReport(carInstance)
         List allCarProblems = Problem.findAllByCarAndApproved(carInstance, true, [sort:"dateSubmitted", order: "desc"])
         String isAdminLoggedin = userService.isAdminLoggedin()
-        respond carInstance, model: [isAdminLoggedin:isAdminLoggedin, carProblemsSummaryReport:carProblemsSummaryReport, allCarProblems:allCarProblems, userInstance:userInstance]
+        //String carBelongsToLoggedinUser = carService.carBelongsToLoggedinUser(carInstance)
+        respond carInstance, model: [isAdminLoggedin:isAdminLoggedin,
+
+                                     carProblemsSummaryReport:carProblemsSummaryReport,
+                                     allCarProblems:allCarProblems,
+                                     userInstance:userInstance]
 
     }
-
-
 
     @Secured(['ROLE_ADMIN', 'ROLE_USER', 'ROLE_ANONYMOUS'])
     def carTest () {
@@ -89,12 +92,14 @@ class CarController {
         Set userCars = userInstance.cars
         def isAdminLoggedin = userService.isAdminLoggedin()
         def profileOwnerIsLoggedin = userService.profileOwnerIsLoggedin(userInstance)
+        String carBelongsToLoggedinUser = carService.carBelongsToLoggedinUser(carInstance)
             respond carInstance, model: [carProblemsSummaryReport: carProblemsSummaryReport,
                                          allCarProblems:allCarProblems,
                                          mileage:mileages,
                                          userCars:userCars,
                                          isAdminLoggedin:isAdminLoggedin,
-                                         profileOwnerIsLoggedin:profileOwnerIsLoggedin]
+                                         profileOwnerIsLoggedin:profileOwnerIsLoggedin,
+                                         carBelongsToLoggedinUser:carBelongsToLoggedinUser]
 
     }
 

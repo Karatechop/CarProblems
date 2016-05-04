@@ -22,51 +22,61 @@ class CarService {
             return testCar
         }
 
-    def generateCarProblemsSummaryReport (Car carInstance) {
+        def generateCarProblemsSummaryReport (Car carInstance) {
 
-        List carProblemsSummaryReport = []
-        List allCarProblems = Problem.findAllByCarAndApproved(carInstance, true)
+            List carProblemsSummaryReport = []
+            List allCarProblems = Problem.findAllByCarAndApproved(carInstance, true)
 
-        List systems = []
-        allCarProblems.each {systems << "${it.system}"}
-        systems = systems.unique { a, b -> a <=> b }
+            List systems = []
+            allCarProblems.each {systems << "${it.system}"}
+            systems = systems.unique { a, b -> a <=> b }
 
-        Integer i
-        List mileages = []
-        List summary = []
-        def mileagesSize
-        int midNumber
-        def medianMileage
+            Integer i
+            List mileages = []
+            List summary = []
+            def mileagesSize
+            int midNumber
+            def medianMileage
 
 
-        for (i = 0; i < systems.size(); i++) {
-            mileages = []
-            summary = []
-            summary << systems[i]
+            for (i = 0; i < systems.size(); i++) {
+                mileages = []
+                summary = []
+                summary << systems[i]
 
-            allCarProblems.each {
-                if ("${it.system}" == systems[i]){
-                    mileages << "${it.mileage}".toInteger()
+                allCarProblems.each {
+                    if ("${it.system}" == systems[i]){
+                        mileages << "${it.mileage}".toInteger()
 
+                    }
                 }
+
+
+                mileages.sort { a, b -> a <=> b }
+                mileagesSize = mileages.size()
+                midNumber = mileagesSize / 2
+                medianMileage = mileagesSize % 2 != 0 ? mileages[midNumber] : (mileages[midNumber] + mileages[midNumber - 1]) / 2
+
+
+                summary << medianMileage
+                summary << mileages.min()
+                summary << mileages.max()
+
+                carProblemsSummaryReport << summary
             }
 
 
-            mileages.sort { a, b -> a <=> b }
-            mileagesSize = mileages.size()
-            midNumber = mileagesSize / 2
-            medianMileage = mileagesSize % 2 != 0 ? mileages[midNumber] : (mileages[midNumber] + mileages[midNumber - 1]) / 2
-
-
-            summary << medianMileage
-            summary << mileages.min()
-            summary << mileages.max()
-
-            carProblemsSummaryReport << summary
+            return carProblemsSummaryReport
         }
+/*
+        def carBelongsToLoggedinUser(Car carInstance) {
+            User userInstance = userService.getUser()
+            String carBelongsToLoggedinUser
 
-
-        return carProblemsSummaryReport
-    }
-
+            Set cars = userInstance ? userInstance.cars : []
+            Car car = cars.find {c -> c == carInstance}
+            if(car != null) {carBelongsToLoggedinUser = 'yes'}else{carBelongsToLoggedinUser = 'no'}
+            return carBelongsToLoggedinUser
+        }
+*/
 }

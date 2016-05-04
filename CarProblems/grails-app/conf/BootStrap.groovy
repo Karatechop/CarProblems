@@ -175,8 +175,26 @@ class BootStrap {
                 approved: false
         ).save(failOnError: true)
 
-        // Honda 2003 Accord problems
         Problem problem11 = new Problem (
+                user: testUser1,
+                car:testCar1,
+                system: 'Brakes',
+                mileage: 105000,
+                description: 'Taciti porttitor nullam ornare platea posuere ipsum eleifend accumsan quis massa congue dolor blandit, senectus velit sodales eget leo fames netus hac tristique id mauris. Viverra hendrerit venenatis vulputate ultricies tempus quisque porta turpis quisque tellus proin curabitur metus neque, himenaeos sed viverra id mi nibh ipsum tellus suspendisse nisl dolor consectetur quis. ',
+                approved: null
+        ).save(failOnError: true)
+
+        Problem problem12 = new Problem (
+                user: testUser1,
+                car:testCar1,
+                system: 'Brakes',
+                mileage: 100000,
+                description: 'Taciti porttitor nullam ornare platea posuere ipsum eleifend accumsan quis massa congue dolor blandit, senectus velit sodales eget leo fames netus hac tristique id mauris. Viverra hendrerit venenatis vulputate ultricies tempus quisque porta turpis quisque tellus proin curabitur metus neque, himenaeos sed viverra id mi nibh ipsum tellus suspendisse nisl dolor consectetur quis. ',
+                approved: false
+        ).save(failOnError: true)
+
+        // Honda 2003 Accord problems
+        Problem problem13 = new Problem (
                 user: testUser2,
                 car:testCar2,
                 system: 'Body/Paint',
@@ -186,8 +204,8 @@ class BootStrap {
         ).save(failOnError: true)
 
 
-        // Honda 20013 Civic problems
-        Problem problem12 = new Problem (
+        // Honda 2013 Civic problems
+        Problem problem14 = new Problem (
                 user: testUser2,
                 car:testCar3,
                 system: 'Fuel system',

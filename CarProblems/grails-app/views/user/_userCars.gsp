@@ -23,9 +23,9 @@
             </thead>
             <tbody>
 
-            <g:each in="${userCars}" var="uc">
+            <g:each in="${userInstance.cars}" var="uc">
                 <tr>
-                    <td>${uc.manufacturer}</td>
+                    <td><g:link controller="car" action="carProfile" id="${uc.id}">${uc.manufacturer}</g:link></td>
                     <td>${uc.carModel}</td>
                     <td>${uc.fuel}</td>
                     <td>${uc.doors}</td>

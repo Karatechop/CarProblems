@@ -12,6 +12,7 @@
 		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
 		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
 <g:layoutHead/>
 </head>
 <body>
@@ -23,10 +24,10 @@
 			<div class="pull-right">
 				<sec:ifLoggedIn>
 					<p>Logged in as <span class="badge"><sec:username/></span>
-				<g:if test="${isAdminLoggedin == 'yes' && userInstance}">
-					<g:link class="btn btn-success btn-sm" controller="user" action="adminDashboard" id="${userInstance.id}">Admin dashboard</g:link>
+				<g:if test="${isAdminLoggedin == 'yes'}">
+					<g:link class="btn btn-success btn-sm" controller="user" action="adminDashboard">Admin dashboard</g:link>
 				</g:if>
-				<g:elseif test="${userInstance}">
+				<g:elseif test="${isAdminLoggedin == 'no'}">
 					<g:link class="btn btn-success btn-sm" controller="user" action="userProfile" id="${userInstance.id}">User profile</g:link>
 				</g:elseif>
 					<g:remoteLink class="logout btn btn-warning btn-sm" controller="logout" method="post" asynchronous="false" onSuccess="location.href = '/CarProblems'">Logout</g:remoteLink></p>

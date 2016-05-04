@@ -41,6 +41,39 @@
 
 <g:render template="userCars"/>
 
+<hr>
+
+<h3>Your problem submissions</h3>
+
+    <ul class="nav nav-tabs nav-justified">
+        <li><a data-toggle="tab" href="#approvedProblems">Approved</a></li>
+
+        <g:if test="${profileOwnerIsLoggedin == 'yes'}">
+            <li class="active"><a data-toggle="tab" href="#unapprovedProblems">Waiting for approval</a></li>
+            <li><a data-toggle="tab" href="#rejectedProblems">Rejected</a></li>
+        </g:if>
+    </ul>
+
+    <div class="tab-content">
+
+            <div id="approvedProblems"
+                <g:if test="${profileOwnerIsLoggedin == 'yes'}">class="tab-pane fade in"</g:if>
+                <g:else>class="tab-pane fade in active"</g:else> >
+
+                <g:render template="userApProblemsTable"/>
+            </div>
+
+        <g:if test="${profileOwnerIsLoggedin == 'yes'}">
+            <div id="unapprovedProblems" class="tab-pane fade in active">
+                <g:render template="userUnProblemsTable"/>
+            </div>
+
+            <div id="rejectedProblems" class="tab-pane fade in">
+                <g:render template="userRejProblemsTable"/>
+            </div>
+        </g:if>
+    </div>
+
 
 </body>
 </html>

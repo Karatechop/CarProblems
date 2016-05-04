@@ -11,9 +11,10 @@ Tests:
 <p>${carProblemsSummaryReport}</p>
 <p>${allCarProblems}</p>
 <p>${mileages}</p>
-<p>${userCars}</p>
 <p>${isAdminLoggedin}</p>
 <p>${profileOwnerIsLoggedin}</p>
+<p>${userCars}</p>
+<p>${carBelongsToLoggedinUser}</p>
 
 </body>
 </html>

@@ -16,14 +16,34 @@ class UserController {
     @Secured(['ROLE_ADMIN', 'ROLE_USER'])
     def userProfile(User userInstance) {
         def isAdminLoggedin = userService.isAdminLoggedin()
-        Set userCars = userInstance.cars
         String profileOwnerIsLoggedin = userService.profileOwnerIsLoggedin(userInstance)
+        Set userCars = userInstance.cars
+        List unapprovedProblems = Problem.findAllByUserAndApproved(userInstance, null)
+        List approvedProblems = Problem.findAllByUserAndApproved(userInstance, true)
+        List rejectedProblems = Problem.findAllByUserAndApproved(userInstance, false)
 
-        respond userInstance, model: [isAdminLoggedin:isAdminLoggedin, profileOwnerIsLoggedin:profileOwnerIsLoggedin, userCars:userCars]
+
+        respond userInstance, model: [isAdminLoggedin:isAdminLoggedin,
+                                      profileOwnerIsLoggedin:profileOwnerIsLoggedin,
+                                      userCars:userCars,
+                                      unapprovedProblems:unapprovedProblems,
+                                      approvedProblems:approvedProblems,
+                                      rejectedProblems:rejectedProblems]
     }
 
     def adminDashboard(User userInstance) {
-        respond userInstance, view:show
+        def isAdminLoggedin = userService.isAdminLoggedin()
+        respond userInstance, model: [isAdminLoggedin:isAdminLoggedin]
+    }
+
+    @Secured(['ROLE_ADMIN', 'ROLE_USER'])
+    def addCarToUserProfile(params) {
+        Car carInstance = Car.findById(params.car)
+        User userInstance = userService.getUser()
+        carInstance.addToUsers(userInstance)
+
+        userInstance.save flush:true
+
     }
 
     def index(Integer max) {
