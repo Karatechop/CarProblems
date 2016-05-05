@@ -27,7 +27,7 @@
 				<g:if test="${isAdminLoggedin == 'yes'}">
 					<g:link class="btn btn-success btn-sm" controller="user" action="adminDashboard">Admin dashboard</g:link>
 				</g:if>
-				<g:elseif test="${isAdminLoggedin == 'no'}">
+				<g:elseif test="${isAdminLoggedin == 'no' && userInstance}">
 					<g:link class="btn btn-success btn-sm" controller="user" action="userProfile" id="${userInstance.id}">User profile</g:link>
 				</g:elseif>
 					<g:remoteLink class="logout btn btn-warning btn-sm" controller="logout" method="post" asynchronous="false" onSuccess="location.href = '/CarProblems'">Logout</g:remoteLink></p>

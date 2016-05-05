@@ -2,6 +2,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+
     <meta name="layout" content="main">
     <title>${userInstance}</title>
 </head>
@@ -43,8 +44,12 @@
 
 <hr>
 
-<h3>Your problem submissions</h3>
+<div class="col-md-4"><h3>Your problem submissions</h3></div>
 
+<div class="col-md-8">
+<button type="button" class="btn btn-lg btn-primary pull-right" data-toggle="modal" data-target="#userCarProblemSubmissionModal">Submit a new car problem</button>
+</div>
+<div class="col-md-12">
     <ul class="nav nav-tabs nav-justified">
         <li><a data-toggle="tab" href="#approvedProblems">Approved</a></li>
 
@@ -74,6 +79,11 @@
         </g:if>
     </div>
 
+
+<g:if test="${profileOwnerIsLoggedin == 'yes'}">
+    <g:render template="userCarProblemSubmissionModal"/>
+</g:if>
+</div>
 
 </body>
 </html>

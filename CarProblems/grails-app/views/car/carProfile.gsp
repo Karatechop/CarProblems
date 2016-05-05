@@ -16,7 +16,7 @@
 <div id="greetingAndCars">
     <h1>${carInstance.manufacturer + " - " + carInstance.carModel}
 
-            <g:if test="${carInstance == userInstance.cars.find{c-> c == carInstance}}">
+            <g:if test="${carInstance == userInstance?.cars.find{c-> c == carInstance}}">
                 - this is one of your cars
             </g:if>
 
@@ -37,7 +37,7 @@
                 </fieldset>
             </g:form>
             </g:if>
-            <g:elseif test="${carInstance != userInstance.cars.find{c-> c == carInstance}}">
+            <g:elseif test="${carInstance != userInstance?.cars.find{c-> c == carInstance}}">
                 <g:remoteLink class="btn btn-primary" controller="user" action="addCarToUserProfile" asynchronous="false" params="[car: carInstance.id]" onComplete="location.reload()">Add this car to your profile</g:remoteLink>
             </g:elseif>
         </sec:ifLoggedIn>

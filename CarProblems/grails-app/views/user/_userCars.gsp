@@ -30,7 +30,7 @@
                     <td>${uc.fuel}</td>
                     <td>${uc.doors}</td>
                 <g:if test="${profileOwnerIsLoggedin == 'yes'}">
-                    <td><g:link class="btn btn-warning" controller="user" action="removeCarFromProfile" resource="${carInstance}">Remove from profile</g:link></td>
+                    <td><g:remoteLink class="btn btn-warning" controller="user" action="removeCarFromProfile" asynchronous="false" params="[car: uc.id]" onComplete="location.reload()">Remove from profile</g:remoteLink></td>
                 </g:if>
                 </tr>
             </g:each>

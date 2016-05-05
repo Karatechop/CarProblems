@@ -24,9 +24,11 @@ class CarController {
     @Secured(['ROLE_ADMIN', 'ROLE_USER', 'ROLE_ANONYMOUS'])
     def example() {
         Car carInstance = Car.get(1)
+        String isAdminLoggedin = userService.isAdminLoggedin()
+        User userInstance = userService.getUser()
         List carProblemsSummaryReport = carService.generateCarProblemsSummaryReport(carInstance)
         List allCarProblems = Problem.findAllByCarAndApproved(carInstance, true, [sort:"dateSubmitted", order: "desc"])
-        respond Car.get(1), view: 'carProfile', model: [carProblemsSummaryReport:carProblemsSummaryReport, allCarProblems:allCarProblems]
+        respond Car.get(1), view: 'carProfile', model: [isAdminLoggedin:isAdminLoggedin, userInstance:userInstance, carProblemsSummaryReport:carProblemsSummaryReport, allCarProblems:allCarProblems]
     }
 
     @Secured(['ROLE_ADMIN', 'ROLE_USER', 'ROLE_ANONYMOUS'])

@@ -46,6 +46,16 @@ class UserController {
 
     }
 
+    @Secured(['ROLE_ADMIN', 'ROLE_USER'])
+    def removeCarFromProfile(params) {
+        Car carInstance = Car.findById(params.car)
+        User userInstance = userService.getUser()
+        carInstance.removeFromUsers(userInstance)
+
+        userInstance.save flush:true
+
+    }
+
     def index(Integer max) {
         params.max = Math.min(max ?: 10, 100)
         respond User.list(params), model:[userInstanceCount: User.count()]
