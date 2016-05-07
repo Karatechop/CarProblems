@@ -16,24 +16,51 @@ class UserController {
     @Secured(['ROLE_ADMIN', 'ROLE_USER'])
     def userProfile(User userInstance) {
         def isAdminLoggedin = userService.isAdminLoggedin()
+        User loggedInUser = userService.getUser()
         String profileOwnerIsLoggedin = userService.profileOwnerIsLoggedin(userInstance)
         Set userCars = userInstance.cars
         List unapprovedProblems = Problem.findAllByUserAndApproved(userInstance, null)
         List approvedProblems = Problem.findAllByUserAndApproved(userInstance, true)
         List rejectedProblems = Problem.findAllByUserAndApproved(userInstance, false)
+        Problem problemInstance = new Problem(params)
 
+        if (isAdminLoggedin == 'yes' &&
+                request.forwardURI == "/CarProblems/user/userProfile/1" ||
+                isAdminLoggedin == 'yes' &&
+                request.forwardURI + '?' + request.queryString  == "/CarProblems/user/userProfile?id=1") {
 
-        respond userInstance, model: [isAdminLoggedin:isAdminLoggedin,
-                                      profileOwnerIsLoggedin:profileOwnerIsLoggedin,
-                                      userCars:userCars,
-                                      unapprovedProblems:unapprovedProblems,
-                                      approvedProblems:approvedProblems,
-                                      rejectedProblems:rejectedProblems]
+            redirect(action: 'adminDashboard')
+
+        } else if (isAdminLoggedin == 'no' &&
+                request.forwardURI == "/CarProblems/user/userProfile/1" ||
+                isAdminLoggedin == 'no' &&
+                request.forwardURI + '?' + request.queryString  == "/CarProblems/user/userProfile?id=1") {
+
+            redirect(controller: 'car', action: 'welcomePage')
+
+                 } else {
+
+            respond userInstance, model: [isAdminLoggedin       : isAdminLoggedin,
+                                          loggedInUser          : loggedInUser,
+                                          profileOwnerIsLoggedin: profileOwnerIsLoggedin,
+                                          userCars              : userCars,
+                                          unapprovedProblems    : unapprovedProblems,
+                                          approvedProblems      : approvedProblems,
+                                          rejectedProblems      : rejectedProblems,
+                                          problemInstance       : problemInstance]
+            }
+
     }
 
-    def adminDashboard(User userInstance) {
+    def adminDashboard() {
         def isAdminLoggedin = userService.isAdminLoggedin()
-        respond userInstance, model: [isAdminLoggedin:isAdminLoggedin]
+        User loggedInUser = userService.getUser()
+        Map adminCarUserProblemSummary = userService.adminCarUserProblemSummary()
+        List unapprovedProblems = Problem.findAllByApproved(null)
+
+        respond loggedInUser, model: [isAdminLoggedin:isAdminLoggedin,
+                                      adminCarUserProblemSummary:adminCarUserProblemSummary,
+                                      unapprovedProblems:unapprovedProblems]
     }
 
     @Secured(['ROLE_ADMIN', 'ROLE_USER'])
@@ -56,9 +83,27 @@ class UserController {
 
     }
 
+    @Secured(['ROLE_ADMIN'])
+    adminApproveProblem(params){
+        Problem problemInstance = Problem.findById(params.problemId)
+        problemInstance.approved = true
+
+        problemInstance.save flush:true
+    }
+
+    @Secured(['ROLE_ADMIN'])
+    adminRejectProblem(params){
+        Problem problemInstance = Problem.findById(params.problemId)
+        problemInstance.approved = false
+
+        problemInstance.save flush:true
+    }
+
     def index(Integer max) {
         params.max = Math.min(max ?: 10, 100)
-        respond User.list(params), model:[userInstanceCount: User.count()]
+        String isAdminLoggedin = userService.isAdminLoggedin()
+        respond User.list(params), model:[userInstanceCount: User.count(),
+                                          isAdminLoggedin:isAdminLoggedin]
     }
 
     def show(User userInstance) {

@@ -5,7 +5,7 @@
 
 <div class="panel panel-default">
 
-    <div class="panel-heading">This problem submissions are waiting for admin approval</div>
+    <div class="panel-heading">These problem submissions are waiting for admin approval</div>
 
     <div class="table-responsive">
         <table class="table">

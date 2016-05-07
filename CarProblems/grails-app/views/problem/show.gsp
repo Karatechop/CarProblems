@@ -41,6 +41,15 @@
 				</li>
 				</g:if>
 			
+				<g:if test="${problemInstance?.mileage}">
+				<li class="fieldcontain">
+					<span id="mileage-label" class="property-label"><g:message code="problem.mileage.label" default="Mileage" /></span>
+					
+						<span class="property-value" aria-labelledby="mileage-label"><g:fieldValue bean="${problemInstance}" field="mileage"/></span>
+					
+				</li>
+				</g:if>
+			
 				<g:if test="${problemInstance?.approved}">
 				<li class="fieldcontain">
 					<span id="approved-label" class="property-label"><g:message code="problem.approved.label" default="Approved" /></span>
@@ -55,6 +64,15 @@
 					<span id="car-label" class="property-label"><g:message code="problem.car.label" default="Car" /></span>
 					
 						<span class="property-value" aria-labelledby="car-label"><g:link controller="car" action="show" id="${problemInstance?.car?.id}">${problemInstance?.car?.encodeAsHTML()}</g:link></span>
+					
+				</li>
+				</g:if>
+			
+				<g:if test="${problemInstance?.dateSubmitted}">
+				<li class="fieldcontain">
+					<span id="dateSubmitted-label" class="property-label"><g:message code="problem.dateSubmitted.label" default="Date Submitted" /></span>
+					
+						<span class="property-value" aria-labelledby="dateSubmitted-label"><g:formatDate date="${problemInstance?.dateSubmitted}" /></span>
 					
 				</li>
 				</g:if>

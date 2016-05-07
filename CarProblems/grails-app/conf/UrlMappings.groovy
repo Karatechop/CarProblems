@@ -16,12 +16,7 @@ class UrlMappings {
             action = "example"
         }
 
-        "/user/userProfile/1" {
-            controller = "user"
-            action = "adminDashboard"
-        }
-
-        "/controllers"(view:"/index")
+    "/controllers"(view:"/index")
         "500"(view:'/error')
 	}
 }

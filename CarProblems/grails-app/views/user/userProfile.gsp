@@ -8,14 +8,8 @@
 </head>
 <body>
 
-<div class="btn-group" role="group">
-    <a class="btn btn-default"  href="${createLink(uri: '/')}"><g:message code="default.home.label"/></a>
-    <a class="btn btn-default" href="${createLink(uri: '/car/index')}">All cars</a>
-</div>
-
 <g:if test="${isAdminLoggedin == 'yes'}">
 <h1>Hello admin, this profile belongs to ${userInstance}</h1>
-
 
         <g:form url="[resource:userInstance, action:'delete']" method="DELETE">
             <fieldset class="buttons">
@@ -46,9 +40,14 @@
 
 <div class="col-md-4"><h3>Your problem submissions</h3></div>
 
+<g:if test="${profileOwnerIsLoggedin == 'yes'}">
 <div class="col-md-8">
-<button type="button" class="btn btn-lg btn-primary pull-right" data-toggle="modal" data-target="#userCarProblemSubmissionModal">Submit a new car problem</button>
+    <g:link class="btn btn-lg btn-primary pull-right" action="create" resource="${problemInstance}">Submit a new car problem</g:link>
 </div>
+    </g:if>
+<br><br><br><br>
+
+
 <div class="col-md-12">
     <ul class="nav nav-tabs nav-justified">
         <li><a data-toggle="tab" href="#approvedProblems">Approved</a></li>
@@ -80,10 +79,8 @@
     </div>
 
 
-<g:if test="${profileOwnerIsLoggedin == 'yes'}">
-    <g:render template="userCarProblemSubmissionModal"/>
-</g:if>
 </div>
+
 
 </body>
 </html>

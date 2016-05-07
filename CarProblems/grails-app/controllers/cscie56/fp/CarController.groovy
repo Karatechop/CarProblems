@@ -16,33 +16,33 @@ class CarController {
 
     @Secured(['ROLE_ADMIN', 'ROLE_USER', 'ROLE_ANONYMOUS'])
     def welcomePage() {
-        User userInstance = userService.getUser()
+        User loggedInUser = userService.getUser()
         String isAdminLoggedin = userService.isAdminLoggedin()
-        respond Car.list(), model: [isAdminLoggedin:isAdminLoggedin, userInstance:userInstance]
+        respond Car.list(), model: [isAdminLoggedin:isAdminLoggedin, loggedInUser:loggedInUser]
     }
 
     @Secured(['ROLE_ADMIN', 'ROLE_USER', 'ROLE_ANONYMOUS'])
     def example() {
         Car carInstance = Car.get(1)
         String isAdminLoggedin = userService.isAdminLoggedin()
-        User userInstance = userService.getUser()
+        User loggedInUser = userService.getUser()
         List carProblemsSummaryReport = carService.generateCarProblemsSummaryReport(carInstance)
         List allCarProblems = Problem.findAllByCarAndApproved(carInstance, true, [sort:"dateSubmitted", order: "desc"])
-        respond Car.get(1), view: 'carProfile', model: [isAdminLoggedin:isAdminLoggedin, userInstance:userInstance, carProblemsSummaryReport:carProblemsSummaryReport, allCarProblems:allCarProblems]
+        respond Car.get(1), view: 'carProfile', model: [isAdminLoggedin:isAdminLoggedin, loggedInUser:loggedInUser, carProblemsSummaryReport:carProblemsSummaryReport, allCarProblems:allCarProblems]
     }
 
     @Secured(['ROLE_ADMIN', 'ROLE_USER', 'ROLE_ANONYMOUS'])
     def carProfile (Car carInstance) {
-        User userInstance = userService.getUser()
+        User loggedInUser = userService.getUser()
         List carProblemsSummaryReport = carService.generateCarProblemsSummaryReport(carInstance)
         List allCarProblems = Problem.findAllByCarAndApproved(carInstance, true, [sort:"dateSubmitted", order: "desc"])
         String isAdminLoggedin = userService.isAdminLoggedin()
-        //String carBelongsToLoggedinUser = carService.carBelongsToLoggedinUser(carInstance)
+
         respond carInstance, model: [isAdminLoggedin:isAdminLoggedin,
 
                                      carProblemsSummaryReport:carProblemsSummaryReport,
                                      allCarProblems:allCarProblems,
-                                     userInstance:userInstance]
+                                     loggedInUser:loggedInUser]
 
     }
 

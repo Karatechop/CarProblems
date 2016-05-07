@@ -51,4 +51,21 @@ class UserService {
             }
             return profileOwnerIsLoggedin
         }
+
+        def adminCarUserProblemSummary(){
+            Integer numberOfUsers = User.count()
+            Integer numberOfCars = Car.count()
+            Integer numberOfProblems = Problem.count()
+            Integer numberOfApprovedProblems = Problem.findAllByApproved(true).size()
+            Integer numberOfUnapprovedProblems = Problem.findAllByApproved(null).size()
+            Integer numberOfRejectedProblems = Problem.findAllByApproved(false).size()
+            Map adminCarUserProblemSummary = [numberOfUsers:numberOfUsers,
+                                              numberOfCars:numberOfCars,
+                                              numberOfProblems:numberOfProblems,
+                                              numberOfApprovedProblems:numberOfApprovedProblems,
+                                              numberOfUnapprovedProblems:numberOfUnapprovedProblems,
+                                              numberOfRejectedProblems:numberOfRejectedProblems]
+            return adminCarUserProblemSummary
+
+        }
 }

@@ -68,7 +68,7 @@
 
                         <div id='login'>
 
-                                <form class="form-horizontal" action='/CarProblems/j_spring_security_check' method='POST' id='loginForm' class='cssform' autocomplete='off'>
+                                <form class="form-horizontal" action='/CarProblems/j_spring_security_check' method='POST' id='loginForm'  autocomplete='off'>
                                     <fieldset>
                                         <div class="form-group">
                                             <label class="col-md-4 control-label" for='username'>Username:</label>

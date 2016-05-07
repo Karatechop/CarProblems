@@ -21,14 +21,30 @@
 	<div class="row">
 		<div class="center-block col-md-10" style="float: none;">
 
+			<g:if test="${request.forwardURI == '/CarProblems/'}">
+				<sec:ifLoggedIn>
+					<hr>
+				</sec:ifLoggedIn>
+			</g:if>
+			<g:if test="${request.forwardURI != '/CarProblems/'}">
+				<hr>
+				<div class="btn-group" role="group">
+						<a class="btn btn-default"  href="${createLink(uri: '/')}"><g:message code="default.home.label"/></a>
+					<g:if test="${request.forwardURI != '/CarProblems/user/adminDashboard'}">
+						<a class="btn btn-default" href="${createLink(uri: '/car/index')}">All cars</a>
+					</g:if>
+				</div>
+			</g:if>
+
+
 			<div class="pull-right">
 				<sec:ifLoggedIn>
 					<p>Logged in as <span class="badge"><sec:username/></span>
 				<g:if test="${isAdminLoggedin == 'yes'}">
 					<g:link class="btn btn-success btn-sm" controller="user" action="adminDashboard">Admin dashboard</g:link>
 				</g:if>
-				<g:elseif test="${isAdminLoggedin == 'no' && userInstance}">
-					<g:link class="btn btn-success btn-sm" controller="user" action="userProfile" id="${userInstance.id}">User profile</g:link>
+				<g:elseif test="${isAdminLoggedin == 'no' && loggedInUser}">
+					<g:link class="btn btn-success btn-sm" controller="user" action="userProfile" id="${loggedInUser.id}">User profile</g:link>
 				</g:elseif>
 					<g:remoteLink class="logout btn btn-warning btn-sm" controller="logout" method="post" asynchronous="false" onSuccess="location.href = '/CarProblems'">Logout</g:remoteLink></p>
 				</sec:ifLoggedIn>

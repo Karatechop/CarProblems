@@ -1,26 +1,28 @@
 
 <%@ page import="cscie56.fp.User" %>
+
 <!DOCTYPE html>
 <html>
 	<head>
 		<meta name="layout" content="main">
-		<g:set var="entityName" value="${message(code: 'user.label', default: 'User')}" />
-		<title><g:message code="default.list.label" args="[entityName]" /></title>
+		<title>All users</title>
 	</head>
 	<body>
-		<a href="#list-user" class="skip" tabindex="-1"><g:message code="default.link.skip.label" default="Skip to content&hellip;"/></a>
-		<div class="nav" role="navigation">
-			<ul>
-				<li><a class="home" href="${createLink(uri: '/')}"><g:message code="default.home.label"/></a></li>
-				<li><g:link class="create" action="create"><g:message code="default.new.label" args="[entityName]" /></g:link></li>
-			</ul>
-		</div>
-		<div id="list-user" class="content scaffold-list" role="main">
-			<h1><g:message code="default.list.label" args="[entityName]" /></h1>
+
+
+			<div class="col-md-4">
+				<h1>Manage users</h1>
+			</div>
+			<div class="col-md-8">
+			<g:link class="btn btn-lg btn-primary pull-right" action="create" >Create a new user</g:link>
+			</div>
+			<br><br><br><hr>
+
 			<g:if test="${flash.message}">
 				<div class="message" role="status">${flash.message}</div>
 			</g:if>
-			<table>
+	<div class="table-responsive">
+	<table class="table table-striped">
 			<thead>
 					<tr>
 					
@@ -58,9 +60,10 @@
 				</g:each>
 				</tbody>
 			</table>
-			<div class="pagination">
-				<g:paginate total="${userInstanceCount ?: 0}" />
-			</div>
 		</div>
+	<ul class="pagination">
+				<boots:paginate total="${userInstanceCount ?: 0}" />
+			</ul>
+
 	</body>
 </html>

@@ -28,11 +28,13 @@
 					
 						<g:sortableColumn property="description" title="${message(code: 'problem.description.label', default: 'Description')}" />
 					
+						<g:sortableColumn property="mileage" title="${message(code: 'problem.mileage.label', default: 'Mileage')}" />
+					
 						<g:sortableColumn property="approved" title="${message(code: 'problem.approved.label', default: 'Approved')}" />
 					
 						<th><g:message code="problem.car.label" default="Car" /></th>
 					
-						<th><g:message code="problem.user.label" default="User" /></th>
+						<g:sortableColumn property="dateSubmitted" title="${message(code: 'problem.dateSubmitted.label', default: 'Date Submitted')}" />
 					
 					</tr>
 				</thead>
@@ -44,11 +46,13 @@
 					
 						<td>${fieldValue(bean: problemInstance, field: "description")}</td>
 					
+						<td>${fieldValue(bean: problemInstance, field: "mileage")}</td>
+					
 						<td><g:formatBoolean boolean="${problemInstance.approved}" /></td>
 					
 						<td>${fieldValue(bean: problemInstance, field: "car")}</td>
 					
-						<td>${fieldValue(bean: problemInstance, field: "user")}</td>
+						<td><g:formatDate date="${problemInstance.dateSubmitted}" /></td>
 					
 					</tr>
 				</g:each>

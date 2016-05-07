@@ -11,6 +11,9 @@ class ProblemController {
 
     static allowedMethods = [save: "POST", update: "PUT", delete: "DELETE"]
 
+    def userService
+
+    @Secured(['ROLE_ADMIN'])
     def index(Integer max) {
         params.max = Math.min(max ?: 10, 100)
         respond Problem.list(params), model:[problemInstanceCount: Problem.count()]
@@ -22,8 +25,11 @@ class ProblemController {
 
     @Secured(['ROLE_ADMIN', 'ROLE_USER'])
     def create() {
-        respond new Problem(params)
+        def isAdminLoggedin = userService.isAdminLoggedin()
+        User loggedInUser = userService.getUser()
+        respond new Problem(params), model: [isAdminLoggedin: isAdminLoggedin, loggedInUser: loggedInUser]
     }
+
 
     @Transactional
     @Secured(['ROLE_ADMIN', 'ROLE_USER'])
@@ -40,13 +46,12 @@ class ProblemController {
 
         problemInstance.save flush:true
 
-        request.withFormat {
-            form multipartForm {
-                flash.message = message(code: 'default.created.message', args: [message(code: 'problem.label', default: 'Problem'), problemInstance.id])
-                redirect problemInstance
-            }
-            '*' { respond problemInstance, [status: CREATED] }
-        }
+        def isAdminLoggedin = userService.isAdminLoggedin()
+        User userInstance = userService.getUser()
+        String id = userInstance.id.toString()
+        String uri = (isAdminLoggedin == 'yes')? "/user/adminDashboard" : "/user/userProfile/" + id
+
+        redirect(uri: uri, model: [isAdminLoggedin: isAdminLoggedin, userInstance: userInstance])
     }
 
     def edit(Problem problemInstance) {
@@ -74,6 +79,8 @@ class ProblemController {
             }
             '*'{ respond problemInstance, [status: OK] }
         }
+
+
     }
 
     @Transactional

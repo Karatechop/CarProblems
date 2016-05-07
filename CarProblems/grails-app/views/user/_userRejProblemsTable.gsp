@@ -5,7 +5,7 @@
 
 <div class="panel panel-default">
 
-    <div class="panel-heading">This problem submissions have been rejected by admin</div>
+    <div class="panel-heading">These problem submissions have been rejected by admin</div>
 
     <div class="table-responsive">
         <table class="table">
