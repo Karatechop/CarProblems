@@ -10,7 +10,7 @@
 <g:if test="${isAdminLoggedin == 'yes'}">
     <h1>Admin dashboard</h1>
 
-    <nav class="navbar navbar">
+    <nav class="navbar navbar-inverse">
         <div class="container-fluid">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -20,7 +20,14 @@
                 </button>
 
             </div>
-            <g:render template="adminManageMenue"/>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                    <li><a href="/CarProblems/user/index">Manage Users</a></li>
+                    <li><a href="/CarProblems/car/index">Manage Cars</a></li>
+                    <li><a href="/CarProblems/problem/index">Manage Problems</a></li>
+                </ul>
+
+            </div>
         </div>
     </nav>
 
