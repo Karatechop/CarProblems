@@ -8,20 +8,25 @@
 		<title><g:message code="default.list.label" args="[entityName]" /></title>
 	</head>
 	<body>
-		<a href="#list-car" class="skip" tabindex="-1"><g:message code="default.link.skip.label" default="Skip to content&hellip;"/></a>
-		<div class="nav" role="navigation">
-			<ul>
-				<li><a class="home" href="${createLink(uri: '/')}"><g:message code="default.home.label"/></a></li>
-				<li><g:link class="create" action="create"><g:message code="default.new.label" args="[entityName]" /></g:link></li>
-			</ul>
+
+		<g:if test="${isAdminLoggedin == 'yes'}">
+		<div class="col-md-4">
+			<h1>Manage cars</h1>
 		</div>
-		<div id="list-car" class="content scaffold-list" role="main">
-			<h1><g:message code="default.list.label" args="[entityName]" /></h1>
-			<g:if test="${flash.message}">
-				<div class="message" role="status">${flash.message}</div>
-			</g:if>
-			<table>
-			<thead>
+
+
+			<div class="col-md-8">
+				<g:link class="btn btn-lg btn-primary pull-right" action="create" >Create a new car</g:link>
+			</div>
+		</g:if>
+		<g:else>
+			<h1>All cars</h1>
+		</g:else>
+		<br><br><br><hr>
+
+		<div class="table-responsive">
+			<table class="table table-striped">
+				<thead>
 					<tr>
 					
 						<g:sortableColumn property="manufacturer" title="${message(code: 'car.manufacturer.label', default: 'Manufacturer')}" />
@@ -33,15 +38,32 @@
 						<g:sortableColumn property="fuel" title="${message(code: 'car.fuel.label', default: 'Fuel')}" />
 					
 						<g:sortableColumn property="doors" title="${message(code: 'car.doors.label', default: 'Doors')}" />
-					
+
+						<g:if test="${isAdminLoggedin == 'yes'}">
+						<th>Edit</th>
+
+						<th>Delete</th>
+						</g:if>
+
 					</tr>
 				</thead>
 				<tbody>
 				<g:each in="${carInstanceList}" status="i" var="carInstance">
-					<tr class="${(i % 2) == 0 ? 'even' : 'odd'}">
-					
-						<td><g:link action="show" id="${carInstance.id}">${fieldValue(bean: carInstance, field: "manufacturer")}</g:link></td>
-					
+					<tr>
+						<sec:ifLoggedIn>
+						<g:if test="${isAdminLoggedin == 'yes'}">
+							<td><g:link action="show" id="${carInstance.id}">${fieldValue(bean: carInstance, field: "manufacturer")}</g:link></td>
+						</g:if>
+
+						<g:else>
+							<td><g:link action="carProfile" id="${carInstance.id}">${fieldValue(bean: carInstance, field: "manufacturer")}</g:link></td>
+						</g:else>
+						</sec:ifLoggedIn>
+
+						<sec:ifNotLoggedIn>
+						<td>${fieldValue(bean: carInstance, field: "manufacturer")}</td>
+						</sec:ifNotLoggedIn>
+
 						<td>${fieldValue(bean: carInstance, field: "carModel")}</td>
 					
 						<td>${carInstance.year}</td>
@@ -49,7 +71,19 @@
 						<td>${fieldValue(bean: carInstance, field: "fuel")}</td>
 					
 						<td>${fieldValue(bean: carInstance, field: "doors")}</td>
-					
+
+						<g:if test="${isAdminLoggedin == 'yes'}">
+							<td><g:link class="edit btn btn-warning" action="edit" resource="${carInstance}">Edit car</g:link></td>
+
+							<td>
+								<g:form url="[resource:carInstance, action:'delete']" method="DELETE">
+									<fieldset class="buttons">
+										<g:actionSubmit class="delete btn btn-danger" action="delete" value="Delete car" onclick="return confirm('${message(code: 'default.button.delete.confirm.message', default: 'Are you sure?')}');" />
+									</fieldset>
+								</g:form>
+							</td>
+						</g:if>
+
 					</tr>
 				</g:each>
 				</tbody>
@@ -57,6 +91,6 @@
 			<div class="pagination">
 				<g:paginate total="${carInstanceCount ?: 0}" />
 			</div>
-		</div>
+
 	</body>
 </html>

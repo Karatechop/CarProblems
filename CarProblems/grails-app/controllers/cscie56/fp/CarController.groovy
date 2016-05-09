@@ -28,7 +28,11 @@ class CarController {
         User loggedInUser = userService.getUser()
         List carProblemsSummaryReport = carService.generateCarProblemsSummaryReport(carInstance)
         List allCarProblems = Problem.findAllByCarAndApproved(carInstance, true, [sort:"dateSubmitted", order: "desc"])
-        respond Car.get(1), view: 'carProfile', model: [isAdminLoggedin:isAdminLoggedin, loggedInUser:loggedInUser, carProblemsSummaryReport:carProblemsSummaryReport, allCarProblems:allCarProblems]
+
+        respond Car.first(), view: 'carProfile', model: [isAdminLoggedin:isAdminLoggedin,
+                                                         loggedInUser:loggedInUser,
+                                                         carProblemsSummaryReport:carProblemsSummaryReport,
+                                                         allCarProblems:allCarProblems]
     }
 
     @Secured(['ROLE_ADMIN', 'ROLE_USER', 'ROLE_ANONYMOUS'])
@@ -47,79 +51,25 @@ class CarController {
     }
 
     @Secured(['ROLE_ADMIN', 'ROLE_USER', 'ROLE_ANONYMOUS'])
-    def carTest () {
-
-        Car carInstance = Car.get(1)
-        List carProblemsSummaryReport = []
-        List allCarProblems = Problem.findAllByCarAndApproved(carInstance, true)
-
-        List systems = []
-        allCarProblems.each { systems << "${it.system}" }
-        systems = systems.unique { a, b -> a <=> b }
-
-        Integer i
-        List mileages = []
-        List summary = []
-        def mileagesSize
-        int midNumber
-        def medianMileage
-
-
-        for (i = 0; i < systems.size(); i++) {
-            summary = []
-            mileages = []
-            summary << systems[i]
-
-            allCarProblems.each {
-                if ("${it.system}" == systems[i]) {
-                    mileages << "${it.mileage}".toInteger()
-
-                }
-            }
-
-
-            mileages.sort { a, b -> a <=> b }
-            mileagesSize = mileages.size()
-            midNumber = mileagesSize / 2
-            medianMileage = mileagesSize % 2 != 0 ? mileages[midNumber] : (mileages[midNumber] + mileages[midNumber - 1]) / 2
-
-
-            summary << medianMileage
-            summary << mileages.min()
-            summary << mileages.max()
-
-            carProblemsSummaryReport << mileages
-        }
-        User userInstance = User.get(2)
-        Set userCars = userInstance.cars
-        def isAdminLoggedin = userService.isAdminLoggedin()
-        def profileOwnerIsLoggedin = userService.profileOwnerIsLoggedin(userInstance)
-        String carBelongsToLoggedinUser = carService.carBelongsToLoggedinUser(carInstance)
-            respond carInstance, model: [carProblemsSummaryReport: carProblemsSummaryReport,
-                                         allCarProblems:allCarProblems,
-                                         mileage:mileages,
-                                         userCars:userCars,
-                                         isAdminLoggedin:isAdminLoggedin,
-                                         profileOwnerIsLoggedin:profileOwnerIsLoggedin,
-                                         carBelongsToLoggedinUser:carBelongsToLoggedinUser]
-
-    }
-
-
-    @Secured(['ROLE_ADMIN', 'ROLE_USER', 'ROLE_ANONYMOUS'])
     def index(Integer max) {
         params.max = Math.min(max ?: 10, 100)
-        respond Car.list(params), model:[carInstanceCount: Car.count()]
+        String isAdminLoggedin = userService.isAdminLoggedin()
+        User loggedInUser = userService.getUser()
+        respond Car.list(params), model:[carInstanceCount: Car.count(),
+                                         isAdminLoggedin:isAdminLoggedin,
+                                         loggedInUser:loggedInUser]
     }
 
     @Secured(['ROLE_ADMIN'])
     def show(Car carInstance) {
-        respond carInstance
+        String isAdminLoggedin = userService.isAdminLoggedin()
+        respond carInstance, model: [isAdminLoggedin:isAdminLoggedin]
     }
 
     @Secured(['ROLE_ADMIN'])
     def create() {
-        respond new Car(params)
+        def isAdminLoggedin = userService.isAdminLoggedin()
+        respond new Car(params), model: [isAdminLoggedin: isAdminLoggedin]
     }
 
     @Transactional
@@ -131,26 +81,29 @@ class CarController {
         }
 
         if (carInstance.hasErrors()) {
-            respond carInstance.errors, view:'create'
+            redirect(action: 'create', params: [invalidParams: true])
             return
         }
 
-        carInstance.save flush:true
+        def isAdminLoggedin = userService.isAdminLoggedin()
+        User loggedInAdmin = (isAdminLoggedin == 'yes')? userService.getUser() : null
 
-        request.withFormat {
-            form multipartForm {
-                flash.message = message(code: 'default.created.message', args: [message(code: 'car.label', default: 'Car'), carInstance.id])
-                redirect carInstance
-            }
-            '*' { respond carInstance, [status: CREATED] }
-        }
+        carInstance.save (flush:true).addToUsers(loggedInAdmin)
+
+
+        String cid = carInstance.id.toString()
+        String uri = (isAdminLoggedin == 'yes')? "/car/show/" + cid : null
+
+        redirect(uri: uri, params: [carSaved: true])
     }
 
     @Secured(['ROLE_ADMIN'])
     def edit(Car carInstance) {
-        respond carInstance
+        def isAdminLoggedin = userService.isAdminLoggedin()
+        respond carInstance, model: [isAdminLoggedin:isAdminLoggedin]
     }
 
+    @Secured(['ROLE_ADMIN'])
     @Transactional
     def update(Car carInstance) {
         if (carInstance == null) {
@@ -159,19 +112,19 @@ class CarController {
         }
 
         if (carInstance.hasErrors()) {
-            respond carInstance.errors, view:'edit'
+            String cid = carInstance.id.toString()
+            String uri = "/car/edit/" + cid
+            redirect(uri: uri, params: [invalidParams: true])
             return
         }
 
-        carInstance.save flush:true
+        carInstance.save(flush:true)
 
-        request.withFormat {
-            form multipartForm {
-                flash.message = message(code: 'default.updated.message', args: [message(code: 'Car.label', default: 'Car'), carInstance.id])
-                redirect carInstance
-            }
-            '*'{ respond carInstance, [status: OK] }
-        }
+        def isAdminLoggedin = userService.isAdminLoggedin()
+        String cid = carInstance.id.toString()
+        String uri = (isAdminLoggedin == 'yes')? "/car/show/" + cid : null
+
+        redirect(uri: uri, params: [carUpdated: true])
     }
 
     @Transactional
@@ -183,6 +136,13 @@ class CarController {
             return
         }
 
+        Problem.findAllByCar(carInstance).each{it -> it.delete()}
+
+        def tmp = []
+        tmp.addAll(carInstance.users)
+        tmp.each{
+            it.removeFromCars(carInstance)
+        }
         carInstance.delete flush:true
 
         request.withFormat {

@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite errors="0" failures="0" hostname="xmgbr-PC" name="cscie56.fp.UserSpec" skipped="0" tests="11" time="0.176" timestamp="2016-04-29T21:07:26">
+<testsuite errors="0" failures="0" hostname="xmgbr-PC" name="cscie56.fp.UserSpec" skipped="0" tests="11" time="0.29" timestamp="2016-05-08T23:51:15">
   <properties />
-  <testcase classname="cscie56.fp.UserSpec" name="test user all constraints username is nullable" time="0.065" />
-  <testcase classname="cscie56.fp.UserSpec" name="test user all constraints username is unique" time="0.012" />
-  <testcase classname="cscie56.fp.UserSpec" name="test user all constraints username is nullable" time="0.01" />
-  <testcase classname="cscie56.fp.UserSpec" name="test user all constraints username is matches" time="0.01" />
-  <testcase classname="cscie56.fp.UserSpec" name="test user all constraints username is valid" time="0.012" />
-  <testcase classname="cscie56.fp.UserSpec" name="test user all constraints username is size" time="0.01" />
-  <testcase classname="cscie56.fp.UserSpec" name="test user all constraints username is valid" time="0.011" />
-  <testcase classname="cscie56.fp.UserSpec" name="test user all constraints username is valid" time="0.01" />
-  <testcase classname="cscie56.fp.UserSpec" name="test user all constraints username is valid" time="0.009" />
-  <testcase classname="cscie56.fp.UserSpec" name="test user all constraints password is nullable" time="0.009" />
-  <testcase classname="cscie56.fp.UserSpec" name="test user all constraints password is nullable" time="0.009" />
+  <testcase classname="cscie56.fp.UserSpec" name="test user all constraints username is nullable" time="0.1" />
+  <testcase classname="cscie56.fp.UserSpec" name="test user all constraints username is unique" time="0.022" />
+  <testcase classname="cscie56.fp.UserSpec" name="test user all constraints username is nullable" time="0.016" />
+  <testcase classname="cscie56.fp.UserSpec" name="test user all constraints username is matches" time="0.017" />
+  <testcase classname="cscie56.fp.UserSpec" name="test user all constraints username is valid" time="0.019" />
+  <testcase classname="cscie56.fp.UserSpec" name="test user all constraints username is size" time="0.017" />
+  <testcase classname="cscie56.fp.UserSpec" name="test user all constraints username is valid" time="0.019" />
+  <testcase classname="cscie56.fp.UserSpec" name="test user all constraints username is valid" time="0.019" />
+  <testcase classname="cscie56.fp.UserSpec" name="test user all constraints username is valid" time="0.019" />
+  <testcase classname="cscie56.fp.UserSpec" name="test user all constraints password is nullable" time="0.015" />
+  <testcase classname="cscie56.fp.UserSpec" name="test user all constraints password is nullable" time="0.016" />
   <system-out><![CDATA[--Output from test user all constraints username is nullable--
 --Output from test user all constraints username is unique--
 --Output from test user all constraints username is nullable--

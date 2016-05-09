@@ -10,6 +10,10 @@ class Problem {
     Date dateSubmitted = new Date()
     Boolean approved = null
 
+    String toString(){
+        system + " - " + mileage + " mi"
+    }
+
     static constraints = {
         system (blank: false, inList: ["Transmission", "Body/Paint", "Interior accessories", "Wheels/Hubs",
                                        "Drivetrain", "Windows/Windshield", "Engine", "Suspension",
@@ -19,5 +23,6 @@ class Problem {
         description (blank: false, matches: "[a-zA-Z0-9,. ]*", size: 1..500)
         mileage (blank: false, validator:{val -> val>=0 && val<550000})
         approved (nullable: true)
+        user (nullable: true)
             }
 }

@@ -20,13 +20,7 @@
                 </button>
 
             </div>
-            <div class="collapse navbar-collapse" id="myNavbar">
-                <ul class="nav navbar-nav">
-                    <li><a href="/CarProblems/user/index">Manage Users</a></li>
-                    <li><a href="/CarProblems/car/index">Manage Cars</a></li>
-                    <li><a href="/CarProblems/problem/index">Manage Problems</a></li>
-                </ul>
-            </div>
+            <g:render template="adminManageMenue"/>
         </div>
     </nav>
 
@@ -90,7 +84,12 @@
                                     <td>${p.mileage}</td>
                                     <td>${p.description}</td>
                                     <td>${p.dateSubmitted}</td>
-                                    <td><g:link controller="user" action="userProfile" id="${p.user.id}">${p.user}</g:link></td>
+                                    <g:if test="${p.user == null}">
+                                        <td>User deleted</td>
+                                    </g:if>
+                                    <g:else>
+                                        <td><g:link controller="user" action="userProfile" id="${p.user.id}">${p.user}</g:link></td>
+                                    </g:else>
                                     <td>
                                         <g:remoteLink class="btn btn-success" controller="user" action="adminApproveProblem" asynchronous="false" params="[problemId: p.id]" onComplete="location.reload()">Approve</g:remoteLink>
                                     </td>

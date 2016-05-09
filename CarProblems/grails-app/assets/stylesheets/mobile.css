@@ -57,13 +57,13 @@
 	}
 
 	/* stack form elements */
-	.fieldcontain {
+	.form-group {
 		margin-top: 0.6em;
 	}
 
-	.fieldcontain label,
-	.fieldcontain .property-label,
-	.fieldcontain .property-value {
+	.form-group label,
+	.form-group .property-label,
+	.form-group .property-value {
 		display: block;
 		float: none;
 		margin: 0 0 0.25em 0;

@@ -5174,3 +5174,13 @@ n:2152:org/apache/tools/ant/taskdefs/optional/native2ascii/DefaultNative2Ascii
 n:6767:sun/tools/native2ascii/Main
 n:697:sun/tools/native2ascii/resources/MsgNative2ascii
 n:1243:sun/tools/native2ascii/N2AFilter
+n:9029:com/intellij/rt/coverage/instrumentation/Instrumentator
+n:35497:org/jetbrains/org/objectweb/asm/ClassReader
+n:22140:org/jetbrains/org/objectweb/asm/ClassWriter
+n:3195:org/jetbrains/org/objectweb/asm/ClassVisitor
+n:4379:com/intellij/rt/coverage/util/classFinder/ClassFinder
+n:8974:com/intellij/rt/coverage/instrumentation/SaveHook
+n:3708:com/intellij/rt/coverage/instrumentation/Instrumentator$1
+n:6318:org/jetbrains/org/objectweb/asm/AnnotationWriter
+n:1599:org/jetbrains/org/objectweb/asm/AnnotationVisitor
+n:6868:org/jetbrains/org/objectweb/asm/Opcodes

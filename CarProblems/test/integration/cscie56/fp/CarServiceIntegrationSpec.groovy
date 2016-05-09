@@ -22,4 +22,15 @@ class CarServiceIntegrationSpec extends IntegrationSpec {
         Car.count() - carCountBefore == 1
 
     }
+
+    void "generateCarProblemsSummaryReport() method"() {
+
+        when: 'generateCarProblemsSummaryReport() method is used'
+        Car carInstance = Car.findByCarModel("2002 Explorer")
+        List carProblemsSummaryReport = carService.generateCarProblemsSummaryReport(carInstance)
+
+        then: 'check if carProblemsSummaryReport returns correct data'
+        carProblemsSummaryReport == [['Transmission', 117000, 95000, 135000], ['Brakes', 89000, 65000, 96000]]
+
+    }
 }

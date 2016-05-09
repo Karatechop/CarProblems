@@ -1,8 +1,6 @@
 
 
-
-
-<div class="form-group required">
+	<div class="form-group required">
 	<label class="control-label col-md-4" for="system">System</label>
 	<div class="col-md-8">
 		<g:select name="system" from="${problemInstance.constraints.system.inList}" required="" value="${problemInstance?.system}" valueMessagePrefix="problem.system"/>
@@ -10,15 +8,15 @@
 </div>
 
 <div class="form-group required">
-	<label class="control-label col-md-4" for="description">Description</label>
+	<label class="control-label col-md-4" for="description">Description (max 500 ch.)</label>
 	<div class="col-md-8">
-	<g:textArea name="description" maxlength="500" required="" value="${problemInstance?.description}"/>
+		<g:textArea name="description" maxlength="500" required="" value="${problemInstance?.description}"/>
 	</div>
 </div>
 
 <div class="form-group ${hasErrors(bean: problemInstance, field: 'mileage', 'error')} required">
 	<label class="control-label col-md-4" for="mileage">
-		<g:message code="problem.mileage.label" default="Mileage" />
+		<g:message code="problem.mileage.label" default="Mileage" /> (max 549000 mi.)
 		<span class="required-indicator">*</span>
 	</label>
 <div class="col-md-8">
@@ -48,7 +46,7 @@
 
 <div class="form-group ${hasErrors(bean: problemInstance, field: 'dateSubmitted', 'error')} required">
 	<label class="control-label col-md-4" for="dateSubmitted">
-		<g:message code="problem.dateSubmitted.label" default="Date Submitted" />
+		<g:message code="problem.dateSubmitted.label" default="Date Submitted" /> (max. current date)
 		<span class="required-indicator">*</span>
 	</label>
 <div class="col-md-8">
@@ -66,11 +64,3 @@
 </div>
 </div>
 
-<div class="form-group ${hasErrors(bean: problemInstance, field: 'user', 'error')} required">
-	<label class="control-label col-md-4" for="user">
-		Submit
-	</label>
-	<div class="col-md-8">
-		<g:submitButton name="create" class="btn btn-success" value="${message(code: 'default.button.create.label', default: 'Submit problem')}" />
-	</div>
-</div>

@@ -18,9 +18,7 @@
 			</div>
 			<br><br><br><hr>
 
-			<g:if test="${flash.message}">
-				<div class="message" role="status">${flash.message}</div>
-			</g:if>
+
 	<div class="table-responsive">
 	<table class="table table-striped">
 			<thead>
@@ -37,12 +35,16 @@
 						<g:sortableColumn property="enabled" title="${message(code: 'user.enabled.label', default: 'Enabled')}" />
 					
 						<g:sortableColumn property="passwordExpired" title="${message(code: 'user.passwordExpired.label', default: 'Password Expired')}" />
-					
+
+						<th>Edit</th>
+						<th>Delete</th>
+
 					</tr>
 				</thead>
 				<tbody>
 				<g:each in="${userInstanceList}" status="i" var="userInstance">
-					<tr class="${(i % 2) == 0 ? 'even' : 'odd'}">
+					<g:if test="${userInstance.getAuthorities().authority != ['ROLE_ADMIN']}">
+					<tr>
 					
 						<td><g:link action="show" id="${userInstance.id}">${fieldValue(bean: userInstance, field: "username")}</g:link></td>
 					
@@ -55,15 +57,25 @@
 						<td><g:formatBoolean boolean="${userInstance.enabled}" /></td>
 					
 						<td><g:formatBoolean boolean="${userInstance.passwordExpired}" /></td>
-					
+
+						<td><g:link class="edit btn btn-warning" action="edit" resource="${userInstance}">Edit user</g:link></td>
+
+						<td>
+							<g:form url="[resource:userInstance, action:'delete']" method="DELETE">
+								<fieldset class="buttons">
+									<g:actionSubmit class="delete btn btn-danger" action="delete" value="Delete user" onclick="return confirm('${message(code: 'default.button.delete.confirm.message', default: 'Are you sure?')}');" />
+								</fieldset>
+							</g:form>
+						</td>
 					</tr>
+					</g:if>
 				</g:each>
 				</tbody>
 			</table>
 		</div>
-	<ul class="pagination">
-				<boots:paginate total="${userInstanceCount ?: 0}" />
-			</ul>
+		<div class="pagination">
+			<g:paginate total="${userInstanceCount ?: 0}" />
+		</div>
 
 	</body>
 </html>

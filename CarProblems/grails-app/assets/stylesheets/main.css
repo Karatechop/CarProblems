@@ -213,28 +213,28 @@ fieldset,
 	border: none;
 }
 
-.property-list .fieldcontain {
+.property-list .form-group {
 	list-style: none;
 	overflow: hidden;
 	zoom: 1;
 }
 
-.fieldcontain {
+.form-group {
 	margin-top: 1em;
 }
 
-.fieldcontain label,
-.fieldcontain .property-label {
+.form-group label,
+.form-group .property-label {
 	color: #666666;
 	text-align: right;
 	width: 25%;
 }
 
-.fieldcontain .property-label {
+.form-group .property-label {
 	float: left;
 }
 
-.fieldcontain .property-value {
+.form-group .property-value {
 	display: block;
 	margin-left: 27%;
 }

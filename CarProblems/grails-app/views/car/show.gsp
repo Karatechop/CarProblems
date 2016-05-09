@@ -8,95 +8,79 @@
 		<title><g:message code="default.show.label" args="[entityName]" /></title>
 	</head>
 	<body>
-		<a href="#show-car" class="skip" tabindex="-1"><g:message code="default.link.skip.label" default="Skip to content&hellip;"/></a>
-		<div class="nav" role="navigation">
-			<ul>
-				<li><a class="home" href="${createLink(uri: '/')}"><g:message code="default.home.label"/></a></li>
-				<li><g:link class="list" action="index"><g:message code="default.list.label" args="[entityName]" /></g:link></li>
-				<li><g:link class="create" action="create"><g:message code="default.new.label" args="[entityName]" /></g:link></li>
-			</ul>
-		</div>
-		<div id="show-car" class="content scaffold-show" role="main">
-			<h1><g:message code="default.show.label" args="[entityName]" /></h1>
-			<g:if test="${flash.message}">
-			<div class="message" role="status">${flash.message}</div>
-			</g:if>
-			<ol class="property-list car">
-			
-				<g:if test="${carInstance?.manufacturer}">
-				<li class="fieldcontain">
-					<span id="manufacturer-label" class="property-label"><g:message code="car.manufacturer.label" default="Manufacturer" /></span>
-					
-						<span class="property-value" aria-labelledby="manufacturer-label"><g:fieldValue bean="${carInstance}" field="manufacturer"/></span>
-					
-				</li>
-				</g:if>
-			
-				<g:if test="${carInstance?.carModel}">
-				<li class="fieldcontain">
-					<span id="carModel-label" class="property-label"><g:message code="car.carModel.label" default="Car Model" /></span>
-					
-						<span class="property-value" aria-labelledby="carModel-label"><g:fieldValue bean="${carInstance}" field="carModel"/></span>
-					
-				</li>
-				</g:if>
-			
-				<g:if test="${carInstance?.year}">
-				<li class="fieldcontain">
-					<span id="year-label" class="property-label"><g:message code="car.year.label" default="Year" /></span>
-					
-						<span class="property-value" aria-labelledby="year-label">${carInstance.year}</span>
-					
-				</li>
-				</g:if>
-			
-				<g:if test="${carInstance?.fuel}">
-				<li class="fieldcontain">
-					<span id="fuel-label" class="property-label"><g:message code="car.fuel.label" default="Fuel" /></span>
-					
-						<span class="property-value" aria-labelledby="fuel-label"><g:fieldValue bean="${carInstance}" field="fuel"/></span>
-					
-				</li>
-				</g:if>
-			
-				<g:if test="${carInstance?.doors}">
-				<li class="fieldcontain">
-					<span id="doors-label" class="property-label"><g:message code="car.doors.label" default="Doors" /></span>
-					
-						<span class="property-value" aria-labelledby="doors-label"><g:fieldValue bean="${carInstance}" field="doors"/></span>
-					
-				</li>
-				</g:if>
-			
-				<g:if test="${carInstance?.problems}">
-				<li class="fieldcontain">
-					<span id="problems-label" class="property-label"><g:message code="car.problems.label" default="Problems" /></span>
-					
-						<g:each in="${carInstance.problems}" var="p">
-						<span class="property-value" aria-labelledby="problems-label"><g:link controller="problem" action="show" id="${p.id}">${p?.encodeAsHTML()}</g:link></span>
-						</g:each>
-					
-				</li>
-				</g:if>
-			
-				<g:if test="${carInstance?.users}">
-				<li class="fieldcontain">
-					<span id="users-label" class="property-label"><g:message code="car.users.label" default="Users" /></span>
+		<g:if test="${params.carSaved}">
+			<div class="alert alert-success">
+				<strong>Success!</strong> Car has been successfully saved.
+			</div>
+		</g:if>
+		<g:if test="${params.carUpdated}">
+			<div class="alert alert-success">
+				<strong>Success!</strong> Car has been successfully updated.
+			</div>
+		</g:if>
 
-						<g:each in="${carInstance.users}" var="u">
-						<span class="property-value" aria-labelledby="users-label"><g:link controller="user" action="show" id="${u.id}">${u?.encodeAsHTML()}</g:link></span>
-						</g:each>
-					
-				</li>
-				</g:if>
-			
-			</ol>
-			<g:form url="[resource:carInstance, action:'delete']" method="DELETE">
-				<fieldset class="buttons">
-					<g:link class="edit" action="edit" resource="${carInstance}"><g:message code="default.button.edit.label" default="Edit" /></g:link>
-					<g:actionSubmit class="delete" action="delete" value="${message(code: 'default.button.delete.label', default: 'Delete')}" onclick="return confirm('${message(code: 'default.button.delete.confirm.message', default: 'Are you sure?')}');" />
-				</fieldset>
-			</g:form>
+		<div class="col-md-4">
+			<h1><g:message code="default.show.label" args="[entityName]" /></h1>
 		</div>
+
+		<div class="col-md-8">
+			<g:link class="btn btn-lg btn-primary pull-right" action="create" >Create a new car</g:link>
+		</div>
+		<br><br><br><hr>
+
+		<g:if test="${carInstance}">
+			<table class="table table-reflow">
+				<thead>
+				<tr>
+					<th><g:message code="car.manufacturer.label" default="Manufacturer" /></th>
+					<th><g:message code="car.carModel.label" default="Car Model" /></th>
+					<th><g:message code="car.year.label" default="Year" /></th>
+					<th><g:message code="car.fuel.label" default="Fuel" /></th>
+					<th><g:message code="car.doors.label" default="Doors" /></th>
+					<th><g:message code="car.problems.label" default="Problems" /></th>
+					<th><g:message code="car.users.label" default="Users" /></th>
+				</tr>
+				</thead>
+				<tbody>
+				<tr>
+					<td><g:fieldValue bean="${carInstance}" field="manufacturer"/></td>
+
+					<td><g:fieldValue bean="${carInstance}" field="carModel"/></td>
+
+					<td>${carInstance.year}</td>
+
+					<td><g:fieldValue bean="${carInstance}" field="fuel"/></td>
+
+					<td><g:fieldValue bean="${carInstance}" field="doors"/></td>
+
+					<td>
+						<ul>
+						<g:each in="${carInstance.problems}" var="p">
+							<li><g:link controller="problem" action="show" id="${p.id}">${p?.encodeAsHTML()}</g:link></li>
+						</g:each>
+						</ul>
+					</td>
+
+					<td>
+						<ul>
+							<g:each in="${carInstance.users}" var="u">
+								<li><g:link controller="user" action="show" id="${u.id}">${u?.encodeAsHTML()}</g:link></li>
+							</g:each>
+						</ul>
+					</td>
+				</tr>
+				</tbody>
+			</table>
+		</g:if>
+
+
+	<g:form url="[resource:carInstance, action:'delete']" method="DELETE">
+		<fieldset class="buttons">
+			<g:link class="btn btn-warning" action="edit" resource="${carInstance}">Edit car</g:link>
+			<g:actionSubmit class="btn btn-danger" action="delete" value="Delete car" onclick="return confirm('${message(code: 'default.button.delete.confirm.message', default: 'Are you sure?')}');" />
+			<g:link class="btn btn-default" action="carProfile" resource="${carInstance}">View profile</g:link>
+		</fieldset>
+	</g:form>
+
 	</body>
 </html>

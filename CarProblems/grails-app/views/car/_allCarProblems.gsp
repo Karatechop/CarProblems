@@ -21,7 +21,12 @@
                     <td>${acp.mileage}</td>
                     <td>${acp.description}</td>
                     <td>${acp.dateSubmitted}</td>
-                    <td><g:link controller="user" action="userProfile" id="${acp.user.id}">${acp.user}</g:link></td>
+                    <g:if test="${acp.user == null}">
+                        <td>User deleted</td>
+                    </g:if>
+                    <g:else>
+                    <td><g:link controller="user" action="userProfile" id="${acp.user?.id}">${acp.user}</g:link></td>
+                    </g:else>
                 </tr>
             </g:each>
 

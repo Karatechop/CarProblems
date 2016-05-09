@@ -1,0 +1,4 @@
+--Output from check getUser() method--
+--Output from check isAdminLoggedin() method--
+--Output from check profileOwnerIsLoggedin() method--
+--Output from check adminCarUserProblemSummary() method--

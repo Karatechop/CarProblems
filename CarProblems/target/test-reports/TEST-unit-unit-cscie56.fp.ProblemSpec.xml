@@ -1,27 +1,28 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite errors="0" failures="0" hostname="xmgbr-PC" name="cscie56.fp.ProblemSpec" skipped="0" tests="21" time="4.011" timestamp="2016-05-01T14:00:02">
+<testsuite errors="0" failures="0" hostname="xmgbr-PC" name="cscie56.fp.ProblemSpec" skipped="0" tests="22" time="0.59" timestamp="2016-05-08T23:51:14">
   <properties />
-  <testcase classname="cscie56.fp.ProblemSpec" name="test problem all constraints system is nullable" time="3.1" />
-  <testcase classname="cscie56.fp.ProblemSpec" name="test problem all constraints system is nullable" time="0.075" />
-  <testcase classname="cscie56.fp.ProblemSpec" name="test problem all constraints system is inList" time="0.257" />
-  <testcase classname="cscie56.fp.ProblemSpec" name="test problem all constraints system is valid" time="0.035" />
-  <testcase classname="cscie56.fp.ProblemSpec" name="test problem all constraints system is valid" time="0.035" />
-  <testcase classname="cscie56.fp.ProblemSpec" name="test problem all constraints description is nullable" time="0.042" />
-  <testcase classname="cscie56.fp.ProblemSpec" name="test problem all constraints description is nullable" time="0.032" />
-  <testcase classname="cscie56.fp.ProblemSpec" name="test problem all constraints description is matches" time="0.034" />
-  <testcase classname="cscie56.fp.ProblemSpec" name="test problem all constraints description is valid" time="0.026" />
+  <testcase classname="cscie56.fp.ProblemSpec" name="test problem all constraints system is nullable" time="0.13" />
+  <testcase classname="cscie56.fp.ProblemSpec" name="test problem all constraints system is nullable" time="0.023" />
+  <testcase classname="cscie56.fp.ProblemSpec" name="test problem all constraints system is inList" time="0.022" />
+  <testcase classname="cscie56.fp.ProblemSpec" name="test problem all constraints system is valid" time="0.024" />
+  <testcase classname="cscie56.fp.ProblemSpec" name="test problem all constraints system is valid" time="0.022" />
+  <testcase classname="cscie56.fp.ProblemSpec" name="test problem all constraints description is nullable" time="0.018" />
+  <testcase classname="cscie56.fp.ProblemSpec" name="test problem all constraints description is nullable" time="0.017" />
+  <testcase classname="cscie56.fp.ProblemSpec" name="test problem all constraints description is matches" time="0.021" />
+  <testcase classname="cscie56.fp.ProblemSpec" name="test problem all constraints description is valid" time="0.032" />
   <testcase classname="cscie56.fp.ProblemSpec" name="test problem all constraints description is size" time="0.024" />
-  <testcase classname="cscie56.fp.ProblemSpec" name="test problem all constraints description is valid" time="0.033" />
-  <testcase classname="cscie56.fp.ProblemSpec" name="test problem all constraints description is valid" time="0.024" />
-  <testcase classname="cscie56.fp.ProblemSpec" name="test problem all constraints description is valid" time="0.027" />
-  <testcase classname="cscie56.fp.ProblemSpec" name="test problem all constraints mileage is nullable" time="0.022" />
-  <testcase classname="cscie56.fp.ProblemSpec" name="test problem all constraints mileage is nullable" time="0.024" />
-  <testcase classname="cscie56.fp.ProblemSpec" name="test problem all constraints mileage is validator" time="0.037" />
-  <testcase classname="cscie56.fp.ProblemSpec" name="test problem all constraints mileage is valid" time="0.024" />
-  <testcase classname="cscie56.fp.ProblemSpec" name="test problem all constraints mileage is validator" time="0.023" />
-  <testcase classname="cscie56.fp.ProblemSpec" name="test problem all constraints mileage is valid" time="0.02" />
-  <testcase classname="cscie56.fp.ProblemSpec" name="test problem all constraints mileage is valid" time="0.019" />
-  <testcase classname="cscie56.fp.ProblemSpec" name="test problem all constraints approved is valid" time="0.019" />
+  <testcase classname="cscie56.fp.ProblemSpec" name="test problem all constraints description is valid" time="0.02" />
+  <testcase classname="cscie56.fp.ProblemSpec" name="test problem all constraints description is valid" time="0.016" />
+  <testcase classname="cscie56.fp.ProblemSpec" name="test problem all constraints description is valid" time="0.021" />
+  <testcase classname="cscie56.fp.ProblemSpec" name="test problem all constraints mileage is nullable" time="0.018" />
+  <testcase classname="cscie56.fp.ProblemSpec" name="test problem all constraints mileage is nullable" time="0.02" />
+  <testcase classname="cscie56.fp.ProblemSpec" name="test problem all constraints mileage is validator" time="0.021" />
+  <testcase classname="cscie56.fp.ProblemSpec" name="test problem all constraints mileage is valid" time="0.016" />
+  <testcase classname="cscie56.fp.ProblemSpec" name="test problem all constraints mileage is validator" time="0.02" />
+  <testcase classname="cscie56.fp.ProblemSpec" name="test problem all constraints mileage is valid" time="0.021" />
+  <testcase classname="cscie56.fp.ProblemSpec" name="test problem all constraints mileage is valid" time="0.022" />
+  <testcase classname="cscie56.fp.ProblemSpec" name="test problem all constraints approved is valid" time="0.017" />
+  <testcase classname="cscie56.fp.ProblemSpec" name="test problem all constraints user is valid" time="0.02" />
   <system-out><![CDATA[--Output from test problem all constraints system is nullable--
 --Output from test problem all constraints system is nullable--
 --Output from test problem all constraints system is inList--
@@ -43,6 +44,7 @@
 --Output from test problem all constraints mileage is valid--
 --Output from test problem all constraints mileage is valid--
 --Output from test problem all constraints approved is valid--
+--Output from test problem all constraints user is valid--
 ]]></system-out>
   <system-err><![CDATA[--Output from test problem all constraints system is nullable--
 --Output from test problem all constraints system is nullable--
@@ -65,5 +67,6 @@
 --Output from test problem all constraints mileage is valid--
 --Output from test problem all constraints mileage is valid--
 --Output from test problem all constraints approved is valid--
+--Output from test problem all constraints user is valid--
 ]]></system-err>
 </testsuite>

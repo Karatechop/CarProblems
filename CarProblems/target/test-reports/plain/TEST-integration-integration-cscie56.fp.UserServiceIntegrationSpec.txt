@@ -1,0 +1,19 @@
+Testsuite: cscie56.fp.UserServiceIntegrationSpec
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0,062 sec
+------------- Standard Output ---------------
+--Output from check getUser() method--
+--Output from check isAdminLoggedin() method--
+--Output from check profileOwnerIsLoggedin() method--
+--Output from check adminCarUserProblemSummary() method--
+------------- ---------------- ---------------
+------------- Standard Error -----------------
+--Output from check getUser() method--
+--Output from check isAdminLoggedin() method--
+--Output from check profileOwnerIsLoggedin() method--
+--Output from check adminCarUserProblemSummary() method--
+------------- ---------------- ---------------
+
+Testcase: check getUser() method took 0,013 sec
+Testcase: check isAdminLoggedin() method took 0,006 sec
+Testcase: check profileOwnerIsLoggedin() method took 0,013 sec
+Testcase: check adminCarUserProblemSummary() method took 0,03 sec

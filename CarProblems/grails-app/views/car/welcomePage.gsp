@@ -39,9 +39,7 @@
 
                                 <fieldset>
                                     <div class="form-group">
-                                        <div class="fieldcontain">
-                                            <g:select id="car" name="id" from="${cscie56.fp.Car.list()}" optionKey="id" required="" value="${params.id}" class=""/>
-                                        </div>
+                                        <g:select id="car" name="id" from="${cscie56.fp.Car.list()}" optionKey="id" required="" value="${params.id}" class=""/>
                                     </div>
 
                                     <div class="form-group">

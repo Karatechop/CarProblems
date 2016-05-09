@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite errors="0" failures="0" hostname="xmgbr-PC" name="cscie56.fp.UserServiceIntegrationSpec" skipped="0" tests="4" time="0.062" timestamp="2016-05-08T23:51:28">
+  <properties />
+  <testcase classname="cscie56.fp.UserServiceIntegrationSpec" name="check getUser() method" time="0.013" />
+  <testcase classname="cscie56.fp.UserServiceIntegrationSpec" name="check isAdminLoggedin() method" time="0.006" />
+  <testcase classname="cscie56.fp.UserServiceIntegrationSpec" name="check profileOwnerIsLoggedin() method" time="0.013" />
+  <testcase classname="cscie56.fp.UserServiceIntegrationSpec" name="check adminCarUserProblemSummary() method" time="0.03" />
+  <system-out><![CDATA[--Output from check getUser() method--
+--Output from check isAdminLoggedin() method--
+--Output from check profileOwnerIsLoggedin() method--
+--Output from check adminCarUserProblemSummary() method--
+]]></system-out>
+  <system-err><![CDATA[--Output from check getUser() method--
+--Output from check isAdminLoggedin() method--
+--Output from check profileOwnerIsLoggedin() method--
+--Output from check adminCarUserProblemSummary() method--
+]]></system-err>
+</testsuite>

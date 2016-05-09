@@ -91,5 +91,20 @@ class ProblemSpec extends ConstraintUnitSpec {
 
     }
 
+    @Unroll("test problem all constraints #field is #error")
+    def "test problem user constraints"() {
+        when:
+        def obj = new Problem("$field": val)
+
+        then:
+        validateConstraints(obj, field, error)
+
+        where:
+        error   | field  | val
+        'valid' | 'user' | null
+
+    }
+
+
 
 }

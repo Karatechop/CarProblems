@@ -1,1 +1,2 @@
 --Output from createCar() method--
+--Output from generateCarProblemsSummaryReport() method--

@@ -1,9 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite errors="0" failures="0" hostname="xmgbr-PC" name="cscie56.fp.CarServiceIntegrationSpec" skipped="0" tests="1" time="0.258" timestamp="2016-04-29T21:07:35">
+<testsuite errors="0" failures="0" hostname="xmgbr-PC" name="cscie56.fp.CarServiceIntegrationSpec" skipped="0" tests="2" time="0.413" timestamp="2016-05-08T23:51:27">
   <properties />
-  <testcase classname="cscie56.fp.CarServiceIntegrationSpec" name="createCar() method" time="0.253" />
+  <testcase classname="cscie56.fp.CarServiceIntegrationSpec" name="createCar() method" time="0.318" />
+  <testcase classname="cscie56.fp.CarServiceIntegrationSpec" name="generateCarProblemsSummaryReport() method" time="0.089" />
   <system-out><![CDATA[--Output from createCar() method--
+--Output from generateCarProblemsSummaryReport() method--
 ]]></system-out>
   <system-err><![CDATA[--Output from createCar() method--
+--Output from generateCarProblemsSummaryReport() method--
 ]]></system-err>
 </testsuite>

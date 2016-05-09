@@ -107,11 +107,13 @@ class UserController {
     }
 
     def show(User userInstance) {
-        respond userInstance
+        String isAdminLoggedin = userService.isAdminLoggedin()
+        respond userInstance, model: [isAdminLoggedin:isAdminLoggedin]
     }
 
     def create() {
-        respond new User(params)
+        def isAdminLoggedin = userService.isAdminLoggedin()
+        respond new User(params), model: [isAdminLoggedin: isAdminLoggedin]
     }
 
     @Transactional
@@ -122,22 +124,21 @@ class UserController {
         }
 
         if (userInstance.hasErrors()) {
-            respond userInstance.errors, view:'create'
+            redirect(action: 'create', params: [invalidParams: true])
             return
         }
 
         userInstance.save flush:true
+        Role userRole = Role.findByAuthority('ROLE_USER')
+        UserRole.create userInstance, userRole, true
 
-        request.withFormat {
-            form multipartForm {
-                flash.message = message(code: 'default.created.message', args: [message(code: 'user.label', default: 'User'), userInstance.id])
-                redirect userInstance
-            }
-            '*' { respond userInstance, [status: CREATED] }
-        }
+        String uri = "/user/show/" + userInstance.id.toString()
+
+        redirect(uri: uri, params: [userSaved: true])
     }
 
     def edit(User userInstance) {
+        def isAdminLoggedin = userService.isAdminLoggedin()
         respond userInstance
     }
 
@@ -149,19 +150,19 @@ class UserController {
         }
 
         if (userInstance.hasErrors()) {
-            respond userInstance.errors, view:'edit'
+            String uid = userInstance.id.toString()
+            String uri = "/car/edit/" + uid
+            redirect(uri: uri, params: [invalidParams: true])
             return
         }
 
         userInstance.save flush:true
 
-        request.withFormat {
-            form multipartForm {
-                flash.message = message(code: 'default.updated.message', args: [message(code: 'User.label', default: 'User'), userInstance.id])
-                redirect userInstance
-            }
-            '*'{ respond userInstance, [status: OK] }
-        }
+        def isAdminLoggedin = userService.isAdminLoggedin()
+        String uid = userInstance.id.toString()
+        String uri = (isAdminLoggedin == 'yes')? "/user/show/" + uid : null
+
+        redirect(uri: uri, params: [userUpdated: true])
     }
 
     @Transactional
@@ -171,6 +172,15 @@ class UserController {
             notFound()
             return
         }
+
+
+        Role userRole = Role.findByAuthority('ROLE_USER')
+        UserRole.remove userInstance, userRole, true
+
+        Problem.findAllByUser(userInstance).each{it -> it.user = null}
+
+        userInstance.save flush:true
+
 
         userInstance.delete flush:true
 

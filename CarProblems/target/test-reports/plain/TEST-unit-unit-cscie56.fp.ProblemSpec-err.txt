@@ -19,3 +19,4 @@
 --Output from test problem all constraints mileage is valid--
 --Output from test problem all constraints mileage is valid--
 --Output from test problem all constraints approved is valid--
+--Output from test problem all constraints user is valid--

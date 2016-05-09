@@ -5,7 +5,7 @@
         <span class="required-indicator">*</span>
     </label>
     <div class="col-md-8">
-        <g:select id="car" name="car.id" from="${cscie56.fp.Car.list()}" optionKey="id" required="" value="${problemInstance?.car?.id}" class="many-to-one"/>
+        <g:select id="car" name="car.id" from="${loggedInUser.cars}" optionKey="id" required="" value="${problemInstance?.car?.id}" class="many-to-one"/>
     </div>
 </div>
 
@@ -53,14 +53,5 @@
     </label>
     <div class="col-md-8 hidden">
         <g:select id="user" name="user.id" from="${loggedInUser}" optionKey="id" required="" value="${problemInstance?.user?.id}" class="many-to-one"/>
-    </div>
-</div>
-
-<div class="form-group ${hasErrors(bean: problemInstance, field: 'user', 'error')} required">
-    <label class="control-label col-md-4" for="user">
-        Submit
-    </label>
-    <div class="col-md-8">
-        <g:submitButton name="create" class="btn btn-success" value="${message(code: 'default.button.create.label', default: 'Submit problem')}" />
     </div>
 </div>

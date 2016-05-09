@@ -16,11 +16,14 @@ class ProblemController {
     @Secured(['ROLE_ADMIN'])
     def index(Integer max) {
         params.max = Math.min(max ?: 10, 100)
-        respond Problem.list(params), model:[problemInstanceCount: Problem.count()]
+        String isAdminLoggedin = userService.isAdminLoggedin()
+        respond Problem.list(params), model:[problemInstanceCount: Problem.count(),
+                                             isAdminLoggedin:isAdminLoggedin]
     }
 
     def show(Problem problemInstance) {
-        respond problemInstance
+        String isAdminLoggedin = userService.isAdminLoggedin()
+        respond problemInstance, model: [isAdminLoggedin:isAdminLoggedin]
     }
 
     @Secured(['ROLE_ADMIN', 'ROLE_USER'])
@@ -40,22 +43,24 @@ class ProblemController {
         }
 
         if (problemInstance.hasErrors()) {
-            respond problemInstance.errors, view:'create'
+            redirect(action: 'create', params: [invalidParams: true])
             return
         }
 
         problemInstance.save flush:true
 
         def isAdminLoggedin = userService.isAdminLoggedin()
-        User userInstance = userService.getUser()
-        String id = userInstance.id.toString()
-        String uri = (isAdminLoggedin == 'yes')? "/user/adminDashboard" : "/user/userProfile/" + id
+        User loggedInUser = userService.getUser()
+        String uid = loggedInUser.id.toString()
+        String pid = problemInstance.id.toString()
+        String uri = (isAdminLoggedin == 'yes')? "/problem/show/" + pid : "/user/userProfile/" + uid
 
-        redirect(uri: uri, model: [isAdminLoggedin: isAdminLoggedin, userInstance: userInstance])
+        redirect(uri: uri, params: [problemSaved: true])
     }
 
     def edit(Problem problemInstance) {
-        respond problemInstance
+        def isAdminLoggedin = userService.isAdminLoggedin()
+        respond problemInstance, model: [isAdminLoggedin:isAdminLoggedin]
     }
 
     @Transactional
@@ -66,19 +71,20 @@ class ProblemController {
         }
 
         if (problemInstance.hasErrors()) {
-            respond problemInstance.errors, view:'edit'
+            String pid = problemInstance.id.toString()
+            String uri = "/problem/edit/" + pid
+            redirect(uri: uri, params: [invalidParams: true])
+
             return
         }
 
         problemInstance.save flush:true
 
-        request.withFormat {
-            form multipartForm {
-                flash.message = message(code: 'default.updated.message', args: [message(code: 'Problem.label', default: 'Problem'), problemInstance.id])
-                redirect problemInstance
-            }
-            '*'{ respond problemInstance, [status: OK] }
-        }
+        def isAdminLoggedin = userService.isAdminLoggedin()
+        String pid = problemInstance.id.toString()
+        String uri = (isAdminLoggedin == 'yes')? "/problem/show/" + pid : null
+
+        redirect(uri: uri, params: [problemUpdated: true])
 
 
     }

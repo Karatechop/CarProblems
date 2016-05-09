@@ -10,6 +10,7 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 		<meta name="viewport" content="width=device-width, initial-scale=1"/>
 		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+		<link rel="stylesheet" href="${resource(dir: 'css', file: 'custom.css')}" type="text/css">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
 		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 
@@ -24,14 +25,20 @@
 			<g:if test="${request.forwardURI == '/CarProblems/'}">
 				<sec:ifLoggedIn>
 					<hr>
+					<a class="btn btn-default" href="${createLink(uri: '/car/index')}">All cars</a>
 				</sec:ifLoggedIn>
 			</g:if>
 			<g:if test="${request.forwardURI != '/CarProblems/'}">
 				<hr>
 				<div class="btn-group" role="group">
 						<a class="btn btn-default"  href="${createLink(uri: '/')}"><g:message code="default.home.label"/></a>
-					<g:if test="${request.forwardURI != '/CarProblems/user/adminDashboard'}">
+					<g:if test="${isAdminLoggedin == 'no'}">
 						<a class="btn btn-default" href="${createLink(uri: '/car/index')}">All cars</a>
+					</g:if>
+					<g:if test="${isAdminLoggedin == 'yes' && request.forwardURI != '/CarProblems/user/adminDashboard'}">
+						<a class="btn btn-default" href="/CarProblems/user/index">Users</a>
+						<a class="btn btn-default" href="/CarProblems/car/index">Cars</a>
+						<a class="btn btn-default" href="/CarProblems/problem/index">Problems</a>
 					</g:if>
 				</div>
 			</g:if>

@@ -68,15 +68,5 @@ class CarService {
 
             return carProblemsSummaryReport
         }
-/*
-        def carBelongsToLoggedinUser(Car carInstance) {
-            User userInstance = userService.getUser()
-            String carBelongsToLoggedinUser
 
-            Set cars = userInstance ? userInstance.cars : []
-            Car car = cars.find {c -> c == carInstance}
-            if(car != null) {carBelongsToLoggedinUser = 'yes'}else{carBelongsToLoggedinUser = 'no'}
-            return carBelongsToLoggedinUser
-        }
-*/
 }
